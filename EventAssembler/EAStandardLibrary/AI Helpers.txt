@@ -169,6 +169,7 @@
 #define BrigandMove					0x04
 
 #define RossMovementAI				0x0A
+#define DestroyWallAI				0x0E
 
 //AI3 helpers
 #define NormalRecovery				0x00

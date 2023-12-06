@@ -1,0 +1,5 @@
+#0x0355 BronzeSwordName
+*{Bronze Sword}[X]
+
+#0x0405
+Cannot Critical.[X]

@@ -4,6 +4,7 @@
 //PROTECT $25224
     ORG FreeSpace
 
+
     #include "repointedTextTable.event"
 
     //Text first for Text ID definitions
@@ -18,6 +19,8 @@
     #include "EngineHacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
+	#include "Fixes/MasterFixInstaller.event"
+	
 	#ifdef USE_TEST_MAP
     //Events
     #include "Events/Release_map.event"
