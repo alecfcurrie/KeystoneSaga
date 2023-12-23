@@ -42,7 +42,7 @@ TurnEventEnemy(0x00, Turn2_EP, 2)
 TurnEventEnemy(0x00, Turn3_EP, 3)
 TurnEventEnemy(0x00, Turn4_EP, 4)
 TurnEventEnemy(0x00, Turn5_EP, 5)
-TurnEventEnemy(0x00, Turn7_EP, 7)
+TurnEventEnemy(0x00, Turn6_EP, 6)
 END_MAIN
 
 LocationBasedEvents:
@@ -69,7 +69,7 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x1 [SlimSword,Rapier,Vulnerary] NoAI
+UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x1 [SlimSword] NoAI
 UNIT Franz Cavalier Eirika Level(2, Ally, False)  [9,17] 0x0 0x0 0x0 0x1 [IronSword,SlimLance] NoAI
 UNIT
 
@@ -77,22 +77,20 @@ EnemyUnits:
 // Boss Group
 UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [6,4] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 // Central Group
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 // Wall Breakers
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [3,12] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI]
-UNIT 0x80 Archer ONeill Level(1, Enemy, True) [3,11] 0x0 0x0 0x0 0x0 [IronBow] [AttackInRange, DestroyWallAI]
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [14,13] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI]
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,14] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI]
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [3,12] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI, 0x0, 0x0]
+UNIT 0x80 Archer ONeill Level(1, Enemy, True) [3,11] 0x0 0x0 0x0 0x0 [IronBow] [AttackInRange, DestroyWallAI, 0x0, 0x0]
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [14,13] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI, 0x0, 0x0]
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,14] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI, 0x0, 0x0]
 UNIT
 
 EnemyUnits2:
-// Top Left
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [2,6] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [2,7] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [3,7] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
+// Bottom Left
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [0,11] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
+UNIT 0x80 Archer ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x0 0x0 [ShortBow] AttackInRangeAI
 // Top Right
 UNIT 0x80 Archer ONeill Level(1, Enemy, True) [15,8] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,7] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
@@ -101,8 +99,8 @@ UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [14,8] 0x0 0x0 0x0 0x0 [DevilAxe]
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,4] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,3] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,3] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [12,1] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,2] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [12,1] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,2] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 // Sides
 UNIT 0x80 Archer ONeill Level(1, Enemy, True) [17,11] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [1,9] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
@@ -129,12 +127,12 @@ ENUN
 ENDA
 
 FriendlyReinforcements1:
-UNIT Seth Archer Eirika Level(8, Ally, False) [8,17] 0x0 0x0 0x0 0x1 [ShortBow, IronBow] NoAI
-UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,17] 0x0 0x0 0x0 0x1 [Javelin, IronLance] NoAI
+UNIT Seth Archer Eirika Level(8, Ally, False) [8,17] 0x0 0x0 0x0 0x1 [ShortBow, IronBow,Vulnerary] NoAI
+UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,17] 0x0 0x0 0x0 0x1 [Javelin, IronLance,Vulnerary] NoAI
 UNIT
 
 FriendlyReinforcements2:
-UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x1 [DevilAxe, Vulnerary] NoAI
+UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x1 [BronzeAxeID, Vulnerary] NoAI
 UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,17] 0x0 0x0 0x0 0x1 [Heal,Lightning] NoAI
 UNIT
 
@@ -162,15 +160,13 @@ NoFade
 ENDA
 
 Turn5_EP:
-SetAI_Pos(2,6,0,0,0,0)
-SetAI_Pos(2,7,0,0,0,0)
-SetAI_Pos(3,7,0,0,0,0)
+SetAI_Pos(0,10,0,0,0,0)
+SetAI_Pos(0,11,0,0,0,0)
 NoFade
 ENDA
 
-Turn7_EP:
+Turn6_EP:
 SetAI_Pos(5,4,0,0,0,0)
-SetAI_Pos(6,4,0,0,0,0)
 SetAI_Pos(5,5,0,0,0,0)
 NoFade
 ENDA

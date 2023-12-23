@@ -123,3 +123,6 @@ a skill when used.[X]
 #include "unitinfo_text.txt"
 
 #include "Weapons\weapon_info.txt"
+
+#include "Units\UnitNames.txt"
+#include "Units\UnitDescs.txt"

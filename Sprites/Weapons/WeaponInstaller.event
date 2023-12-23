@@ -1,0 +1,16 @@
+#define SetIcon(ID) "ORG 0x5926F4 + ID * 128 - 128" //0x5926F4 is the address of the Icon Table
+
+PUSH //PUSHing because SetIcon ORGs
+SetIcon(BronzeSwordID) // Bronze Sword ID
+#incext Png2Dmp "BronzeSword_Fixed.png"
+POP
+
+PUSH //PUSHing because SetIcon ORGs
+SetIcon(BronzeLanceID)
+#incext Png2Dmp "BronzeLance.png"
+POP
+
+PUSH //PUSHing because SetIcon ORGs
+SetIcon(BronzeAxeID)
+#incext Png2Dmp "BronzeAxe.png"
+POP

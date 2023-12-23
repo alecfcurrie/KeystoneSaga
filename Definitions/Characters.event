@@ -1,0 +1,35 @@
+// Audrey - Lord
+#define AudreyID 0x1
+#define AudreyPortrait 0x2
+//#define AudreyDescription 0x26e
+//#define AudreyName 0x212
+
+//Cordell - Archer
+#define CordellID 0x2
+#define CordellPortrait 0x4
+//#define CordellDescription 0x26f
+//#define CordellName 0x213
+
+//Kennard - Soldier
+#define KennardID 0x3
+#define KennardPortrait 0x5
+//#define KennardDescription 0x270
+//#define KennardName 0x214
+
+// Wesley - Cavalier
+#define WesleyID 0x4
+#define WesleyPortrait 0x6
+//#define WesleyDescription 0x271
+//#define WesleyName 0x215
+
+// Osborne - Monk
+#define OsborneID 0x5
+#define OsbornePortrait 0x7
+//#define OsborneDescription 0x272
+//#define OsborneName 0x216
+
+// Surge - Fighter
+#define SurgeID 0xa
+#define SurgePortrait 0xe
+//#define SurgeDescription 0x277
+//#define SurgeName 0x21b

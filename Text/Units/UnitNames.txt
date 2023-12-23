@@ -1,0 +1,17 @@
+#0x212 AudreyName
+Audrey[X]
+
+#0x215 WesleyName
+Wesley[X]
+
+#0x21b SurgeName
+Surge[X]
+
+#0x213 CordellName
+Cordell[X]
+
+#0x214 KennardName
+Kennard[X]
+
+#0x216 OsborneName
+Osborne[X]

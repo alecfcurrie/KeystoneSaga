@@ -1,0 +1,3 @@
+#define BronzeSwordID 0x2
+#define BronzeLanceID 0x15
+#define BronzeAxeID 0x27
