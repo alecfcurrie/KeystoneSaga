@@ -77,6 +77,11 @@ EnemyUnits:
 // Boss Group
 UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [1,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
+UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [2,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
+UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [3,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
+UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [4,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
+UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [5,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
 // Central Group
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
