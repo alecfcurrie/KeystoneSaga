@@ -206,7 +206,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 // #define UNLOCK_WORKS_ON_CHESTS
 
 // If uncommented, damage numbers will display over participants' heads during battle animations.
-#define BATTLE_ANIMATION_NUMBERS
+// #define BATTLE_ANIMATION_NUMBERS
 
 //ID of flag to use for hiding damage numbers, if enabled above.
 #define BATTLE_ANIMATION_NUMBERS_FLAG 0xEE
@@ -354,7 +354,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 // ================================
 
 //If commented, growths will not be displayed by pressing Select.
-#define PRESS_SELECT_TO_VIEW_GROWTHS
+// #define PRESS_SELECT_TO_VIEW_GROWTHS
 
 //If true, the stat colors for player units will reflect their growth in the stat.
 #define USE_STAT_COLORS False
@@ -367,14 +367,14 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 
 //If true, Fixed Growths mode will exist.
 // Note: this takes promotion level into account, but does not take stat boosters into account 
-#define FIXED_GROWTHS_MODE False
+#define FIXED_GROWTHS_MODE True
 
 //ID of flag to use for fixed growths mode, if enabled (also works if flag here is defined as 0)
 #define FIXED_GROWTHS_FLAG_ID 0xEF
 
 //If true, Stat bracketing mode will exist. This keeps your stats within X points of the average. 
 // Note: this takes promotion level into account, but does not take stat boosters into account 
-#define STAT_BRACKETING_EXISTS False 
+#define STAT_BRACKETING_EXISTS True 
 
 //ID of flag to use for bracketed growths mode, if enabled (also works if flag here is defined as 0)
 #define BRACKETED_GROWTHS_FLAG_ID 0xED // 0xEE is used to hide dmg numbers in battle
@@ -383,7 +383,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 #define FORCE_WHEN_BELOW_AVERAGE_BY_AMOUNT 3 
 
 //If using stat bracketing and your stat is above average by this many points, never gain it on levelup 
-#define PREVENT_WHEN_ABOVE_AVERAGE_BY_AMOUNT 5 
+#define PREVENT_WHEN_ABOVE_AVERAGE_BY_AMOUNT 7 
 
 //If true, passive growth boosters and metis tome will not affect growths in fixed growths mode.
 #define FIXED_GROWTHS_DONT_BOOST True

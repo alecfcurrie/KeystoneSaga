@@ -76,12 +76,6 @@ UNIT
 EnemyUnits:
 // Boss Group
 UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [1,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
-UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [2,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
-UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [3,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
-UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [4,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
-UNIT 0x80 Paladin ONeill Level(20, Enemy, True) [5,0] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
 // Central Group
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
@@ -94,8 +88,7 @@ UNIT
 
 EnemyUnits2:
 // Bottom Left
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [0,11] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
-UNIT 0x80 Archer ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x0 0x0 [ShortBow] AttackInRangeAI
+UNIT 0x80 Archer ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x0 0x0 [ShortBow] AttackInRangeAI
 // Top Right
 UNIT 0x80 Archer ONeill Level(1, Enemy, True) [15,8] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,7] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
@@ -123,10 +116,12 @@ ALIGN 4
 BeginningScene:
 ENUT 0x1 //no more boss quotes
 ENUT 0x2 //no more death quotes
+ENUT FIXED_GROWTHS_FLAG_ID
 LOAD1 0x1 EnemyUnits
 ENUN
 LOAD1 0x1 EnemyUnits2
 ENUN
+ENUF FIXED_GROWTHS_FLAG_ID
 LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
 ENDA
@@ -166,13 +161,11 @@ ENDA
 
 Turn5_EP:
 SetAI_Pos(0,10,0,0,0,0)
-SetAI_Pos(0,11,0,0,0,0)
 NoFade
 ENDA
 
 Turn6_EP:
 SetAI_Pos(5,4,0,0,0,0)
-SetAI_Pos(5,5,0,0,0,0)
 NoFade
 ENDA
 
