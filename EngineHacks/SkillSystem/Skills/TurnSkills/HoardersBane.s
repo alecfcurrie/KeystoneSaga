@@ -160,7 +160,10 @@ cmp r0, #0
 bne HoardersBaneUsability_True
 
 BreakInvLoop: 
-
+ldrb r3, [r4, #0x0B] @ NPCs / Enemies cannot access the supply 
+lsr r3, #6 
+cmp r3, #0 
+bne HoardersBaneUsability_False 
 ldr r3, HoardersBane_UseConvoyLink 
 cmp r3, #0 
 beq HoardersBaneUsability_False
@@ -474,7 +477,7 @@ cmp r3, #0
 beq NoActiveUnit
 
 ldr r1, [r3, #0x0C] @ Unit state 
-mov r2, #0x3 @ Hide, Acted
+mov r2, #0x1 @ Hide
 bic r1, r2 @ Show SMS @ 
 str r1, [r3, #0x0C] 
 	@mov r0, r3 @ I don't think this part is needed? 
@@ -558,10 +561,10 @@ ldr r3, =0x03004E50 @CurrentUnit
 ldr r3, [r3]
 cmp r3, #0 
 beq NoActiveUnit2
-ldr r1, [r3, #0x0C] @ unit state  
-mov r2, #2 @ Acted 
-orr r1, r2  
-str r1, [r3, #0x0C] @ Active unit should be greyed out now. 
+@ldr r1, [r3, #0x0C] @ unit state  
+@mov r2, #2 @ Acted 
+@orr r1, r2  
+@str r1, [r3, #0x0C] @ Active unit should be greyed out now. 
 NoActiveUnit2:
 
 ldr r0, =0x202E4D8 @ Unit map	{U}
