@@ -2,3 +2,5 @@ GratedShtick - DSFE Patch
 Batima - Bronze Axe/Lance Sprite
 Zelix - Bronze Sword Sprite
 Vesley - _RemoveBy.py
+Vesley - SetStatus
+HyperGammaSpaces - CHAI Fix

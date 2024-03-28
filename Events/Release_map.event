@@ -42,7 +42,7 @@ TurnEventEnemy(0x00, Turn2_EP, 2)
 TurnEventEnemy(0x00, Turn3_EP, 3)
 TurnEventEnemy(0x00, Turn4_EP, 4)
 TurnEventEnemy(0x00, Turn5_EP, 5)
-TurnEventEnemy(0x00, Turn6_EP, 6)
+TurnEventEnemy(0x00, Turn7_EP, 7)
 END_MAIN
 
 LocationBasedEvents:
@@ -69,13 +69,16 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x1 [SlimSword] NoAI
-UNIT Franz Cavalier Eirika Level(2, Ally, False)  [9,17] 0x0 0x0 0x0 0x1 [IronSword,SlimLance] NoAI
+UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x0 [SlimSword] NoAI
+UNIT Franz Cavalier Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [IronSword,SlimLance] NoAI
 UNIT
+
 
 EnemyUnits:
 // Boss Group
-UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] DropItem 0x0 0x0 0x0 [IronAxe, Vulnerary] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [4,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 // Central Group
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
@@ -84,9 +87,6 @@ UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [3,12] 0x0 0x0 0x0 0x0 [SlimSwo
 UNIT 0x80 Archer ONeill Level(1, Enemy, True) [3,11] 0x0 0x0 0x0 0x0 [IronBow] [AttackInRange, DestroyWallAI, 0x0, 0x0]
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [14,13] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI, 0x0, 0x0]
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,14] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI, 0x0, 0x0]
-UNIT
-
-EnemyUnits2:
 // Bottom Left
 UNIT 0x80 Archer ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x0 0x0 [ShortBow] AttackInRangeAI
 // Top Right
@@ -96,13 +96,19 @@ UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [14,8] 0x0 0x0 0x0 0x0 [DevilAxe]
 // Tippy Top
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,4] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,3] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,3] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [12,1] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,2] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,2] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
 // Sides
 UNIT 0x80 Archer ONeill Level(1, Enemy, True) [17,11] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [1,9] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [1,8] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
+UNIT
+
+
+
+HardModeExclusiveEnemies:
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,3] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,3] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 UNIT
 
 Traps1:
@@ -114,27 +120,36 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-ENUT 0x1 //no more boss quotes
-ENUT 0x2 //no more death quotes
 ENUT FIXED_GROWTHS_FLAG_ID
 LOAD1 0x1 EnemyUnits
 ENUN
-LOAD1 0x1 EnemyUnits2
+
+//Hard Mode buffs
+CHECK_HARD
+BEQ 1 s0 sC
+SetUnitStatus(ONeill, Item1,SteelAxe)
+LOAD1 0x1 HardModeExclusiveEnemies
 ENUN
+
+// Finally
+LABEL 1
 ENUF FIXED_GROWTHS_FLAG_ID
 LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
 ENDA
 
+
 FriendlyReinforcements1:
-UNIT Seth Archer Eirika Level(8, Ally, False) [8,17] 0x0 0x0 0x0 0x1 [ShortBow, IronBow,Vulnerary] NoAI
-UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,17] 0x0 0x0 0x0 0x1 [Javelin, IronLance,Vulnerary] NoAI
+UNIT Seth Archer Eirika Level(8, Ally, False) [8,18] 0x0 0x0 0x1 REDA_Left [ShortBow, IronBow,Vulnerary] NoAI
+UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA_Right [Javelin, IronLance,Vulnerary] NoAI
 UNIT
 
+
 FriendlyReinforcements2:
-UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x1 [BronzeAxeID, Vulnerary] NoAI
-UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,17] 0x0 0x0 0x0 0x1 [Heal,Lightning] NoAI
+UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA_Left [BronzeAxeID, Vulnerary] NoAI
+UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA_Right [Heal,Lightning] NoAI
 UNIT
+
 
 Turn2_EP:
 SetAI_Pos(11,4,0,0,0,0)
@@ -156,6 +171,7 @@ SetAI_Pos(14,8,0,0,0,0)
 SetAI_Pos(15,8,0,0,0,0)
 SetAI_Pos(12,1,0,0,0,0)
 SetAI_Pos(13,2,0,0,0,0)
+SetAI_Pos(13,3,0,0,0,0)
 NoFade
 ENDA
 
@@ -164,18 +180,22 @@ SetAI_Pos(0,10,0,0,0,0)
 NoFade
 ENDA
 
-Turn6_EP:
+Turn7_EP:
 SetAI_Pos(5,4,0,0,0,0)
+SetAI_Pos(5,5,0,0,0,0)
+SetAI_Pos(4,5,0,0,0,0)
 NoFade
 ENDA
 
 Turn3_PP:
+CAMERA [8,18]
 LOAD1 0x0 FriendlyReinforcements1
 ENUN
 NoFade
 ENDA
 
 Turn4_PP:
+CAMERA [8,18]
 LOAD1 0x0 FriendlyReinforcements2
 ENUN
 NoFade
@@ -188,3 +208,8 @@ EVBIT_F 0x2
 MNTS 0x1 //return to title screen
 NoFade
 ENDA
+
+REDA_Left:
+REDA [8,17]
+REDA_Right:
+REDA [9,17]
