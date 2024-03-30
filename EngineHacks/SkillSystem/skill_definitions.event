@@ -542,7 +542,7 @@
 //By Datagne
 #define KnightAspirantID 173
 
-// and Death: +10 to damage dealt and taken.
+//Life and Death: +10 to damage dealt and taken.
 //Author Unknown (Initial Commit)
 #define LifeAndDeathID 255
 

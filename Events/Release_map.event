@@ -134,6 +134,7 @@ ENUN
 // Finally
 LABEL 1
 ENUF FIXED_GROWTHS_FLAG_ID
+ENUT EnablePerfectHitFlag
 LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
 ENDA
@@ -160,6 +161,7 @@ NoFade
 ENDA
 
 Turn3_EP:
+ENUF EnablePerfectHitFlag
 SetAI_Pos(1,8,0,0,0,0)
 SetAI_Pos(1,9,0,0,0,0)
 NoFade

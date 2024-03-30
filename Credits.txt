@@ -4,3 +4,4 @@ Zelix - Bronze Sword Sprite
 Vesley - _RemoveBy.py
 Vesley - SetStatus
 HyperGammaSpaces - CHAI Fix
+SME - RNByFlag
