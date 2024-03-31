@@ -618,7 +618,7 @@
 #define WardingStanceID 254
 #define SpectrumStanceID 255
 //By Sme
-#define AlertStanceID 245
+#define FocusedStanceID 245
 #define AlertStancePlusID 255
 
 //Thunderstorm: If weapon weight > enemy W. Weight, +2 dmg, +15% hit, +5% crit.

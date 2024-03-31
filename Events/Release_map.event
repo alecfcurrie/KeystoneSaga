@@ -79,6 +79,7 @@ EnemyUnits:
 UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] DropItem 0x0 0x0 0x0 [IronAxe, Vulnerary] AttackInRangeAI
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [4,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Garcia Fighter Eirika Level(1, Ally, False) [10,5] 0x0 0x0 0x1 REDA_Left [BronzeAxeID, Vulnerary] NoAI 
 // Central Group
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]

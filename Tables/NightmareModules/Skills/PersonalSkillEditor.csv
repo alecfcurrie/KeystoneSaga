@@ -1,15 +1,15 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Eirika,CharismaID
-Seth,SaviorID
-Gilliam,RallyDefID
-Franz,SaviorID
-Moulder,RallySklID
+Audrey,CharismaID
+Cordell,SaviorID
+Kennard,FocusedStanceID
+Wesley,SaviorID
+Osborne,FocusedStanceID
 Vanessa,SpurSpdID
 Ross,ParagonID
 Neimi,RallyLukID
 Colm,RallySpdID
-Garcia,ColossusID
+Surge,FocusedStanceID
 Innes,BowRangeUpID
 Lute,ParagonID
 Natasha,SealLukID

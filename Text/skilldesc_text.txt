@@ -1008,8 +1008,8 @@ Avo when fighting outdoors.[X]
 Tome Range +1: Maximum range[N]
 of equipped tome is increased.[X]
 
-## SD_AlertStance
-Alert Stance: +15 Avo[N]
+## SD_FocusedStance
+Focused Stance: +15 Hit[N]
 when defending.[X]
 
 ## SD_AlertStancePlus
