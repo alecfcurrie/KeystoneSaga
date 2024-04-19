@@ -6,7 +6,7 @@
 
 //Provoke: Enemies are more likely to target this unit.
 //By Tequila
-#define ProvokeID 43
+#define ProvokeID 255
 
 //Shade: Enemies are less likely to target this unit.
 //By Sme
