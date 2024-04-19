@@ -44,6 +44,12 @@ POIN SkillTester
 WORD SolID
 WORD LiquidOozeID
 
+Proc_SolarBrace:
+#incbin "SolarBrace/proc_solarbrace.dmp"
+POIN SkillTester
+WORD SolarBraceID
+WORD LiquidOozeID
+
 Proc_Luna:
 #incbin "Luna/proc_luna.dmp"
 POIN SkillTester
@@ -94,6 +100,11 @@ Proc_Colossus:
 #incbin "Colossus/proc_colossus.dmp"
 POIN SkillTester
 WORD ColossusID
+
+Proc_Pickup:
+#incbin "Pickup/proc_pickup.dmp"
+POIN SkillTester
+WORD PickupID
 
 Proc_Ignis:
 #incbin "Ignis/proc_ignis.dmp"
