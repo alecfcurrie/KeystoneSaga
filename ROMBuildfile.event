@@ -12,9 +12,9 @@
     //Text first for Text ID definitions
     #include "Text/InstallTextData.event"
     MESSAGE Used text space ends at currentOffset
-
+	
 	//Sprites
-	#include "Sprites/MasterSpriteInstaller.event"
+	#include "Graphics/MasterGraphicsInstaller.event"
 	
     //CSV tables
     #include "Tables/TableInstaller.event"

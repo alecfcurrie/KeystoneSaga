@@ -5,3 +5,4 @@ Vesley - _RemoveBy.py
 Vesley - SetStatus
 HyperGammaSpaces - CHAI Fix
 SME - RNByFlag
+Flasuban and Nuramon - Soldier Animations

@@ -127,4 +127,4 @@ a skill when used.[X]
 #include "Units\UnitNames.txt"
 #include "Units\UnitDescs.txt"
 
-#include "Skills\SkillDesc.txt"
+//#include "Skills\SkillDesc.txt"

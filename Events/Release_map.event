@@ -69,6 +69,7 @@ Tutorial:
 END_MAIN
 
 Units1:
+UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,10] 0x0 0x0 0x0 0x0 [Javelin, IronLance,Vulnerary] NoAI
 UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x0 [SlimSword] NoAI
 UNIT Franz Cavalier Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [IronSword,SlimLance] NoAI
 UNIT
@@ -76,32 +77,31 @@ UNIT
 
 EnemyUnits:
 // Boss Group
-UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] DropItem 0x0 0x0 0x0 [IronAxe, Vulnerary] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [4,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] DropItem 0x0 0x0 0x0 [IronAxe, Vulnerary] AttackInRangeFullAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeFullAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [4,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeFullAI
 // Central Group
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 // Wall Breakers
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [3,12] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI, 0x0, 0x0]
-UNIT 0x80 Archer ONeill Level(1, Enemy, True) [3,11] 0x0 0x0 0x0 0x0 [IronBow] [AttackInRange, DestroyWallAI, 0x0, 0x0]
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [14,13] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI, 0x0, 0x0]
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,14] 0x0 0x0 0x0 0x0 [SlimSword] [AttackInRange, DestroyWallAI, 0x0, 0x0]
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [3,12] 0x0 0x0 0x0 0x0 [SlimSword] [0x0,0xE,0xC,0x0]
+UNIT 0x80 Archer ONeill Level(1, Enemy, True) [3,11] 0x0 0x0 0x0 0x0 [IronBow] [0x0,0xE,0xC,0x0]
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [14,13] 0x0 0x0 0x0 0x0 [SlimSword] [0x0,0xE,0xC,0x0]
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,14] 0x0 0x0 0x0 0x0 [SlimSword] [0x0,0xE,0xC,0x0]
 // Bottom Left
-UNIT 0x80 Archer ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x0 0x0 [ShortBow] AttackInRangeAI
+UNIT 0x80 Archer ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x0 0x0 [ShortBow] AttackInRangeFullAI
 // Top Right
-UNIT 0x80 Archer ONeill Level(1, Enemy, True) [15,8] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,7] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [14,8] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,7] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeFullAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [14,8] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeFullAI
 // Tippy Top
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,4] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,3] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [12,1] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,2] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,4] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeFullAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,3] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeFullAI
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [12,1] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeFullAI
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,2] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeFullAI
 // Sides
-UNIT 0x80 Archer ONeill Level(1, Enemy, True) [17,11] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [1,9] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
-UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [1,8] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeAI
+UNIT 0x80 Archer ONeill Level(1, Enemy, True) [17,11] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeFullAI
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [1,9] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeFullAI
+UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [1,8] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeFullAI
 UNIT
 
 
@@ -109,6 +109,7 @@ UNIT
 HardModeExclusiveEnemies:
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,3] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,3] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT 0x80 Archer ONeill Level(1, Enemy, True) [15,8] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeFullAI
 UNIT
 
 Traps1:
@@ -153,39 +154,43 @@ UNIT
 
 
 Turn2_EP:
-SetAI_Pos(11,4,0,0,0,0)
-SetAI_Pos(10,3,0,0,0,0)
-SetAI_Pos(9,3,0,0,0,0)
-SetAI_Pos(17,11,0,0,0,0)
+SetAI_Pos(3,11,0,0,0xC,0)
+SetAI_Pos(3,12,0,0,0xC,0)
+SetAI_Pos(14,13,0,0,0xC,0)
+SetAI_Pos(15,14,0,0,0xC,0)
+SetAI_Pos(11,4,0,0,0xC,0)
+SetAI_Pos(10,3,0,0,0xC,0)
+SetAI_Pos(9,3,0,0,0xC,0)
+SetAI_Pos(17,11,0,0,0xC,0)
 NoFade
 ENDA
 
 Turn3_EP:
-ENUF EnablePerfectHitFlag
-SetAI_Pos(1,8,0,0,0,0)
-SetAI_Pos(1,9,0,0,0,0)
+SetAI_Pos(1,8,0,0,0xC,0)
+SetAI_Pos(1,9,0,0,0xC,0)
 NoFade
 ENDA
 
 Turn4_EP:
-SetAI_Pos(15,7,0,0,0,0)
-SetAI_Pos(14,8,0,0,0,0)
-SetAI_Pos(15,8,0,0,0,0)
-SetAI_Pos(12,1,0,0,0,0)
-SetAI_Pos(13,2,0,0,0,0)
-SetAI_Pos(13,3,0,0,0,0)
+ENUF EnablePerfectHitFlag
+SetAI_Pos(15,7,0,0,0xC,0)
+SetAI_Pos(14,8,0,0,0xC,0)
+SetAI_Pos(15,8,0,0,0xC,0)
+SetAI_Pos(12,1,0,0,0xC,0)
+SetAI_Pos(13,2,0,0,0xC,0)
+SetAI_Pos(13,3,0,0,0xC,0)
 NoFade
 ENDA
 
 Turn5_EP:
-SetAI_Pos(0,10,0,0,0,0)
+SetAI_Pos(0,10,0,0,0xC,0)
 NoFade
 ENDA
 
 Turn7_EP:
-SetAI_Pos(5,4,0,0,0,0)
-SetAI_Pos(5,5,0,0,0,0)
-SetAI_Pos(4,5,0,0,0,0)
+SetAI_Pos(5,4,0,0,0xC,0)
+SetAI_Pos(5,5,0,0,0xC,0)
+SetAI_Pos(4,5,0,0,0xC,0)
 NoFade
 ENDA
 
