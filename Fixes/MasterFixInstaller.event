@@ -1,5 +1,5 @@
-#include "New_CHAI.event"
-#include "DSFEavoid.event"
+#include "CHAIFix\New_CHAI.event"
+#include "DSFEAvoid\DSFEavoid.event"
 #include "SetStatus\SetStatusInstaller.event"
 #include "RNByFlag\installer.event"
-//#include "StatusExpansion\StatusExpansion.event"
+#include "GroupAI\GroupAI.event"

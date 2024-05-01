@@ -1,3 +1,9 @@
 #define BronzeSword 0x2
 #define BronzeLance 0x15
-#define BronzeAxe 0x27
+#define BronzeAxe   0x27
+#define BronzeBow   0x2d
+#define IronBow     0x2e
+#define SteelBow    0x2f
+#define SilverBow   0x30
+#define KillerBow   0x31
+#define BraveBow    0x32

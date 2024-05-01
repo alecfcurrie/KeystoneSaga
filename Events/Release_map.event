@@ -69,7 +69,6 @@ Tutorial:
 END_MAIN
 
 Units1:
-//UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,10] 0x0 0x0 0x0 0x0 [Javelin, IronLance,Vulnerary] NoAI
 UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x0 [SlimSword] NoAI
 UNIT Franz Cavalier Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [IronSword,SlimLance] NoAI
 UNIT
@@ -77,15 +76,15 @@ UNIT
 
 EnemyUnits:
 // Boss Group
-UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] DropItem 0x0 0x0 0x0 [IronAxe, Vulnerary] AttackInRangeFullAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeFullAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [4,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeFullAI
+UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] DropItem 0x0 0x0 0x0 [IronAxe, Vulnerary] GroupOneAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] GroupOneAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [4,5] 0x0 0x0 0x0 0x0 [IronAxe] GroupOneAI
 // Central Group
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
 // Wall Breakers
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [3,12] 0x0 0x0 0x0 0x0 [SlimSword] [0x0,0xE,0xC,0x0]
-UNIT 0x80 Archer ONeill Level(1, Enemy, True) [3,11] 0x0 0x0 0x0 0x0 [IronBow] [0x0,0xE,0xC,0x0]
+UNIT 0x80 Archer ONeill Level(1, Enemy, True) [3,11] 0x0 0x0 0x0 0x0 [BronzeBow] [0x0,0xE,0xC,0x0]
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [14,13] 0x0 0x0 0x0 0x0 [SlimSword] [0x0,0xE,0xC,0x0]
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,14] 0x0 0x0 0x0 0x0 [SlimSword] [0x0,0xE,0xC,0x0]
 // Bottom Left
@@ -99,17 +98,15 @@ UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,3] 0x0 0x0 0x0 0x0 [DevilAxe]
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [12,1] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeFullAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,2] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeFullAI
 // Sides
-UNIT 0x80 Archer ONeill Level(1, Enemy, True) [17,11] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeFullAI
+UNIT 0x80 Archer ONeill Level(1, Enemy, True) [17,11] 0x0 0x0 0x0 0x0 [BronzeBow] AttackInRangeFullAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [1,9] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeFullAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [1,8] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeFullAI
 UNIT
 
-
-
 HardModeExclusiveEnemies:
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,3] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,3] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-UNIT 0x80 Archer ONeill Level(1, Enemy, True) [15,8] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeFullAI
+UNIT 0x80 Archer ONeill Level(1, Enemy, True) [15,8] 0x0 0x0 0x0 0x0 [BronzeBow] AttackInRangeFullAI
 UNIT
 
 Traps1:
@@ -145,14 +142,14 @@ ENDA
 
 
 FriendlyReinforcements1:
-UNIT Seth Archer Eirika Level(8, Ally, False) [8,18] 0x0 0x0 0x1 REDA_Left [ShortBow, IronBow,Vulnerary] NoAI
+UNIT Seth Archer Eirika Level(8, Ally, False) [8,18] 0x0 0x0 0x1 REDA_Left [ShortBow, BronzeBow,Vulnerary] NoAI
 UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA_Right [Javelin, IronLance,Vulnerary] NoAI
 UNIT
 
 
 FriendlyReinforcements2:
 UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA_Left [BronzeAxe, Vulnerary] NoAI
-UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA_Right [Heal,Lightning] NoAI
+UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA_Right [Heal,Lightning,Vulnerary] NoAI
 UNIT
 
 
@@ -175,7 +172,6 @@ NoFade
 ENDA
 
 Turn4_EP:
-ENUF EnablePerfectHitFlag
 SetAI_Pos(15,7,0,0,0xC,0)
 SetAI_Pos(14,8,0,0,0xC,0)
 SetAI_Pos(15,8,0,0,0xC,0)
@@ -186,14 +182,18 @@ NoFade
 ENDA
 
 Turn5_EP:
+ENUF EnablePerfectHitFlag
 SetAI_Pos(0,10,0,0,0xC,0)
 NoFade
 ENDA
 
 Turn7_EP:
+CHECK_TUTORIAL 						// sC = True if on Normal mode, False otherwise
+BNE 2 s0 sC							// skip to label 2 if on Normal mode
 SetAI_Pos(5,4,0,0,0xC,0)
 SetAI_Pos(5,5,0,0,0xC,0)
 SetAI_Pos(4,5,0,0,0xC,0)
+LABEL 2
 NoFade
 ENDA
 
