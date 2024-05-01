@@ -69,7 +69,7 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,10] 0x0 0x0 0x0 0x0 [Javelin, IronLance,Vulnerary] NoAI
+//UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,10] 0x0 0x0 0x0 0x0 [Javelin, IronLance,Vulnerary] NoAI
 UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x0 [SlimSword] NoAI
 UNIT Franz Cavalier Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [IronSword,SlimLance] NoAI
 UNIT
@@ -128,8 +128,11 @@ ENUN
 //Hard Mode buffs
 CHECK_HARD
 BEQ 1 s0 sC
-SetUnitStatus(ONeill, Item1,SteelAxe)
 LOAD1 0x1 HardModeExclusiveEnemies
+SetUnitStatusAll(Any, Item1,  SteelAxe, AnyDeployed, EnemyArmy, AnyClass, AnyRange,     IronAxe)
+SetUnitStatusAll(Any, Item1,   IronAxe, AnyDeployed, EnemyArmy, AnyClass, AnyRange,   BronzeAxe)
+SetUnitStatusAll(Any, Item1, IronSword, AnyDeployed, EnemyArmy, AnyClass, AnyRange, BronzeSword)
+// TODO ADD BOW REPLACEMENT
 ENUN
 
 // Finally
@@ -148,7 +151,7 @@ UNIT
 
 
 FriendlyReinforcements2:
-UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA_Left [BronzeAxeID, Vulnerary] NoAI
+UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA_Left [BronzeAxe, Vulnerary] NoAI
 UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA_Right [Heal,Lightning] NoAI
 UNIT
 

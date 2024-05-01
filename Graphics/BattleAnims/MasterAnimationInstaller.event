@@ -15,9 +15,13 @@
 
 //////////////Installed animations go here:
 
-// Soldier Anims
+// Audrey Lord Anims
 {
-#include "SoldierLance.event"
-
-#include "SoldierUnarmed.event"
+#include "AudreyLordSword.event"
+#include "AudreyLordUnarmed.event"
+}
+// Soldier (M) Anims
+{
+#include "SoldierMLance.event"
+#include "SoldierMUnarmed.event"
 }

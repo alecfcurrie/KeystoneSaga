@@ -1,0 +1,9 @@
+//===Include map sprites===
+
+ALIGN 4
+SoldierMStand:
+#incext Png2Dmp --lz77 "SoldierMStand.png"
+
+ALIGN 4
+SoldierMWalk:
+#incext Png2Dmp --lz77 "SoldierMWalk.png"

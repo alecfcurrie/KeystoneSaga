@@ -4,6 +4,6 @@
 ALIGN 4
 
 SoldierAnimPointer:
-LanceAnim(SoldierLance)
-UnarmedAnim(SoldierUnarmed)
+LanceAnim(SoldierMLance)
+UnarmedAnim(SoldierMUnarmed)
 EndClassAnimation
