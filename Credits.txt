@@ -6,6 +6,10 @@ Vesley - SetStatus
 HyperGammaSpaces - CHAI Fix
 SME - RNByFlag
 Flasuban - Soldier Battle Animations
-Rexacuse, Peerless, Alusq - Soldier Map Animations
 Mystic - Map Sprite Tables
+
 Red Bean, Jeorge_Reds - Audrey Lord Battle Animations
+
+Rexacuse, Peerless, Alusq - Soldier Map Animations
+Salvaged - Male Axe Cavalier Animations
+Salvaged, Flasuban - Female Axe Cavalier Animations

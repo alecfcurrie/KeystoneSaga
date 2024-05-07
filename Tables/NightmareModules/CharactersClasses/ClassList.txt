@@ -3,11 +3,11 @@ Ephraim Lord
 Eirika Lord
 Ephraim Master Lord
 Eirika Master Lord
-Cavalier
-Cavalier (F)
+Lance Cavalier
+Axe Cavalier
+Axe Cavalier (F)
 Paladin
 Paladin (F)
-Armour Knight
 Armour Knight (F)
 General
 General (F)

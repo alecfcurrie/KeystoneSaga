@@ -70,7 +70,7 @@ END_MAIN
 
 Units1:
 UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x0 [SlimSword] NoAI
-UNIT Franz Cavalier Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [IronSword,SlimLance] NoAI
+UNIT Franz AxeCavM Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT
 
 
@@ -80,8 +80,8 @@ UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] DropItem 0x0 0x0 0x0 [Ir
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] GroupOneAI
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [4,5] 0x0 0x0 0x0 0x0 [IronAxe] GroupOneAI
 // Central Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [DevilAxe] [0]
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
 // Wall Breakers
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [3,12] 0x0 0x0 0x0 0x0 [SlimSword] [0x0,0xE,0xC,0x0]
 UNIT 0x80 Archer ONeill Level(1, Enemy, True) [3,11] 0x0 0x0 0x0 0x0 [BronzeBow] [0x0,0xE,0xC,0x0]
@@ -91,10 +91,10 @@ UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,14] 0x0 0x0 0x0 0x0 [SlimSw
 UNIT 0x80 Archer ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x0 0x0 [ShortBow] AttackInRangeFullAI
 // Top Right
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [15,7] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeFullAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [14,8] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeFullAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [14,8] 0x0 0x0 0x0 0x0 [BronzeAxe] AttackInRangeFullAI
 // Tippy Top
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,4] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeFullAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,3] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeFullAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,4] 0x0 0x0 0x0 0x0 [BronzeAxe] AttackInRangeFullAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,3] 0x0 0x0 0x0 0x0 [BronzeAxe] AttackInRangeFullAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [12,1] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeFullAI
 UNIT 0x80 Mercenary ONeill Level(1, Enemy, True) [13,2] 0x0 0x0 0x0 0x0 [SlimSword] AttackInRangeFullAI
 // Sides

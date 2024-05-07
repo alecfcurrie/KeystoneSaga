@@ -7,7 +7,7 @@
 *{the battlefield. Their stats are balanced.}[X]
 
 ## AxeCavDesc
-*{Mounted soldiers that use lances to cut through}[NL]
+*{Mounted soldiers that use axes to cut through}[NL]
 *{the battlefield. Slow but sturdy.}[X]
 
 ## PaladinDesc

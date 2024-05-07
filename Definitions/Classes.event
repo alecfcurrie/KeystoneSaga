@@ -1,5 +1,5 @@
 #define LanceCav 0x5
-#define AxeCav 0x6
+#define AxeCavM 0x6
 #define AxeCavF 0x7
 #define Paladin 0x8
 #define PaladinF 0x9

@@ -7,3 +7,27 @@ SoldierMStand:
 ALIGN 4
 SoldierMWalk:
 #incext Png2Dmp --lz77 "SoldierMWalk.png"
+
+ALIGN 4
+LanceCavStand:
+#incext Png2Dmp --lz77 "LanceCavStand.png"
+
+ALIGN 4
+LanceCavWalk:
+#incext Png2Dmp --lz77 "LanceCavWalk.png"
+
+ALIGN 4
+AxeCavMStand:
+#incext Png2Dmp --lz77 "AxeCavMStand.png"
+
+ALIGN 4
+AxeCavMWalk:
+#incext Png2Dmp --lz77 "AxeCavMWalk.png"
+
+ALIGN 4
+AxeCavFStand:
+#incext Png2Dmp --lz77 "AxeCavFStand.png"
+
+ALIGN 4
+AxeCavFWalk:
+#incext Png2Dmp --lz77 "AxeCavFWalk.png"
