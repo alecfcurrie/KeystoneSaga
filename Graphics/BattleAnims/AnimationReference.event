@@ -1,3 +1,4 @@
+#define SwordAnim(AnimID) "AddClassAnimation(AnimID,Swords,1)"
 #define LanceAnim(AnimID) "AddClassAnimation(AnimID,Lances,1)"
 #define UnarmedAnim(AnimID) "AddClassAnimation(AnimID,Disarmed,1)"
 
@@ -6,4 +7,9 @@ ALIGN 4
 SoldierAnimPointer:
 LanceAnim(SoldierMLance)
 UnarmedAnim(SoldierMUnarmed)
+EndClassAnimation
+
+AudreyLordAnimPointer:
+SwordAnim(AudreyLordSword)
+UnarmedAnim(AudreyLordUnarmed)
 EndClassAnimation

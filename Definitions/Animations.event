@@ -1,2 +1,5 @@
+#define AudreyLordSword 0x3
+#define AudreyLordUnarmed 0x4
+
 #define SoldierMLance 0x98
 #define SoldierMUnarmed 0x99
