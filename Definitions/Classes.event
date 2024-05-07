@@ -1,0 +1,8 @@
+#define LanceCav 0x5
+#define AxeCav 0x6
+#define AxeCavF 0x7
+#define Paladin 0x8
+#define PaladinF 0x9
+
+#define GreatKnight 0x35
+#define GreatKnightF 0x36

@@ -1,23 +1,23 @@
-#0x026e AudreyDescription
+## AudreyDesc
 *{The youngest princess of Lydemoor. She's hot-headed}[NL]
 *{and strongly loyal to her ideals and companions.}[X]
 
-#0x026f CordellDescription
+## CordellDesc
 *{A calm knight and loyal retainer to Audrey.}[NL]
 *{Serves as her training instructor and mentor.}[X]
 
-#0x0270 KennardDescription
+## KennardDesc
 *{A quiet knight of Lydemoor}[NL]
 *{with a strong sense of duty.}[X]
 
-#0x0271 WesleyDescription
+## WesleyDesc
 *{A noble of Lydemoor and longtime friend of}[NL]
 *{Audrey. A recent graduate of knight school.}[X]
 
-#0x0272 OsborneDescription
+## OsborneDesc
 *{A veteran tactician in service of the knights}[NL]
 *{of Lydemoor. He's serious and introverted.}[X]
 
-#0x0277 SurgeDescription
+## SurgeDesc
 *{A soldier from a border village in Lydemoor.}[NL]
 *{He's outgoing and eager to improve at combat.}[X]

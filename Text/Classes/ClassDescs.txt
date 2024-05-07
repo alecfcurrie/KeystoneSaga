@@ -1,0 +1,15 @@
+//## SwordCavDesc
+//Mounted soldiers that use swords to cut through[NL]
+//the battlefield. Faster than other cavaliers.[X]
+
+## LanceCavDesc
+*{Mounted soldiers that use lances to cut through}[NL]
+*{the battlefield. Their stats are balanced.}[X]
+
+## AxeCavDesc
+*{Mounted soldiers that use lances to cut through}[NL]
+*{the battlefield. Slow but sturdy.}[X]
+
+## PaladinDesc
+*{Honored cavaliers that dominate battlefields with}[NL]
+*{their balanced stats and supreme mobility.}[X]

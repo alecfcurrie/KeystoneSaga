@@ -2,3 +2,4 @@
 #include "Characters.event"
 #include "Helpers.event"
 #include "Animations.event"
+#include "Classes.event"

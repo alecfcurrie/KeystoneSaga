@@ -1,0 +1,8 @@
+//## SwordCavName
+//Sword Cavalier[X]
+
+## LanceCavName
+*{Lance Cavalier}[X]
+
+## AxeCavName
+*{Axe Cavalier}[X]
