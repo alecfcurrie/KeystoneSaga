@@ -1,3 +1,5 @@
+#define AudreyLord EirikaLord
+
 #define LanceCav 0x5
 #define AxeCavM 0x6
 #define AxeCavF 0x7
