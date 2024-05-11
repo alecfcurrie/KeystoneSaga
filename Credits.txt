@@ -3,9 +3,12 @@ Vesley - SetStatus
 HyperGammaSpaces - CHAI Fix
 SME - RNByFlag
 Mystic - Map Sprite Tables
+Snakey1 - setCardEntry macro
 
 Batima - Bronze Axe/Lance/Bow Sprite
 Zelix - Bronze Sword Sprite
+
+RobertFPY - Axe Cavalier Class Card
 
 Flasuban - Soldier Battle Animations
 Red Bean, Jeorge_Reds - Audrey Lord Battle Animations

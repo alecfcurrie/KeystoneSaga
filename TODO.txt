@@ -1,3 +1,2 @@
 -Add class cards
 -Fix 0xFF crit indicator bug
--Fix AxeCavF Battle Animation Colours

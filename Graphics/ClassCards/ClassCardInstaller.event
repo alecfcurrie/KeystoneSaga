@@ -1,0 +1,12 @@
+#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP" // Credit: Snakey1
+
+// ==Axe Cavalier==
+ALIGN 4
+AxeCavCard:
+#incext Png2Dmp --lz77 "AxeCav.png"
+
+ALIGN 4
+AxeCavPalette:
+#incext Png2Dmp --palette-only "AxeCav.png"
+
+setCardEntry(AxeCavClassCard,AxeCavCard,AxeCavPalette)
