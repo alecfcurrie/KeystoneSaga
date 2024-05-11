@@ -9,6 +9,7 @@ Flasuban - Soldier Battle Animations
 Mystic - Map Sprite Tables
 
 Red Bean, Jeorge_Reds - Audrey Lord Battle Animations
+Leo_Link, Pushwall - Female and Male Axe Cavalier Battle Animations
 
 Rexacuse, Peerless, Alusq - Soldier Map Animations
 Salvaged - Male Axe Cavalier Animations
