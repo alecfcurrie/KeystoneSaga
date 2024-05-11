@@ -20,6 +20,22 @@
 #include "AudreyLordSword.event"
 #include "AudreyLordUnarmed.event"
 }
+
+// Axe Cav (M) Anims
+{
+#include "AxeCavMAxe.event"
+#include "AxeCavMHandaxe.event"
+#include "AxeCavMUnarmed.event"
+}
+
+// Axe Cav (F) Anims
+{
+#include "AxeCavFAxe.event"
+#include "AxeCavFHandaxe.event"
+#include "AxeCavFUnarmed.event"
+}
+
+
 // Soldier (M) Anims
 {
 #include "SoldierMLance.event"

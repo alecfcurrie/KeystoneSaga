@@ -1,15 +1,29 @@
-#define SwordAnim(AnimID) "AddClassAnimation(AnimID,Swords,1)"
-#define LanceAnim(AnimID) "AddClassAnimation(AnimID,Lances,1)"
+#define SwordAnim(AnimID)  "AddClassAnimation(AnimID,Swords,1)"
+#define LanceAnim(AnimID)  "AddClassAnimation(AnimID,Lances,1)"
+#define AxeAnim(AnimID)    "AddClassAnimation(AnimID,Axes,1)"
+#define HandaxeAnim(AnimID) "AddClassAnimation(AnimID,HandAxe,0); AddClassAnimation(AnimID, Tomahawk,0)"
 #define UnarmedAnim(AnimID) "AddClassAnimation(AnimID,Disarmed,1)"
 
 ALIGN 4
 
-SoldierAnimPointer:
-LanceAnim(SoldierMLance)
-UnarmedAnim(SoldierMUnarmed)
-EndClassAnimation
-
-AudreyLordAnimPointer:
+AudreyLordAnims:
 SwordAnim(AudreyLordSword)
 UnarmedAnim(AudreyLordUnarmed)
+EndClassAnimation
+
+AxeCavMAnims:
+HandaxeAnim(AxeCavMHandaxe)
+AxeAnim(AxeCavMAxe)
+UnarmedAnim(AxeCavMUnarmed)
+EndClassAnimation
+
+AxeCavFAnims:
+HandaxeAnim(AxeCavFHandaxe)
+AxeAnim(AxeCavFAxe)
+UnarmedAnim(AxeCavFUnarmed)
+EndClassAnimation
+
+SoldierMAnims:
+LanceAnim(SoldierMLance)
+UnarmedAnim(SoldierMUnarmed)
 EndClassAnimation

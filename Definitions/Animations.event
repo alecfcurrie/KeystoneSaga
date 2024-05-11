@@ -1,5 +1,12 @@
 #define AudreyLordSword 0x3
 #define AudreyLordUnarmed 0x4
 
+#define AxeCavMAxe 0xB3
+#define AxeCavMHandaxe 0xB4
+#define AxeCavMUnarmed 0xB5
+#define AxeCavFAxe 0xB6
+#define AxeCavFHandaxe 0xB7
+#define AxeCavFUnarmed 0xB8
+
 #define SoldierMLance 0x98
 #define SoldierMUnarmed 0x99

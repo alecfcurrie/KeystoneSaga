@@ -71,6 +71,7 @@ END_MAIN
 Units1:
 UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x0 [SlimSword] NoAI
 UNIT Franz AxeCavM Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT Forde AxeCavF Eirika Level(3, Ally, False)  [9,16] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT
 
 
