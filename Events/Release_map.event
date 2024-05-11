@@ -36,8 +36,8 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0x00, Turn3_PP, 3)
-TurnEventPlayer(0x00, Turn4_PP, 4)
+TurnEventPlayer(0x00, Turn3_PP, 1)
+TurnEventPlayer(0x00, Turn4_PP, 1)
 TurnEventEnemy(0x00, Turn2_EP, 2)
 TurnEventEnemy(0x00, Turn3_EP, 3)
 TurnEventEnemy(0x00, Turn4_EP, 4)

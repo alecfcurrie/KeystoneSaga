@@ -5,12 +5,17 @@ SetIcon(BronzeSword) // Bronze Sword ID
 #incext Png2Dmp "BronzeSword_Fixed.png"
 POP
 
-PUSH //PUSHing because SetIcon ORGs
+PUSH
 SetIcon(BronzeLance)
 #incext Png2Dmp "BronzeLance.png"
 POP
 
-PUSH //PUSHing because SetIcon ORGs
+PUSH
 SetIcon(BronzeAxe)
 #incext Png2Dmp "BronzeAxe.png"
+POP
+
+PUSH
+SetIcon(BronzeBow)
+#incext Png2Dmp "BronzeBow.png"
 POP

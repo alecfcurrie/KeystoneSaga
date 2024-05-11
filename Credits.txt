@@ -1,13 +1,13 @@
 GratedShtick - DSFE Avoid Patch
-Batima - Bronze Axe/Lance Sprite
-Zelix - Bronze Sword Sprite
-Vesley - _RemoveBy.py
 Vesley - SetStatus
 HyperGammaSpaces - CHAI Fix
 SME - RNByFlag
-Flasuban - Soldier Battle Animations
 Mystic - Map Sprite Tables
 
+Batima - Bronze Axe/Lance/Bow Sprite
+Zelix - Bronze Sword Sprite
+
+Flasuban - Soldier Battle Animations
 Red Bean, Jeorge_Reds - Audrey Lord Battle Animations
 Leo_Link, Pushwall - Female and Male Axe Cavalier Battle Animations
 

@@ -1,23 +1,20 @@
 #0x0355 BronzeSwordName
 *{Bronze Sword}[X]
 
-#0x0405 BronzeSwordDesc
+#0x0405 BronzeDesc
 Cannot Critical.[X]
 
 #0x036a BronzeLanceName
 *{Bronze Lance}[X]
 
-#0x041a BronzeLanceDesc
-Cannot Critical.[X]
-
 #0x0382 BronzeAxeName
 *{Bronze Axe}[X]
-
-#0x0432 BronzeAxeDesc
-Cannot Critical.[X]
 
 #0x391 MiniBowName
 Mini Bow[X]
 
-#0x441 MiniBowDesc
+#0x38e BronzeBowName
+Bronze Bow[X]
+
+#0x441 OneTwoRangeDesc
 Cannot critical or follow-up.[X]
