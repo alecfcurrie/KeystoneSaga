@@ -2,7 +2,7 @@
 Bronze Sword[X]
 
 #0x0405 BronzeDesc
-Cannot Critical.[X]
+Cannot critical.[X]
 
 #0x036a BronzeLanceName
 Bronze Lance[X]

@@ -1,2 +1,3 @@
--Add class cards
 -Fix 0xFF crit indicator bug
+-Fix item image mismatch issue
+-Add text description and image for Energy Drop

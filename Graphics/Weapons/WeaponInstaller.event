@@ -19,3 +19,28 @@ PUSH
 SetIcon(BronzeBow)
 #incext Png2Dmp "BronzeBow.png"
 POP
+
+PUSH
+SetIcon(IronBow)
+#incext Png2Dmp "IronBow.png"
+POP
+
+PUSH
+SetIcon(SteelBow)
+#incext Png2Dmp "SteelBow.png"
+POP
+
+PUSH
+SetIcon(SilverBow)
+#incext Png2Dmp "SilverBow.png"
+POP
+
+PUSH
+SetIcon(BraveBow)
+#incext Png2Dmp "BraveBow.png"
+POP
+
+PUSH
+SetIcon(MiniBow)
+#incext Png2Dmp "MiniBow.png"
+POP

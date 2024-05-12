@@ -6,8 +6,10 @@ Mystic - Map Sprite Tables
 Snakey1 - setCardEntry macro
 Dragz - Forging prototype
 
-Batima - Bronze Axe/Lance/Bow Sprite
-Zelix - Bronze Sword Sprite
+==Item Icons==
+Batima - Bronze Axe/Lance
+Zelix - Bronze Sword/Bow, Iron Bow, Steel Bow, Silver Bow, Brave Bow
+Peerless - Mini Bow
 
 RobertFPY - Axe Cavalier Class Card
 
