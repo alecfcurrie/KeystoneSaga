@@ -4,6 +4,7 @@ HyperGammaSpaces - CHAI Fix
 SME - RNByFlag
 Mystic - Map Sprite Tables
 Snakey1 - setCardEntry macro
+Dragz - Forging prototype
 
 Batima - Bronze Axe/Lance/Bow Sprite
 Zelix - Bronze Sword Sprite

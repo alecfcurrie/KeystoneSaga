@@ -3,3 +3,4 @@
 #include "SetStatus\SetStatusInstaller.event"
 #include "RNByFlag\installer.event"
 #include "GroupAI\GroupAI.event"
+#include "Forging\Installer.event"

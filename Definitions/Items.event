@@ -9,4 +9,7 @@
 #define KillerBow   0x31
 #define BraveBow    0x32
 #define MiniBow		0x33
-#define LongBow		0x34
+#define Longbow		0x34
+// Define Stat Boosters
+#define SpiritDust 0x5c
+#define EnergyDrop 0x64

@@ -1,14 +1,14 @@
 #0x0355 BronzeSwordName
-*{Bronze Sword}[X]
+Bronze Sword[X]
 
 #0x0405 BronzeDesc
 Cannot Critical.[X]
 
 #0x036a BronzeLanceName
-*{Bronze Lance}[X]
+Bronze Lance[X]
 
 #0x0382 BronzeAxeName
-*{Bronze Axe}[X]
+Bronze Axe[X]
 
 #0x391 MiniBowName
 Mini Bow[X]

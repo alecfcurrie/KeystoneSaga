@@ -69,7 +69,7 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x0 [SlimSword] NoAI
+UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x0 [SlimSword,SpiritDust,EnergyDrop] NoAI
 UNIT Franz AxeCavM Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT 0x80 AxeCavF Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT
