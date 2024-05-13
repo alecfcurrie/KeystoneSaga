@@ -11,10 +11,13 @@ Bronze Lance[X]
 Bronze Axe[X]
 
 #0x391 MiniBowName
-Mini Bow[X]
+Crossbow[X]
 
 #0x38e BronzeBowName
 Bronze Bow[X]
 
 #0x441 OneTwoRangeDesc
 Cannot critical or follow-up.[X]
+
+## CrossbowDesc
+*{Ignores str. Cannot critical or double.}[X]
