@@ -1,10 +1,11 @@
 GratedShtick - DSFE Avoid Patch
 Vesley - SetStatus
 HyperGammaSpaces - CHAI Fix
-SME - RNByFlag
+Sme - RNByFlag
 Mystic - Map Sprite Tables
 Snakey1 - setCardEntry macro
 Dragz - Forging prototype
+Sme - Fixed Damage Weapons
 
 ==Item Icons==
 Batima - Bronze Axe/Lance
