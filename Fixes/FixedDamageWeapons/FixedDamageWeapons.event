@@ -1,0 +1,5 @@
+#include "FixedDamageWeapons.lyn.event"
+
+FixedDamageWeaponList:
+BYTE MiniBow
+BYTE 0
