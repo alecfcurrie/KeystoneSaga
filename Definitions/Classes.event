@@ -6,5 +6,10 @@
 #define Paladin 0x8
 #define PaladinF 0x9
 
+#define SwordfighterM1 0x10
+#define SwordfighterM2 0x11
+#define SwordfighterM SwordfighterM1
+#define SwordfighterF  0x12
+
 #define GreatKnight 0x35
 #define GreatKnightF 0x36

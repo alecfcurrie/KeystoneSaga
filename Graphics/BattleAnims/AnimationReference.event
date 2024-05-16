@@ -23,6 +23,21 @@ AxeAnim(AxeCavFAxe)
 UnarmedAnim(AxeCavFUnarmed)
 EndClassAnimation
 
+SwordfighterM1Anims:
+SwordAnim(SwordfighterM1Sword)
+UnarmedAnim(SwordfighterM1Unarmed)
+EndClassAnimation
+
+SwordfighterM2Anims:
+SwordAnim(SwordfighterM2Sword)
+UnarmedAnim(SwordfighterM2Unarmed)
+EndClassAnimation
+
+SwordfighterFAnims:
+SwordAnim(SwordfighterFSword)
+UnarmedAnim(SwordfighterFUnarmed)
+EndClassAnimation
+
 SoldierMAnims:
 LanceAnim(SoldierMLance)
 UnarmedAnim(SoldierMUnarmed)

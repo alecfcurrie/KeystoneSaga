@@ -35,6 +35,23 @@
 #include "AxeCavFUnarmed.event"
 }
 
+// Swordfighter (M) Anims
+{
+#include "SwordfighterM1Sword.event"
+#include "SwordfighterM1Unarmed.event"
+}
+
+// Swordfighter (M) Alternate Anims
+{
+#include "SwordfighterM2Sword.event"
+#include "SwordfighterM2Unarmed.event"
+}
+
+// Swordfighter (F) Anims
+{
+#include "SwordfighterFSword.event"
+#include "SwordfighterFUnarmed.event"
+}
 
 // Soldier (M) Anims
 {

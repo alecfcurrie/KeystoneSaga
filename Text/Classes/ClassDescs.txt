@@ -13,3 +13,7 @@
 ## PaladinDesc
 *{Honored cavaliers that dominate battlefields with}[NL]
 *{their balanced stats and supreme mobility.}[X]
+
+## SwordfighterDesc
+*{Infantry soldiers that pierce enemy}[NL]
+*{lines with high skill and speed.}[X]

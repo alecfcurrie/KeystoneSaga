@@ -31,3 +31,19 @@ AxeCavFStand:
 ALIGN 4
 AxeCavFWalk:
 #incext Png2Dmp --lz77 "AxeCavFWalk.png"
+
+ALIGN 4
+SwordfighterMStand:
+#incext Png2Dmp --lz77 "SwordfighterMStand.png"
+
+ALIGN 4
+SwordfighterMWalk:
+#incext Png2Dmp --lz77 "SwordfighterMWalk.png"
+
+ALIGN 4
+SwordfighterFStand:
+#incext Png2Dmp --lz77 "SwordfighterFStand.png"
+
+ALIGN 4
+SwordfighterFWalk:
+#incext Png2Dmp --lz77 "SwordfighterFWalk.png"

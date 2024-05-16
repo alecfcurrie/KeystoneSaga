@@ -6,3 +6,6 @@
 
 ## AxeCavName
 *{Axe Cavalier}[X]
+
+## SwordfighterName
+*{Swordfighter}[X]

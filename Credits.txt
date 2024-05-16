@@ -12,12 +12,25 @@ Batima - Bronze Axe/Lance
 Zelix - Bronze Sword/Bow, Iron Bow/Lance/Axe, Steel Bow/Lance/Axe, Silver Bow/Lance/Axe, Brave Bow/Lance/Axe, Hammer
 Peerless - Mini Bow
 
+==Class Cards==
 RobertFPY - Axe Cavalier Class Card
 
-Flasuban - Soldier Battle Animations
-Red Bean, Jeorge_Reds - Audrey Lord Battle Animations
-Leo_Link, Pushwall - Female and Male Axe Cavalier Battle Animations
+==Battle Animations==
+Flasuban - Soldier
 
+Red Bean, Jeorge_Reds - Audrey Lord
+
+Leo_Link, Pushwall - Female and Male Axe Cavalier
+
+Iscaneus, Leo_link - Female Sword Fighter
+
+Iscaneus, Leo_link, Intestine - Male Sword Fighter
+
+Leo_Link, Tsushi, Iscaneus - Male Sword Fighter (alt)
+
+==Map Animations==
 Rexacuse, Peerless, Alusq - Soldier Map Animations
 Salvaged - Male Axe Cavalier Animations
 Salvaged, Flasuban - Female Axe Cavalier Animations
+Leo_Link - Male Swordfighter Map Animations
+Alice - Female Swordfighter Map Animations

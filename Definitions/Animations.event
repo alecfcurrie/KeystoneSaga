@@ -8,5 +8,12 @@
 #define AxeCavFHandaxe 0xB7
 #define AxeCavFUnarmed 0xB8
 
+#define SwordfighterM1Sword 0x11
+#define SwordfighterM1Unarmed 0x12
+#define SwordfighterM2Sword 0x13
+#define SwordfighterM2Unarmed 0x14
+#define SwordfighterFSword 0x0B
+#define SwordfighterFUnarmed 0x0C
+
 #define SoldierMLance 0x98
 #define SoldierMUnarmed 0x99
