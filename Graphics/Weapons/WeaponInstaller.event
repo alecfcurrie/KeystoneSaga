@@ -11,8 +11,53 @@ SetIcon(BronzeLance)
 POP
 
 PUSH
+SetIcon(IronLance)
+#incext Png2Dmp "IronLance.png"
+POP
+
+PUSH
+SetIcon(SteelLance)
+#incext Png2Dmp "SteelLance.png"
+POP
+
+PUSH
+SetIcon(SilverLance)
+#incext Png2Dmp "SilverLance.png"
+POP
+
+PUSH
+SetIcon(BraveLance)
+#incext Png2Dmp "BraveLance.png"
+POP
+
+PUSH
 SetIcon(BronzeAxe)
 #incext Png2Dmp "BronzeAxe.png"
+POP
+
+PUSH
+SetIcon(IronAxe)
+#incext Png2Dmp "BronzeAxe.png"
+POP
+
+PUSH
+SetIcon(SteelAxe)
+#incext Png2Dmp "SteelAxe.png"
+POP
+
+PUSH
+SetIcon(SilverAxe)
+#incext Png2Dmp "SilverAxe.png"
+POP
+
+PUSH
+SetIcon(BraveAxe)
+#incext Png2Dmp "BraveAxe.png"
+POP
+
+PUSH
+SetIcon(Hammer)
+#incext Png2Dmp "Hammer.png"
 POP
 
 PUSH

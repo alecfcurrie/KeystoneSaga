@@ -9,7 +9,7 @@ Sme - Fixed Damage Weapons
 
 ==Item Icons==
 Batima - Bronze Axe/Lance
-Zelix - Bronze Sword/Bow, Iron Bow, Steel Bow, Silver Bow, Brave Bow
+Zelix - Bronze Sword/Bow, Iron Bow/Lance/Axe, Steel Bow/Lance/Axe, Silver Bow/Lance/Axe, Brave Bow/Lance/Axe, Hammer
 Peerless - Mini Bow
 
 RobertFPY - Axe Cavalier Class Card
