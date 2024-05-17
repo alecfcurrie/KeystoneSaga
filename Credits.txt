@@ -32,5 +32,5 @@ Leo_Link, Tsushi, Iscaneus - Male Sword Fighter (alt)
 Rexacuse, Peerless, Alusq - Soldier Map Animations
 Salvaged - Male Axe Cavalier Animations
 Salvaged, Flasuban - Female Axe Cavalier Animations
-Leo_Link - Male Swordfighter Map Animations
+Sephie - Male Swordfighter Map Animations
 Alice - Female Swordfighter Map Animations

@@ -37,7 +37,7 @@ POP
 
 PUSH
 SetIcon(IronAxe)
-#incext Png2Dmp "BronzeAxe.png"
+#incext Png2Dmp "IronAxe.png"
 POP
 
 PUSH
