@@ -1,3 +1,5 @@
 -Fix 0xFF crit indicator bug
 -Fix item image mismatch issue
 -Add text description and image for Energy Drop
+-Replace swordfighter class cards?
+-Add intro cutscene
