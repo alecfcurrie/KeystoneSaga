@@ -36,8 +36,8 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0x00, Turn3_PP, 1)
-TurnEventPlayer(0x00, Turn4_PP, 1)
+TurnEventPlayer(0x00, Turn2_PP, 2)
+TurnEventPlayer(0x00, Turn3_PP, 3)
 TurnEventEnemy(0x00, Turn2_EP, 2)
 TurnEventEnemy(0x00, Turn3_EP, 3)
 TurnEventEnemy(0x00, Turn4_EP, 4)
@@ -122,7 +122,7 @@ ENUT FIXED_GROWTHS_FLAG_ID
 LOAD1 0x1 EnemyUnits
 ENUN
 
-//Hard Mode buffs
+// Hard Mode buffs
 CHECK_HARD
 BEQ 1 s0 sC
 LOAD1 0x1 HardModeExclusiveEnemies
@@ -197,14 +197,14 @@ LABEL 2
 NoFade
 ENDA
 
-Turn3_PP:
+Turn2_PP:
 CAMERA [8,18]
 LOAD1 0x0 FriendlyReinforcements1
 ENUN
 NoFade
 ENDA
 
-Turn4_PP:
+Turn3_PP:
 CAMERA [8,18]
 LOAD1 0x0 FriendlyReinforcements2
 ENUN
