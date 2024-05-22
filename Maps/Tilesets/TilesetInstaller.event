@@ -5,7 +5,7 @@ SuperFieldsObject:
 
 ALIGN 4
 SuperFieldsConfig:
-#incext compress "SuperFields/SuperFields.mapchip_config"
+#incbin "SuperFields/SuperFields_comp.dmp"
 
 ALIGN 4
 SuperFieldsPalette:
@@ -13,4 +13,4 @@ SuperFieldsPalette:
 
 EventPointerTable(0x01, SuperFieldsObject)
 EventPointerTable(0x02, SuperFieldsPalette)
-EventPointerTable(0x03, SuperFields/SuperFieldsPalette)
+EventPointerTable(0x03, SuperFieldsConfig)
