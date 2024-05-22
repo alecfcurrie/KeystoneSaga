@@ -26,14 +26,12 @@
 
 	#include "Fixes/MasterFixInstaller.event"
 	
-	#ifdef USE_TEST_MAP
     //Events
-    #include "Events/Release_map.event"
+    #include "Events/Chapter1.event"
     #include "Events/WorldMapEvents.event"
 
     //Maps
     #include "Maps/MasterMapInstaller.event"
-    #endif // USE_TEST_MAP
 	
 	ASSERT (FreeSpaceEnd - currentOffset) // So that you don't overwrite vanilla tables if using default freespace
 	
