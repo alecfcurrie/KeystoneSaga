@@ -6,6 +6,7 @@ Mystic - Map Sprite Tables
 Snakey1 - setCardEntry macro
 Dragz - Forging prototype
 Sme - Fixed Damage Weapons
+Snakey1 - AssembleObjects.bat
 
 ==Item Icons==
 Batima - Bronze Axe/Lance
