@@ -3,7 +3,7 @@
  <tileset firstgid="1" source="SuperFieldsV2.tsx"/>
  <layer id="1" name="MainLayer" width="18" height="19">
   <properties>
-   <property name="Anims1" value="0"/>
+   <property name="Anims1" value="5"/>
    <property name="Anims2" value="0"/>
    <property name="ChapterID" value="0"/>
    <property name="Main" value=""/>

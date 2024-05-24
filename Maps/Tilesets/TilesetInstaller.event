@@ -1,3 +1,7 @@
+#ifndef tilesetAnimation
+    #define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+#endif
+
 // Super Fields
 ALIGN 4
 SuperFieldsObject:
