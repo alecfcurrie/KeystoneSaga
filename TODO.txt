@@ -3,3 +3,4 @@
 -Add text description and image for Energy Drop
 -Replace swordfighter class cards?
 -Add intro cutscene
+-Fix intro REDAs instantly placing units at their destination

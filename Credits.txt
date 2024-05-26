@@ -7,6 +7,7 @@ Snakey1 - setCardEntry macro
 Dragz - Forging prototype
 Sme - Fixed Damage Weapons
 Snakey1 - AssembleObjects.bat
+Snakey1 - REDA list event file
 
 ==Item Icons==
 Batima - Bronze Axe/Lance

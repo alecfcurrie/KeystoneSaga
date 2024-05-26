@@ -27,8 +27,9 @@
 	#include "Fixes/MasterFixInstaller.event"
 	
     //Events
-    #include "Events/Chapter1.event"
-    #include "Events/WorldMapEvents.event"
+    //#include "Events/Chapter1.event"
+    //#include "Events/WorldMapEvents.event"
+	#include "Events/MasterEventInstaller.event"
 
     //Maps
     #include "Maps/MasterMapInstaller.event"

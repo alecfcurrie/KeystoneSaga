@@ -19,7 +19,7 @@ setText(0x160, NewChName)
 
 ALIGN 4
 NewChName:
-String("Canyon Rush")
+String("Chapter 1: Canyon Rush")
 BYTE 0
 
 ALIGN 4
@@ -68,17 +68,33 @@ END_MAIN
 Tutorial:
 END_MAIN
 
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+//==================================================================//
+//==============================UNITS===============================//
+//==================================================================//
+
+
 Units1:
 UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,17] 0x0 0x0 0x0 0x0 [BronzeSword,SpiritDust,EnergyDrop] NoAI
 UNIT Franz AxeCavM Eirika Level(3, Ally, False)  [9,17] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT
 
 
+BossGroup:
+UNIT Breguet SwordfighterM ONeill Level(5, Enemy, False) [0,10] 0x0 0x0 0x1 BossREDA_1 [IronSword] NoAI
+UNIT ONeill Fighter ONeill Level(3, Enemy, False) [1,11] DropItem 0x0 0x1 BossREDA_2 [IronAxe, Vulnerary] GroupOneAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 BossREDA_3 [IronAxe] GroupOneAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [1,10] 0x0 0x0 0x1 BossREDA_4 [IronAxe] GroupOneAI
+UNIT
+
 EnemyUnits:
-// Boss Group
-UNIT ONeill Fighter ONeill Level(3, Enemy, False) [5,4] DropItem 0x0 0x0 0x0 [IronAxe, Vulnerary] GroupOneAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5,5] 0x0 0x0 0x0 0x0 [IronAxe] GroupOneAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [4,5] 0x0 0x0 0x0 0x0 [IronAxe] GroupOneAI
 // Central Group
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [8,7] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [9,7] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
@@ -109,16 +125,17 @@ UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [13,3] 0x0 0x0 0x0 0x0 [Iro
 UNIT 0x80 Archer ONeill Level(1, Enemy, True) [15,8] 0x0 0x0 0x0 0x0 [BronzeBow] AttackInRangeFullAI
 UNIT
 
-Traps1:
-ENDTRAP
-ALIGN 4
 
-Traps2:
-ENDTRAP
-ALIGN 4
+//==================================================================//
+//=============================EVENTS===============================//
+//==================================================================//
+
 
 BeginningScene:
 ENUT FIXED_GROWTHS_FLAG_ID
+CAMERA [7,5]
+LOAD1 0x1 BossGroup
+ENUN
 LOAD1 0x1 EnemyUnits
 ENUN
 
@@ -126,11 +143,11 @@ ENUN
 CHECK_HARD
 BEQ 1 s0 sC
 LOAD1 0x1 HardModeExclusiveEnemies
+ENUN
 SetUnitStatusAll(Any, Item1,  SteelAxe, AnyDeployed, EnemyArmy, AnyClass, AnyRange,     IronAxe)
 SetUnitStatusAll(Any, Item1,   IronAxe, AnyDeployed, EnemyArmy, AnyClass, AnyRange,   BronzeAxe)
 SetUnitStatusAll(Any, Item1, IronSword, AnyDeployed, EnemyArmy, AnyClass, AnyRange, BronzeSword)
 // TODO ADD BOW REPLACEMENT
-ENUN
 
 // Finally
 LABEL 1
@@ -141,16 +158,19 @@ ENUN
 ENDA
 
 
+
 FriendlyReinforcements1:
 UNIT Seth Archer Eirika Level(8, Ally, False) [8,18] 0x0 0x0 0x1 REDA_Left [ShortBow, BronzeBow,Vulnerary] NoAI
 UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA_Right [Javelin, IronLance,Vulnerary] NoAI
 UNIT
 
 
+
 FriendlyReinforcements2:
 UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA_Left [BronzeAxe, Vulnerary] NoAI
 UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA_Right [Heal,Lightning,Vulnerary] NoAI
 UNIT
+
 
 
 Turn2_EP:
@@ -165,11 +185,13 @@ SetAI_Pos(17,11,0,0,0xC,0)
 NoFade
 ENDA
 
+
 Turn3_EP:
 SetAI_Pos(1,8,0,0,0xC,0)
 SetAI_Pos(1,9,0,0,0xC,0)
 NoFade
 ENDA
+
 
 Turn4_EP:
 SetAI_Pos(15,7,0,0,0xC,0)
@@ -181,11 +203,13 @@ SetAI_Pos(13,3,0,0,0xC,0)
 NoFade
 ENDA
 
+
 Turn5_EP:
 ENUF EnablePerfectHitFlag
 SetAI_Pos(0,10,0,0,0xC,0)
 NoFade
 ENDA
+
 
 Turn7_EP:
 CHECK_TUTORIAL 						// sC = True if on Normal mode, False otherwise
@@ -197,6 +221,7 @@ LABEL 2
 NoFade
 ENDA
 
+
 Turn2_PP:
 CAMERA [8,18]
 LOAD1 0x0 FriendlyReinforcements1
@@ -204,12 +229,14 @@ ENUN
 NoFade
 ENDA
 
+
 Turn3_PP:
 CAMERA [8,18]
 LOAD1 0x0 FriendlyReinforcements2
 ENUN
 NoFade
 ENDA
+
 
 EndingScene:
 ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
@@ -219,7 +246,17 @@ MNTS 0x1 //return to title screen
 NoFade
 ENDA
 
+
 REDA_Left:
 REDA [8,17]
 REDA_Right:
 REDA [9,17]
+
+BossREDA_1:
+REDA [7,3]
+BossREDA_2:
+REDA [7,4]
+BossREDA_3:
+REDA [8,4]
+BossREDA_4:
+REDA [6,4]
