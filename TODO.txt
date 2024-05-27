@@ -3,4 +3,5 @@
 -Add text description and image for Energy Drop
 -Replace swordfighter class cards?
 -Add intro cutscene
--Fix intro REDAs instantly placing units at their destination
+-Add enemies to chapter 1
+-Rework enemy AI for chapter 1
