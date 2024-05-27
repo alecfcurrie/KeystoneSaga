@@ -130,4 +130,6 @@ a skill when used.[X]
 #include "Classes\ClassNames.txt"
 #include "Classes\ClassDescs.txt"
 
+#include "Chapter\MasterChapterTextInstaller.txt"
+
 //#include "Skills\SkillDesc.txt"
