@@ -26,14 +26,14 @@
 
 	#include "Fixes/MasterFixInstaller.event"
 	
+	//Maps
+    #include "Maps/MasterMapInstaller.event"
+	#include "Maps/Tilesets/TilesetInstaller.event"
+	
     //Events
     //#include "Events/Chapter1.event"
     //#include "Events/WorldMapEvents.event"
 	#include "Events/MasterEventInstaller.event"
-
-    //Maps
-    #include "Maps/MasterMapInstaller.event"
-	#include "Maps/Tilesets/TilesetInstaller.event"
 	
 	ASSERT (FreeSpaceEnd - currentOffset) // So that you don't overwrite vanilla tables if using default freespace
 	
