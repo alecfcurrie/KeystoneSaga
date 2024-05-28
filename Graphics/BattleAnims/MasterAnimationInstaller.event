@@ -58,3 +58,9 @@
 #include "SoldierMLance.event"
 #include "SoldierMUnarmed.event"
 }
+
+// Soldier (F) Anims
+{
+#include "SoldierFLance.event"
+#include "SoldierFUnarmed.event"
+}

@@ -42,3 +42,8 @@ SoldierMAnims:
 LanceAnim(SoldierMLance)
 UnarmedAnim(SoldierMUnarmed)
 EndClassAnimation
+
+SoldierFAnims:
+LanceAnim(SoldierFLance)
+UnarmedAnim(SoldierFUnarmed)
+EndClassAnimation

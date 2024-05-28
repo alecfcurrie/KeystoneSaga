@@ -9,6 +9,14 @@ SoldierMWalk:
 #incext Png2Dmp --lz77 "SoldierMWalk.png"
 
 ALIGN 4
+SoldierFStand:
+#incext Png2Dmp --lz77 "SoldierFStand.png"
+
+ALIGN 4
+SoldierFWalk:
+#incext Png2Dmp --lz77 "SoldierFWalk.png"
+
+ALIGN 4
 LanceCavStand:
 #incext Png2Dmp --lz77 "LanceCavStand.png"
 

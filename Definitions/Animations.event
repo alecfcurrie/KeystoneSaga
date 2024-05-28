@@ -17,3 +17,5 @@
 
 #define SoldierMLance 0x98
 #define SoldierMUnarmed 0x99
+#define SoldierFLance 0x9D
+#define SoldierFUnarmed 0x9E
