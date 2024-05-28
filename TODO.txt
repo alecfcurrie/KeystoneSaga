@@ -5,3 +5,4 @@
 -Add intro cutscene
 -Add enemies to chapter 1
 -Rework enemy AI for chapter 1
+-Remove immune status from female soldiers
