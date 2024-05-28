@@ -18,7 +18,7 @@ Peerless - Mini Bow
 RobertFPY - Axe Cavalier
 
 ==Battle Animations==
-Flasuban - Soldier
+Flasuban - Soldier (Male and Female)
 Red Bean, Jeorge_Reds - Audrey Lord
 Leo_Link, Pushwall - Female and Male Axe Cavalier
 Iscaneus, Leo_link - Female Sword Fighter
@@ -26,7 +26,8 @@ Iscaneus, Leo_link, Intestine - Male Sword Fighter
 Leo_Link, Tsushi, Iscaneus - Male Sword Fighter (alt)
 
 ==Map Animations==
-Rexacuse, Peerless, Alusq - Soldier Map Animations
+Rexacuse, Peerless, Alusq - Soldier (M) Map Animations
+Rexacuse, Peerless, Alusq, WarPath - Soldier (F) Map Animations
 Salvaged - Male Axe Cavalier Animations
 Salvaged, Flasuban - Female Axe Cavalier Animations
 Sephie - Male Swordfighter Map Animations
