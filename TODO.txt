@@ -6,3 +6,7 @@
 -Add enemies to chapter 1
 -Rework enemy AI for chapter 1
 -Remove immune status from female soldiers
+-Implement Narrow Text for Class Names/Descs
+-Edit Class Mag Growths/Caps
+-Edit Unit Growths for Mag
+-Finish Outlaw Graphics
