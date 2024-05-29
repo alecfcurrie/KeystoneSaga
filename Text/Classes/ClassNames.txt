@@ -9,3 +9,9 @@
 
 ## SwordfighterName
 *{Swordfighter}[X]
+
+## OutlawName
+*{Outlaw}[X]
+
+## AdventurerName
+*{Adventurer}[X]

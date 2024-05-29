@@ -17,3 +17,11 @@
 ## SwordfighterDesc
 *{Infantry soldiers that pierce enemy}[NL]
 *{lines with high skill and speed.}[X]
+
+## OutlawDesc
+*{Frail rouges that can pick locks and attack}[NL]
+*{using bows. High speed and resistance}[X]
+
+## AdventurerDesc
+*{Seasoned outlaws that wield bows and staves}[NL]
+*{High res, speed, and above average mobility}[X]

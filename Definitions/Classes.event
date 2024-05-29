@@ -17,3 +17,11 @@
 #define SoldierM 0x4E
 #define Soldier SoldierM
 #define SoldierF 0x4F
+
+#define OutlawM 0x37
+#define Outlaw OutlawM
+#define OutlawF 0x38
+
+#define AdventurerM 0x39
+#define Adventurer AdventurerM
+#define AdventurerF 0x3a
