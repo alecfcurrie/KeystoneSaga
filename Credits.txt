@@ -2,7 +2,7 @@ GratedShtick - DSFE Avoid Patch
 Vesley - SetStatus
 HyperGammaSpaces - CHAI Fix
 Sme - RNByFlag
-Mystic - Map Sprite Tables
+Mystic - Map Sprite and Promotion Tables
 Snakey1 - setCardEntry macro
 Dragz - Forging prototype
 Sme - Fixed Damage Weapons
