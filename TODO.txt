@@ -9,4 +9,5 @@
 -Implement Narrow Text for Class Names/Descs
 -Edit Class Mag Growths/Caps
 -Edit Unit Growths for Mag
--Finish Outlaw Graphics
+-Add Adventurer Class Card
+-Fix Green Haired Outlaws
