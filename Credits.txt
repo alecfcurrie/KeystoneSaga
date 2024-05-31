@@ -16,6 +16,8 @@ Peerless - Mini Bow
 
 ==Class Cards==
 RobertFPY - Axe Cavalier
+Spud - Outlaw (M)
+Spud, Jj09 - Outlaw (F)
 
 ==Battle Animations==
 Flasuban - Soldier (Male and Female)

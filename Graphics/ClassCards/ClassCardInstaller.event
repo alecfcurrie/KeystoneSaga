@@ -10,3 +10,25 @@ AxeCavPalette:
 #incext Png2Dmp --palette-only "AxeCav.png"
 
 setCardEntry(AxeCavClassCard,AxeCavCard,AxeCavPalette)
+
+// ==Outlaw (M)==
+ALIGN 4
+OutlawMCard:
+#incext Png2Dmp --lz77 "OutlawM.png"
+
+ALIGN 4
+OutlawMPalette:
+#incext Png2Dmp --palette-only "OutlawM.png"
+
+setCardEntry(OutlawMClassCard, OutlawMCard, OutlawMPalette)
+
+// ==Outlaw (F)==
+ALIGN 4
+OutlawFCard:
+#incext Png2Dmp --lz77 "OutlawF.png"
+
+ALIGN 4
+OutlawFPalette:
+#incext Png2Dmp --palette-only "OutlawF.png"
+
+setCardEntry(OutlawFClassCard, OutlawFCard, OutlawFPalette)
