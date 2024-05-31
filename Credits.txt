@@ -24,13 +24,15 @@ Leo_Link, Pushwall - Female and Male Axe Cavalier
 Iscaneus, Leo_link - Female Sword Fighter
 Iscaneus, Leo_link, Intestine - Male Sword Fighter
 Leo_link, Tsushi, Iscaneus - Male Sword Fighter (alt)
-Itranc, Leo_Link - Adventurer Animations
-Leo_link, Spud, MeatOfJustice - Outlaw Animations
+Itranc, Leo_Link - Adventurer 
+Leo_link, Spud, MeatOfJustice - Outlaw 
 
 ==Map Animations==
-Rexacuse, Peerless, Alusq - Soldier (M) Map Animations
-Rexacuse, Peerless, Alusq, WarPath - Soldier (F) Map Animations
-Salvaged - Male Axe Cavalier Animations
-Salvaged, Flasuban - Female Axe Cavalier Animations
-Sephie - Male Swordfighter Map Animations
-Alice - Female Swordfighter Map Animations
+Rexacuse, Peerless, Alusq - Soldier (M)
+Rexacuse, Peerless, Alusq, WarPath - Soldier (F) 
+Salvaged - Male Axe Cavalier
+Salvaged, Flasuban - Female Axe Cavalier 
+Sephie - Male Swordfighter
+Alice - Female Swordfighter
+MeatOfJustice - Outlaw
+ArcherBias - Adventurer

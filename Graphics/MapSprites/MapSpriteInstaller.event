@@ -55,3 +55,35 @@ SwordfighterFStand:
 ALIGN 4
 SwordfighterFWalk:
 #incext Png2Dmp --lz77 "SwordfighterFWalk.png"
+
+ALIGN 4
+OutlawMStand:
+#incext Png2Dmp --lz77 "OutlawMStand.png"
+
+ALIGN 4
+OutlawMWalk:
+#incext Png2Dmp --lz77 "OutlawMWalk.png"
+
+ALIGN 4
+OutlawFStand:
+#incext Png2Dmp --lz77 "OutlawFStand.png"
+
+ALIGN 4
+OutlawFWalk:
+#incext Png2Dmp --lz77 "OutlawFWalk.png"
+
+ALIGN 4
+AdventurerMStand:
+#incext Png2Dmp --lz77 "AdventurerMStand.png"
+
+ALIGN 4
+AdventurerMWalk:
+#incext Png2Dmp --lz77 "AdventurerMWalk.png"
+
+ALIGN 4
+AdventurerFStand:
+#incext Png2Dmp --lz77 "AdventurerFStand.png"
+
+ALIGN 4
+AdventurerFWalk:
+#incext Png2Dmp --lz77 "AdventurerFWalk.png"
