@@ -64,3 +64,29 @@
 #include "SoldierFLance.event"
 #include "SoldierFUnarmed.event"
 }
+
+// Adventurer (M) Anims
+{
+#include "AdventurerMBow.event"
+#include "AdventurerMStaff.event"
+#include "AdventurerMUnarmed.event"
+}
+
+// Adventurer (F) Anims
+{
+#include "AdventurerFBow.event"
+#include "AdventurerFStaff.event"
+#include "AdventurerFUnarmed.event"
+}
+
+// Outlaw (M) Anims
+{
+#include "OutlawMBow.event"
+#include "OutlawMUnarmed.event"
+}
+
+// Outlaw (F) Anims
+{
+#include "OutlawFBow.event"
+#include "OutlawFUnarmed.event"
+}
