@@ -1,63 +1,63 @@
 INLINE MagClassTable,Base Magic,Magic Growth,Magic Cap,Magic Promotion Bonus
 None,0,0,20,0
-Ephraim Lord,1,10,20,0
-Eirika Lord,1,25,20,0
-Ephraim Master Lord,2,10,24,1
-Eirika Master Lord,2,20,25,2
-Cavalier,0,0,20,0
-Cavalier (F),0,0,20,0
-Paladin,2,10,24,2
-Paladin (F),2,10,24,2
-Armour Knight,0,0,20,0
-Armour Knight (F),0,0,20,0
-General,0,0,22,0
-General (F),0,0,22,0
-Thief,1,5,20,0
-Manakete,0,0,20,0
-Mercenary,0,0,20,0
-Mercenary (F),0,0,20,0
-Hero,0,0,23,0
-Hero (F),0,0,23,0
-Myrmidon,1,15,20,0
-Myrmidon (F),1,15,20,0
-Swordmaster,2,10,23,1
-Swordmaster (F),2,10,23,1
-Assassin,1,0,22,0
-Assassin (F),1,0,22,0
-Archer,0,0,20,0
-Archer (F),0,0,20,0
+Ephraim Lord,1,0,20,0
+Eirika Lord,4,0,21,0
+Ephraim Master Lord,2,0,24,1
+Eirika Master Lord,2,0,32,4
+Lance Cavalier,0,0,15,0
+Axe Cavalier,0,0,15,0
+Axe Cavalier (F),0,0,15,2
+Paladin,2,0,22,2
+Paladin (F),2,0,22,0
+Armour Knight,0,0,8,0
+Armour Knight (F),0,0,8,0
+General,0,0,16,0
+General (F),0,0,16,0
+Ninja,1,5,18,0
+Ninja (F),1,5,18,0
+Sword Fighter (M1),2,10,19,0
+Sword Fighter (M2),2,10,19,0
+Sword Fighter (F),2,10,19,0
+Hero,1,15,20,0
+Hero (F),1,15,20,0
+Swordmaster,4,20,23,1
+Swordmaster (F),4,20,23,1
+Master Ninja,4,10,25,0
+Master Ninja (F),4,10,25,0
+Archer,0,0,18,0
+Archer (F),0,0,18,0
 Sniper,1,10,24,1
 Sniper (F),1,10,24,1
-Ranger,0,0,22,0
-Ranger (F),0,0,22,0
-Wyvern Rider,0,0,20,0
-Wyvern Rider (F),0,0,20,0
-Wyvern Lord,0,0,21,0
-Wyvern Lord (F),0,0,21,0
-Wyvern Knight,1,5,24,1
-Wyvern Knight (F),1,5,24,1
-Mage,1,55,20,0
-Mage (F),1,55,20,0
+Ranger,3,15,26,0
+Ranger (F),3,15,26,0
+Wyvern Rider,2,15,22,0
+Wyvern Rider (F),2,15,22,0
+Wyvern Lord,0,0,22,0
+Wyvern Lord (F),0,0,22,0
+Wyvern Knight,18,45,34,9
+Wyvern Knight (F),18,45,34,9
+Mage,7,65,25,0
+Mage (F),7,65,25,0
 Sage,5,45,28,1
 Sage (F),4,45,30,1
 Mage Knight,4,40,24,2
 Mage Knight (F),3,40,25,2
 Bishop,4,35,25,2
 Bishop (F),4,35,25,1
-Shaman,2,50,20,0
-Shaman (F),3,45,20,0
-Druid,6,55,29,0
-Druid (F),7,55,29,0
+Shaman,10,70,26,0
+Shaman (F),10,70,26,0
+Druid,17,70,40,7
+Druid (F),17,70,40,7
 Summoner,5,50,27,0
 Summoner (F),5,50,27,0
 Rogue,3,25,26,3
 Gorgon Egg,0,0,30,0
 Great Knight,0,0,21,0
 Great Knight (F),0,0,21,0
-Recruit (2),0,0,20,0
-Journeyman (3),0,0,22,0
-Pupil (3),5,55,29,2
-Recruit (3),0,0,23,0
+Outlaw,3,35,21,0
+Outlaw (F),3,35,21,0
+Adventurer,10,45,31,8
+Adventurer (F),10,45,31,8
 Manakete,2,0,20,0
 Manakete (F),2,0,20,0
 Journeyman (1),0,0,20,0
@@ -78,7 +78,7 @@ Troubadour,1,25,20,0
 Valkyrie,4,35,25,2
 Dancer,1,45,20,0
 Soldier,0,0,20,0
-Necromancer,9,55,30,0
+Soldier (F),9,55,30,0
 Fleet,0,0,20,0
 Phantom,0,0,20,0
 Revenant,0,0,20,0
