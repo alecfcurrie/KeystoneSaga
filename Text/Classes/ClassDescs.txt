@@ -20,8 +20,8 @@
 
 ## OutlawDesc
 *{Frail rouges that can pick locks and attack}[NL]
-*{using bows. High speed and resistance}[X]
+*{using bows. High speed and resistance.}[X]
 
 ## AdventurerDesc
 *{Seasoned outlaws that wield bows and staves}[NL]
-*{High res, speed, and above average mobility}[X]
+*{High res, speed, and above average mobility.}[X]
