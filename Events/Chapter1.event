@@ -88,6 +88,17 @@ UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 
 UNIT Franz AxeCavM Eirika Level(3, Ally, False)  [9,18] 0x0 0x0 0x1 REDA9R17 [BronzeAxe] NoAI
 UNIT
 
+FriendlyReinforcements1:
+UNIT Seth Archer Eirika Level(8, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [ShortBow, BronzeBow,Vulnerary] NoAI
+UNIT Vanessa SoldierF Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [Javelin, IronLance,Vulnerary] NoAI
+UNIT
+
+
+FriendlyReinforcements2:
+UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeAxe, Vulnerary] NoAI
+UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA9R17 [Heal,Lightning,Vulnerary] NoAI
+UNIT
+
 
 BossGroup:
 UNIT Breguet SwordfighterM ONeill Level(5, Enemy, False) [0,10] 0x0 0x0 0x1 REDA7R3 [IronSword] NoAI
@@ -103,9 +114,9 @@ UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,0] 0x0 0x0 0x1 REDA8R7 [Bronz
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,0] 0x0 0x0 0x1 REDA9R7 [BronzeAxe] [0]
 // Wall Breakers
 UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [17,11] 0x0 0x0 0x1 REDA15R13 [BronzeSword] [0x0,0xE,0xC,0x0]
-UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [14,14] 0x0 0x0 0x0 0x0 [BronzeSword] [0x0,0xE,0xC,0x0]
+UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [16,14] 0x0 0x0 0x0 0x0 [BronzeSword] [0x0,0xE,0xC,0x0]
 UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA3R12 [BronzeSword] [0x0,0xE,0xC,0x0]
-UNIT 0x80 Archer ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA3R11 [BronzeBow] [0x0,0xE,0xC,0x0]
+UNIT 0x80 OutlawF ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA3R11 [BronzeBow] [0x0,0xE,0xC,0x0]
 UNIT
 
 HardModeExclusiveEnemies:
@@ -158,20 +169,6 @@ LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep s
 ENUN
 NoFade
 ENDA
-
-
-
-FriendlyReinforcements1:
-UNIT Seth Archer Eirika Level(8, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [ShortBow, BronzeBow,Vulnerary] NoAI
-UNIT Gilliam Soldier Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA8R18 [Javelin, IronLance,Vulnerary] NoAI
-UNIT
-
-
-
-FriendlyReinforcements2:
-UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeAxe, Vulnerary] NoAI
-UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA8R18 [Heal,Lightning,Vulnerary] NoAI
-UNIT
 
 
 
