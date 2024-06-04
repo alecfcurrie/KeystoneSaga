@@ -5,4 +5,4 @@
 #include "GroupAI\GroupAI.event"
 // #include "Forging\Installer.event"
 #include "FixedDamageWeapons/FixedDamageWeapons.event"
-#include "FormulaChanges.lyn.event"
+#include "FormulaChanges/FormulaChanges.lyn.event"
