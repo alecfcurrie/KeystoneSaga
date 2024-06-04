@@ -387,7 +387,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 #define FORCE_WHEN_BELOW_AVERAGE_BY_AMOUNT 3 
 
 //If using stat bracketing and your stat is above average by this many points, never gain it on levelup 
-#define PREVENT_WHEN_ABOVE_AVERAGE_BY_AMOUNT 7 
+#define PREVENT_WHEN_ABOVE_AVERAGE_BY_AMOUNT 8 
 
 //If true, passive growth boosters and metis tome will not affect growths in fixed growths mode.
 #define FIXED_GROWTHS_DONT_BOOST True
