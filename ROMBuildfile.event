@@ -24,7 +24,7 @@
     #include "EngineHacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
-	#include "Fixes/MasterFixInstaller.event"
+	#include "Hacks/MasterHackInstaller.event"
 	
 	//Maps
     #include "Maps/MasterMapInstaller.event"
