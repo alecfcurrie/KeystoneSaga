@@ -44,7 +44,7 @@ TurnEventEnemy(0x00, Turn2_EP, 2)
 TurnEventEnemy(0x00, Turn3_EP, 3)
 TurnEventEnemy(0x00, Turn4_EP, 4)
 TurnEventEnemy(0x00, Turn5_EP, 5)
-TurnEventEnemy(0x00, Turn7_EP, 7)
+TurnEventEnemy(0x00, Turn6_EP, 6)
 END_MAIN
 
 LocationBasedEvents:
@@ -84,19 +84,19 @@ ALIGN 4
 
 
 Units1:
-UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeSword,SpiritDust,EnergyDrop] NoAI
+UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeSword,Vulnerary] NoAI
 UNIT Franz AxeCavM Eirika Level(3, Ally, False)  [9,18] 0x0 0x0 0x1 REDA9R17 [BronzeAxe] NoAI
 UNIT
 
 FriendlyReinforcements1:
-UNIT Seth Archer Eirika Level(8, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [ShortBow, BronzeBow,Vulnerary] NoAI
-UNIT Vanessa SoldierF Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [Javelin, IronLance,Vulnerary] NoAI
+UNIT Seth Archer Eirika Level(5, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [SteelBow, BronzeBow,Vulnerary] NoAI
+UNIT Vanessa SoldierF Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [IronLance,Javelin,Vulnerary] NoAI
 UNIT
 
 
 FriendlyReinforcements2:
 UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeAxe, Vulnerary] NoAI
-UNIT Moulder Monk Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA9R17 [Heal,Lightning,Vulnerary] NoAI
+UNIT OsborneID Priest Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA9R17 [IronSword,Heal,Vulnerary] NoAI
 UNIT
 
 
@@ -107,20 +107,41 @@ UNIT
 
 EnemyUnits:
 // Boss Group Generics
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA5R5 [IronAxe] GroupOneAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [1,10] 0x0 0x0 0x1 REDA6R4 [IronAxe] GroupOneAI
-// Central Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,0] 0x0 0x0 0x1 REDA8R7 [BronzeAxe] [0]
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,0] 0x0 0x0 0x1 REDA9R7 [BronzeAxe] [0]
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA5R5 [BronzeAxe] GroupOneAI
+// Lower Central Group
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,0] 0x0 0x0 0x1 REDA8R9 [BronzeAxe] [0]
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,0] 0x0 0x0 0x1 REDA9R9 [BronzeAxe] [0]
 // Wall Breakers
 UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [17,11] 0x0 0x0 0x1 REDA15R13 [BronzeSword] [0x0,0xE,0xC,0x0]
 UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [16,14] 0x0 0x0 0x0 0x0 [BronzeSword] [0x0,0xE,0xC,0x0]
-UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA3R12 [BronzeSword] [0x0,0xE,0xC,0x0]
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA3R12 [BronzeAxe] [0x0,0xE,0xC,0x0]
 UNIT 0x80 OutlawF ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA3R11 [BronzeBow] [0x0,0xE,0xC,0x0]
+// Middle Central Group
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,0] 0x0 0x0 0x1 REDA9R4 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,0] 0x0 0x0 0x1 REDA10R5 [BronzeAxe] AttackInRangeAI
+// Upper Central Group
+UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [10,0] 0x0 0x0 0x1 REDA11R3 [BronzeSword] AttackInRangeAI
+UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [11,0] 0x0 0x0 0x1 REDA10R2 [BronzeSword] AttackInRangeAI
+// Bottom Right Group
+UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [18,11] 0x0 0x0 0x1 REDA16R12 [BronzeSword] AttackInRangeAI
+UNIT 0x80 Outlaw ONeill Level(2, Enemy, True) [18,10] 0x0 0x0 0x1 REDA17R12 [BronzeBow] AttackInRangeAI
+// Upper Right Group
+UNIT 0x80 Outlaw ONeill Level(2, Enemy, True) [18,11] 0x0 0x0 0x1 REDA16R7 [BronzeBow] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R8 [BronzeAxe] AttackInRangeAI
+// Bottom Left Group
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R11 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA2R10 [BronzeAxe] AttackInRangeAI 
+// Upper Left Group
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R8 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Outlaw ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA1R9 [BronzeBow] AttackInRangeAI
 UNIT
 
+
 HardModeExclusiveEnemies:
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,0] 0x0 0x0 0x1 REDA9R3 [IronAxe] AttackInRangeAI
+// Upper Right Group
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R9 [IronAxe] AttackInRangeAI
+// Boss Group Generics
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [1,10] 0x0 0x0 0x1 REDA4R5 [IronAxe] GroupOneAI
 UNIT
 
 
@@ -137,7 +158,7 @@ LOAD1 0x1 BossGroup
 ENUN
 
 CURSOR Breguet
-STAL 100
+STAL 60
 REMOVE_CURSORS
 SetBackground(Outside_Village_Day)
 Text(Chapter1InitialConvo)
@@ -173,33 +194,52 @@ ENDA
 
 
 Turn2_EP:
+// Activate Middle Central Group
+SetAI_Pos(9,4,0,0,0xC,0)
+SetAI_Pos(10,5,0,0,0xC,0)
 NoFade
 ENDA
 
 
 Turn3_EP:
 ENUF EnablePerfectHitFlag
+// Activate Bottom Right Group
+SetAI_Pos(16,12,0,0,0xC,0)
+SetAI_Pos(17,12,0,0,0xC,0)
+// Activate Bottom Left
+SetAI_Pos(1, 11,0,0,0xC,0)
+SetAI_Pos(2,10,0,0,0xC,0)
 NoFade
 ENDA
 
 
 Turn4_EP:
+// Activate Upper Central Group
+SetAI_Pos(11,3,0,0,0xC,0)
+SetAI_Pos(10,2,0,0,0xC,0)
 NoFade
 ENDA
 
 
 Turn5_EP:
+// Activate Upper Left Group
+SetAI_Pos(1,8,0,0,0xC,0)
+SetAI_Pos(1,9,0,0,0xC,0)
+// Activate Upper Right
+SetAI_Pos(16,7,0,0,0xC,0)
+SetAI_Pos(16,8,0,0,0xC,0)
+SetAI_Pos(16,9,0,0,0xC,0)
 NoFade
 ENDA
 
 
-Turn7_EP:
+Turn6_EP:
 CHECK_TUTORIAL 						// sC = True if on Normal mode, False otherwise
-BNE 2 s0 sC							// skip to label 2 if on Normal mode
-SetAI_Pos(5,4,0,0,0xC,0)
-SetAI_Pos(5,5,0,0,0xC,0)
+BNE 2 s0 sC			
 SetAI_Pos(4,5,0,0,0xC,0)
-LABEL 2
+SetAI_Pos(5,4,0,0,0xC,0)				
+SetAI_Pos(5,5,0,0,0xC,0)
+LABEL 2								// skip to label 2 if on Normal mode
 NoFade
 ENDA
 
