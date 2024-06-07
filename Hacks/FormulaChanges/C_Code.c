@@ -25,17 +25,19 @@ void ComputeBattleUnitHitRate(struct BattleUnit* bu) {
 }
 
 void ComputeBattleUnitCritRate(struct BattleUnit* bu) {
-    bu->battleCritRate = GetItemCrit(bu->weapon) + ((bu->unit.skl - 10) / 2);
+	short skillBonus = ((bu->unit.skl - 10) / 2);
 	
-	if (bu->battleCritRate < 0)
-        bu->battleCritRate = 0;
+	if (skillBonus < 0)
+        skillBonus = 0;
+	
+    bu->battleCritRate = GetItemCrit(bu->weapon) + skillBonus;
 
     if (UNIT_CATTRIBUTES(&bu->unit) & CA_CRITBONUS)
         bu->battleCritRate += 15;
 }
 
-void ComputeBattleUnitDodgeRate(struct BattleUnit* bu) {
-    bu->battleDodgeRate = (bu->unit.lck / 2);
+void ComputeBattleUnitDodgeRateNew(struct BattleUnit* bu) { //New because function is not long enough for lyn hook
+   bu->battleDodgeRate = (bu->unit.lck / 2);
 }
 
 #endif 
