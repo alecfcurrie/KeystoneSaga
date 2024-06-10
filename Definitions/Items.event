@@ -13,3 +13,5 @@
 // Define Stat Boosters
 #define SpiritDust 0x5c
 #define EnergyDrop 0x64
+// Define PRF Info
+#define LightMagicWeaponLock 0x01000000

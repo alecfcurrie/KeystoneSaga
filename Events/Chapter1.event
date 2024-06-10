@@ -138,7 +138,7 @@ HardModeExclusiveEnemies:
 // Upper Right Group
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R9 [IronAxe] AttackInRangeAI
 // Upper Left Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R8 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R10 [IronAxe] AttackInRangeAI
 UNIT
 
 
@@ -220,8 +220,8 @@ ENDA
 
 Turn5_EP:
 // Activate Upper Left Group
-SetAI_Pos(1,8,0,0,0xC,0)
-SetAI_Pos(1,9,0,0,0xC,0)
+SetAI_Pos(1,10,0,0,0xC,0)
+SetAI_Pos(1, 9,0,0,0xC,0)
 // Activate Upper Right
 SetAI_Pos(16,7,0,0,0xC,0)
 SetAI_Pos(16,8,0,0,0xC,0)
@@ -231,13 +231,10 @@ ENDA
 
 
 Turn6_EP:
-CHECK_TUTORIAL 						// sC = True if on Normal mode, False otherwise
-BNE 2 s0 sC	
 // Activate ONeill		
 //SetAI_Pos(4,5,0,0,0xC,0)
 SetAI_Pos(5,4,0,0,0xC,0)				
 //SetAI_Pos(5,5,0,0,0xC,0)
-LABEL 2								// skip to label 2 if on Normal mode
 NoFade
 ENDA
 

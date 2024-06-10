@@ -21,3 +21,6 @@ Cannot critical or follow-up.[X]
 
 ## CrossbowDesc
 *{Ignores str. Cannot critical or double.}[X]
+
+## LightMagDesc
+*{Priest/Bishop only. Eff. vs monsters.}[X]

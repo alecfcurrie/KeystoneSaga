@@ -152,7 +152,7 @@
 
 //If uncommented, AdvWeaponLocks will be implemented.
 //This is a rewrite of venno's array-based weapon locks.
-// #define ADV_WEAPON_LOCKS
+#define ADV_WEAPON_LOCKS
 //If uncommented, AdvWeaponLocks will use only the lowest bit of the weapon ability word's 4th byte rather than the entire thing.
 //Requires additional configuration in WeaponLockArray/AdvWeaponLocks.event.
 // #define CONSOLIDATED_ADV_WEAPON_LOCKS
