@@ -1,11 +1,11 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
 Audrey,CharismaID
-Cordell,SaviorID
+Cordell,0x0
 Kennard,FocusedStanceID
-Wesley,SaviorID
-Osborne,FocusedStanceID
-Vanessa,SpurSpdID
+Wesley,0x0
+Osborne,0x0
+Vanessa,0x0
 Ross,ParagonID
 Neimi,RallyLukID
 Colm,RallySpdID
