@@ -6,4 +6,5 @@
 // #include "Forging\Installer.event"
 #include "FixedDamageWeapons/FixedDamageWeapons.event"
 #include "FormulaChanges/FormulaChanges.lyn.event"
+#include "FormulaChanges/EXPChanges.lyn.event"
 #include "MurderSticks/Installer.event"
