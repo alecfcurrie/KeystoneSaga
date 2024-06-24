@@ -89,13 +89,13 @@ UNIT Franz AxeCavM Eirika Level(3, Ally, False)  [9,18] 0x0 0x0 0x1 REDA9R17 [Br
 UNIT
 
 FriendlyReinforcements1:
-UNIT OsborneID Priest Eirika Level(4, Ally, False)  [9,18] 0x0 0x0 0x1 REDA8R17 [Lightning,Heal,Vulnerary] NoAI
+UNIT OsborneID Priest Eirika Level(4, Ally, False)  [8,18] 0x0 0x0 0x1 REDA8R17 [Lightning,Heal,Vulnerary] NoAI
 UNIT Vanessa SoldierF Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [IronLance,Javelin,Vulnerary] NoAI
 UNIT
 
 
 FriendlyReinforcements2:
-UNIT Seth Archer Eirika Level(5, Ally, False) [8,18] 0x0 0x0 0x1 REDA9R17 [SteelBow, BronzeBow,Vulnerary] NoAI
+UNIT Seth Archer Eirika Level(5, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [SteelBow, BronzeBow,Vulnerary] NoAI
 UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeAxe, Vulnerary] NoAI
 UNIT
 
