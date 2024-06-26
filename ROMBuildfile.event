@@ -3,7 +3,8 @@
     #include "CustomDefinitions.event"
 //PROTECT $25224
     ORG FreeSpace
-
+	
+	#define DEBUG_MODE
 
     #include "repointedTextTable.event"
 	

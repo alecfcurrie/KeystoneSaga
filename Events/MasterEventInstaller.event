@@ -1,3 +1,10 @@
 #include "REDAs.event"
-#include "Chapter1.event"
 #include "WorldMapEvents.event"
+
+#ifdef DEBUG_MODE
+#include "DebugMap.event"
+
+#else
+#include "Chapter1.event"
+
+#endif 
