@@ -1,7 +1,7 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
 Audrey,CharismaID
-Cordell,0x0
+Cordell,CourageousID
 Kennard,FocusedStanceID
 Wesley,0x0
 Osborne,0x0
@@ -9,7 +9,7 @@ Vanessa,0x0
 Ross,ParagonID
 Neimi,RallyLukID
 Colm,RallySpdID
-Surge,FocusedStanceID
+Surge,BornBrawlerID
 Innes,BowRangeUpID
 Lute,ParagonID
 Natasha,SealLukID

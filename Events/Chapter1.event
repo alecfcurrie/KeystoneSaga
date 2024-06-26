@@ -183,7 +183,7 @@ LABEL 1
 ENUF FIXED_GROWTHS_FLAG_ID
 ENUT EnablePerfectHitFlag
 CAMERA [8,18]
-LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
 NoFade
 ENDA

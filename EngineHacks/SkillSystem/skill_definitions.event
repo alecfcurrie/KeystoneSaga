@@ -265,11 +265,11 @@
 
 //Nullify: Unit is protected from all effective attacks.
 //By Tequila
-#define NullifyID 46
+#define NullifyID 11
 
 //Slayer: Deal effective damage to monster units.
 //By Tequila
-#define SlayerID 7
+#define SlayerID 255
 
 //Skybreaker: Deal effective damage to flying units.
 //By Sme
@@ -288,7 +288,7 @@
 
 //Void Curse: This unit gives no experience when defeated.
 //By Sme
-#define VoidCurseID 50
+#define VoidCurseID 6
 
 //Growth Skills
 
@@ -382,7 +382,7 @@
 
 //Canto+: Can move again after attacking and other actions.
 //By Tequila
-#define CantoPlusID 2
+#define CantoPlusID 255
 
 //Despoil: Obtain a Red Gem after attacking and defeating an enemy. (Luck % activation)
 //Author Unknown (Initial Commit)
@@ -548,7 +548,7 @@
 
 //Crit Boost: +15 critical rate.
 //Author Unknown (Initial Commit)
-#define CritUpID 3
+#define CritUpID 255
 #define CritBoostID CritUpID //Alias
 
 //Strong Riposte: When under attack, damage +3.
@@ -616,7 +616,7 @@
 
 //Hawkeye: User will always hit the enemy.
 //By SD9k
-#define HawkeyeID 221
+#define HawkeyeID 10
 
 //Heavy Strikes: Add weapon weight to critical chance.
 //By Datagne
@@ -743,7 +743,7 @@
 
 //Wrath: If HP < 50%, +20 critical rate.
 //Author Unknown (Initial Commit)
-#define WrathID 150
+#define WrathID 255
 
 //Quick Draw: +4 Damage when initiating battle.
 //Author Unknown (Initial Commit)
@@ -809,7 +809,7 @@
 
 //Dragonskin: Halve damage taken
 //By Jopettajah
-#define DragonSkinID 255
+#define DragonSkinID 9
 #define DragonskinID DragonSkinID //Alias
 
 //Stunning Smile: If foe is male, inflicts Avo-20 on that foe during combat.
@@ -854,7 +854,7 @@
 
 //Aether: First strike absorbs HP, second strike negates defenses. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
-#define AetherID 13
+#define AetherID 255
 
 //Astra: 5 attacks at half damage. (Skill % activation)
 //Author Unknown (Initial Commit)
@@ -942,11 +942,11 @@
 
 //Lethality: Instantly kill opponent. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
-#define LethalityID 9
+#define LethalityID 255
 
 //Luna: Negates enemy defenses. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define LunaID 11
+#define LunaID 255
 
 //Miracle: Survive a lethal attack if HP > 50%.
 //Author Unknown (Initial Commit)
@@ -966,7 +966,7 @@
 
 //Sol: Restore damage dealt as HP. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define SolID 12
+#define SolID 255
 
 //Solar Brace: When attacking, restore 25% of damage dealt as HP.
 //By Snerdels
@@ -978,7 +978,7 @@
 
 //Sure Shot: A precision attack that always hits and does 1.5x damage. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define SureShotID 10
+#define SureShotID 255
 
 //Corrosion: Decrease durability of enemy's weapon by User's level (Skill/2 % activation)
 //By Sme
@@ -990,7 +990,7 @@
 
 //Great Shield: Negate all damage. (Defense % activation)
 //By Sme
-#define GreatShieldID 8
+#define GreatShieldID 255
 
 //Vengeance: Add half of damage taken to damage dealt. (Skill % activation)
 //By Sme
@@ -1004,7 +1004,7 @@
 
 //Point Blank: Minimum range of equipped bows is set to 1.
 //By Teraspark
-#define PointBlankID 137
+#define PointBlankID 12
 
 //Staff Savant: Maximum range of staves is increased by 1.
 //By Teraspark
@@ -1061,7 +1061,7 @@
 
 //Wary Fighter: Unit cannot double or be doubled.
 //By Tequila
-#define WaryFighterID 111
+#define WaryFighterID 5
 
 // Last Word: When doubled, this unit also doubles.
 // By Vesly 
@@ -1148,7 +1148,7 @@
 
 //Speed Boost: Boost movement by +1 per turn up to 6 turns.
 //By Jester
-#define SpeedBoostID 155
+#define SpeedBoostID 255
 
 //Minus: +4 to all stats for adjacent units with the 'Plus' skill.
 //By Jester
@@ -1207,7 +1207,7 @@
 
 //Shove: Allows unit to push other units one tile away.
 //By StanH
-#define ShoveID 64
+#define ShoveID 2
 
 //Smite: Allows unit to push other units two tiles away.
 //By StanH
@@ -1282,11 +1282,11 @@
 
 //Catch 'Em All: Grants the user every skill.
 //By Leonarth
-#define CatchEmAllID 151
+#define CatchEmAllID 255
 
 //Vantage+: User always attacks first, even if attacked. Negates crits.
 //By SD9k
-#define VantagePlusID 113
+#define VantagePlusID 8
 
 //Nihil: Cancels the opponent's skills in combat.
 //Author Unknown (Initial Commit)
@@ -1298,7 +1298,7 @@
 
 //Locktouch: Can open locks without keys or picks.
 //By Kao
-#define LockTouchID 5
+#define LockTouchID 4
 #define LocktouchID LockTouchID //Alias
 
 //Expertise: Reduce bonus damage from critical hits by 50%.
@@ -1341,7 +1341,7 @@
 
 //Inspiring Tune: Refreshing a unit grants them +2 Pow/Def until the next turn.
 //By Leonarth
-#define VigorDanceID 100
+#define VigorDanceID 3
 #define InspiringTuneID VigorDanceID //Alias
 
 //Liquid Ooze: Attackers trying to gain HP from attacking this unit lose it instead.
@@ -1385,7 +1385,7 @@
 #define AmischeID 131
 
 //Triangle Attack: Allows this unit to perform a triangle attack with 2 other units who have this skill.
-#define TriangleAttackID 6
+#define TriangleAttackID 255
 
 // Shrewd Potential: Stat boosters provide +1 more than usual. 
 // By Vesly 
@@ -1417,3 +1417,15 @@
 //Broken Skills
 #define Roll12ID 255
 #define TraceID 255
+
+// My Skills (Enemy Only)
+
+#define GhostwalkerID 13
+
+// My Skills (Personal Skills)
+
+// Courageous: Grants +3/-3 damage dealt/taken when not adjaent to any allies
+#define CourageousID 150
+
+// Born Brawler: Grants +3 ATK per adjacent enemy
+#define BornBrawlerID 151
