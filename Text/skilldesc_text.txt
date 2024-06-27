@@ -1814,4 +1814,11 @@ StoneBody: If your CON is greater[N]
 than the enemy's, reduce incoming[N]
 physical damage by the difference.[X]
 
+## SD_Courageous
+Courageous: Grants +3/-3 damage[N]
+dealt/taken when not adjacent to allies.[X]
+
+## SD_BornBrawler
+Born Brawler: Grants +3 damage [NL]
+per adjacent enemy. [X]
 
