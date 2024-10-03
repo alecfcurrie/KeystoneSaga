@@ -43,6 +43,7 @@ POIN UpWithArch
 POIN AxefaithHit
 POIN StancesASM
 POIN AirRaidSkillCheck
+POIN Ghostwalker
 #ifdef ENABLE_GBA_LETHALITY
 POIN LethalitySkill 
 #else

@@ -1008,7 +1008,7 @@
 
 //Staff Savant: Maximum range of staves is increased by 1.
 //By Teraspark
-#define StaffSavantID 134
+#define StaffSavantID 7
 
 //Tome Range +1: Maximum range of equipped tome is increased.
 //By Kirb

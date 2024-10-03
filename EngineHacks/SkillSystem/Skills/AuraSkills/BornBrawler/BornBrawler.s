@@ -58,4 +58,4 @@ bx r0
 SkillTester:
 @ POIN SkillTester
 @ POIN GetUnitsInRange
-@ WORD TantivyID
+@ WORD BornBrawlerID

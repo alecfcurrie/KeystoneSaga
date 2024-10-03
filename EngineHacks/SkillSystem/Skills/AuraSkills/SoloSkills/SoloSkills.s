@@ -47,7 +47,8 @@ pop {r0}
 bx r0
 .align
 .ltorg
+
 SkillTester:
 @ POIN SkillTester
 @ POIN GetUnitsInRange
-@ WORD TantivyID
+@ WORD CourageousID

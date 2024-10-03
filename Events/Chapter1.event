@@ -32,7 +32,7 @@ POIN LocationBasedEvents
 POIN MiscBasedEvents
 POIN Dunno1 Dunno2 Dunno3 Tutorial
 POIN Traps1 Traps2
-POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN AudreyWesley AudreyWesley  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
 POIN BeginningScene EndingScene
@@ -83,9 +83,9 @@ ALIGN 4
 //==================================================================//
 
 
-Units1:
-UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeSword,Vulnerary] NoAI
-UNIT Franz AxeCavM Eirika Level(3, Ally, False)  [9,18] 0x0 0x0 0x1 REDA9R17 [BronzeAxe] NoAI
+AudreyWesley:
+UNIT AudreyID EirikaLord Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeSword,Vulnerary] NoAI
+UNIT WesleyID AxeCavM Eirika Level(3, Ally, False)  [9,18] 0x0 0x0 0x1 REDA9R17 [BronzeAxe] NoAI
 UNIT
 
 FriendlyReinforcements1:
@@ -95,50 +95,56 @@ UNIT
 
 
 FriendlyReinforcements2:
-UNIT Seth Archer Eirika Level(5, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [SteelBow, BronzeBow,Vulnerary] NoAI
-UNIT Garcia Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeAxe, Vulnerary] NoAI
+UNIT CordellID Archer Eirika Level(5, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [SteelBow, BronzeBow,Vulnerary] NoAI
+UNIT SurgeID Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeAxe, Vulnerary] NoAI
 UNIT
 
 
 BossGroup:
-UNIT Breguet SwordfighterM ONeill Level(5, Enemy, False) [0,10] 0x0 0x0 0x1 REDA7R3 [IronSword] NoAI
-UNIT ONeill Fighter ONeill Level(3, Enemy, False) [1,11] DropItem 0x0 0x1 REDA7R4 [IronAxe, Vulnerary] GroupOneAI
+UNIT Breguet SwordfighterM ONeill Level(5, Enemy, False) [0,10] 0x0 0x0 0x1 REDA7R4 [IronSword] NoAI
+UNIT ONeill Fighter ONeill Level(3, Enemy, False) [1,11] DropItem 0x0 0x1 REDA8R4 [IronAxe, Vulnerary] GroupOneAI
+UNIT
+
+Turn2Cutscene:
+UNIT Breguet SwordfighterM ONeill Level(5, Enemy, False) [7,3] 0x0 0x0 0x1 REDA7R4 [IronSword] NoAI
+UNIT JyriID Mage ONeill Level(1, NPC, False) [7,3] DropItem 0x0 0x1 REDA8R4 [0x0] GroupOneAI
+UNIT LievID Dancer ONeill Level(1, NPC, False) [7,3] DropItem 0x0 0x1 REDA8R5 [0x0] GroupOneAI
 UNIT
 
 EnemyUnits:
 // Lower Central Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,0] 0x0 0x0 0x1 REDA8R9 [BronzeAxe] [0]
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,0] 0x0 0x0 0x1 REDA9R9 [BronzeAxe] [0]
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [10,0] 0x0 0x0 0x1 REDA8R9 [BronzeAxe] [0x0,0x00,NoRecovery,0x0]
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [11,0] 0x0 0x0 0x1 REDA9R9 [BronzeAxe] [0x0,0x00,NoRecovery,0x0]
 // Wall Breakers
-UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [17,11] 0x0 0x0 0x1 REDA15R13 [BronzeSword] [0x0,0xE,0xC,0x0]
-UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [16,14] 0x0 0x0 0x0 0x0 [BronzeSword] [0x0,0xE,0xC,0x0]
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA3R12 [BronzeAxe] [0x0,0xE,0xC,0x0]
-UNIT 0x80 OutlawF ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA3R11 [BronzeBow] [0x0,0xE,0xC,0x0]
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [17,11] 0x0 0x0 0x1 REDA15R13 [BronzeSword] [0x0,0xE,0xC,0x0]
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [16,14] 0x0 0x0 0x0 0x0 [BronzeSword] [0x0,0xE,0xC,0x0]
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x1 REDA3R12 [BronzeAxe] [0x0,0xE,0xC,0x0]
+UNIT 0x80 OutlawF ONeill Level(1, Enemy, True) [0,11] 0x0 0x0 0x1 REDA3R11 [BronzeBow] [0x0,0xE,0xC,0x0]
 // Middle Central Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,0] 0x0 0x0 0x1 REDA9R4 [BronzeAxe] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [11,0] 0x0 0x0 0x1 REDA10R5 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [10,0] 0x0 0x0 0x1 REDA9R4 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [11,0] 0x0 0x0 0x1 REDA10R5 [BronzeAxe] AttackInRangeAI
 // Upper Central Group
-UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [10,0] 0x0 0x0 0x1 REDA11R3 [BronzeSword] AttackInRangeAI
-UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [11,0] 0x0 0x0 0x1 REDA10R2 [BronzeSword] AttackInRangeAI
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [10,0] 0x0 0x0 0x1 REDA11R3 [BronzeSword] AttackInRangeAI
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [11,0] 0x0 0x0 0x1 REDA10R2 [BronzeSword] AttackInRangeAI
 // Bottom Right Group
-UNIT 0x80 SwordfighterM ONeill Level(2, Enemy, True) [18,11] 0x0 0x0 0x1 REDA16R12 [BronzeSword] AttackInRangeAI
-UNIT 0x80 Outlaw ONeill Level(2, Enemy, True) [18,10] 0x0 0x0 0x1 REDA17R12 [BronzeBow] AttackInRangeAI
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [18,11] 0x0 0x0 0x1 REDA16R12 [BronzeSword] AttackInRangeAI
+UNIT 0x80 Outlaw ONeill Level(1, Enemy, True) [18,10] 0x0 0x0 0x1 REDA17R12 [BronzeBow] AttackInRangeAI
 // Upper Right Group
-UNIT 0x80 Outlaw ONeill Level(2, Enemy, True) [18,11] 0x0 0x0 0x1 REDA16R7 [BronzeBow] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R8 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Outlaw ONeill Level(1, Enemy, True) [18,11] 0x0 0x0 0x1 REDA16R7 [BronzeBow] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R8 [BronzeAxe] AttackInRangeAI
 // Bottom Left Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R11 [BronzeAxe] AttackInRangeAI
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA2R10 [BronzeAxe] AttackInRangeAI 
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R11 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [0,11] 0x0 0x0 0x1 REDA2R10 [BronzeAxe] AttackInRangeAI 
 // Upper Left Group
-UNIT 0x80 Outlaw ONeill Level(2, Enemy, True) [0,11] 0x0 0x0 0x1 REDA1R9 [BronzeBow] AttackInRangeAI
+UNIT 0x80 Outlaw ONeill Level(1, Enemy, True) [0,11] 0x0 0x0 0x1 REDA1R9 [BronzeBow] AttackInRangeAI
 UNIT
 
 
 HardModeExclusiveEnemies:
 // Upper Right Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R9 [IronAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R9 [IronAxe] AttackInRangeAI
 // Upper Left Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R10 [IronAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R10 [IronAxe] AttackInRangeAI
 UNIT
 
 
@@ -150,6 +156,7 @@ UNIT
 BeginningScene:
 ENUT FIXED_GROWTHS_FLAG_ID
 CAMERA [7,5]
+MUSC Raid
 FADU 0x4
 LOAD1 0x1 BossGroup
 ENUN
@@ -158,11 +165,17 @@ CURSOR Breguet
 STAL 60
 REMOVE_CURSORS
 SetBackground(Outside_Village_Day)
-Text(Chapter1InitialConvo)
+Text(Chapter1InitialConvo1)
 EndConvo
 
+MOVE 0x0 Breguet [7,3]
+ENUN
 TILECHANGE VillageClose
 RemoveUnit Breguet
+MOVE 0x0 ONeill [7,4]
+ENUN
+STAL 30
+Text(Chapter1InitialConvo2)
 MOVE 0x0 ONeill [5,4]
 ENUN
 
@@ -183,14 +196,58 @@ LABEL 1
 ENUF FIXED_GROWTHS_FLAG_ID
 ENUT EnablePerfectHitFlag
 CAMERA [8,18]
-LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+MUSC Tension
+LOAD1 0x1 AudreyWesley
 ENUN
+CURSOR AudreyID
+STAL 60
+REMOVE_CURSORS
+SetBackground(Woodland)
+Text(Chapter1InitialConvo3)
+EndConvo
 NoFade
 ENDA
 
 
 
 Turn2_EP:
+
+// Cutscene
+CAMERA_CENTERED [7,5]
+MUSC Raid
+STAL 30
+TILEREVERT VillageClose
+LOAD1 0x1 Turn2Cutscene
+ENUN
+TILECHANGE VillageClose
+MOVE 0x0 ONeill [6,4]
+
+CURSOR Breguet
+STAL 60
+REMOVE_CURSORS
+Text(Chapter1Turn2EP1)
+
+MOVEONTO 0x0 JyriID Breguet
+ENUN
+RemoveUnit JyriID
+MOVEONTO 0x0 LievID Breguet
+ENUN
+RemoveUnit LievID
+STAL 10
+
+MOVE 0x0 Breguet [11,1]
+MOVE 0x0 ONeill [6,4]
+ENUN
+
+CAMERA_CENTERED [11,5]
+STAL 60
+Text(Chapter1Turn2EP2)
+
+STAL 25
+MOVE 0x0 Breguet [11,0]
+ENUN
+RemoveUnit Breguet
+
 // Activate Middle Central Group
 SetAI_Pos(9,4,0,0,0xC,0)
 SetAI_Pos(10,5,0,0,0xC,0)
@@ -240,17 +297,26 @@ ENDA
 
 
 Turn2_PP:
+CAMERA AudreyID
+CURSOR AudreyID
+STAL 60
+REMOVE_CURSORS
+Text(Chapter1Turn2PP1)
 CAMERA [8,18]
+MUSC Comrades
 LOAD1 0x0 FriendlyReinforcements1
 ENUN
+Text(Chapter1Turn2PP2)
 NoFade
 ENDA
 
 
 Turn3_PP:
 CAMERA [8,18]
+MUSC Comrades
 LOAD1 0x0 FriendlyReinforcements2
 ENUN
+Text(Chapter1Turn3PP)
 NoFade
 ENDA
 

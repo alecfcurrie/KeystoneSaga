@@ -8,3 +8,4 @@
 #include "FormulaChanges/FormulaChanges.lyn.event"
 #include "FormulaChanges/EXPChanges.lyn.event"
 #include "MurderSticks/Installer.event"
+#include "TextEngineRework/_FE8-Text_Engine_Rework_EA.event"

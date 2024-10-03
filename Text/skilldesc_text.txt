@@ -1822,3 +1822,6 @@ dealt/taken when not adjacent to allies.[X]
 Born Brawler: Grants +3 damage [NL]
 per adjacent enemy. [X]
 
+## SD_Ghostwalker
+Ghostwalker: Grants[N]
+absolute evasion.[X]

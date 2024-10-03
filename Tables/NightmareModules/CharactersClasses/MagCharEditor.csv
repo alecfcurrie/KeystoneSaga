@@ -4,7 +4,7 @@ Eirika,0,25
 Seth,2,10
 Gilliam,0,5
 Franz,1,10
-Moulder,3,40
+Moulder,5,40
 Vanessa,2,25
 Ross,0,5
 Neimi,2,15
@@ -26,7 +26,7 @@ Saleh,11,30
 Ewan,2,45
 L'Arachel,5,50
 Dozla,0,5
-+AC0-0,0,50
+#NAME?,0,50
 Rennac,3,35
 Duessel,0,5
 Myrrh,2,85
@@ -45,22 +45,22 @@ Fado,4,5
 Ismaire,7,15
 Hayden,2,10
 FakeEirika,0,0
-+AC0-0,0,0
+#NAME?,0,0
 0,0,0
 0,0,0
 0,0,0
 0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
 Lyon's Summon,0,0
-+AC0-0,0,0
-+AC0-0,0,0
+#NAME?,0,0
+#NAME?,0,0
 Knoll's Summon,0,0
 Ewan's Summon,0,0
 Lyon (Ch 17),13,50
@@ -98,9 +98,9 @@ Entombed (Monster Boss),3,5
 0,0,0
 0,0,0
 0,0,0
-+AC0-0,0,0
+#NAME?,0,0
 Hunter (Ch 16),3,10
-+AC0-0,0,0
+#NAME?,0,0
 Brigand,0,0
 0,0,0
 O'Neill (Prologue),0,5

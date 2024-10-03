@@ -1,3 +1,331 @@
-## Chapter1InitialConvo
-[OpenLeft][LoadFace][0x30][0x1]
-Very important story uwu[A][X]
+## Chapter1InitialConvo1
+[MidLeft][LoadFester]
+[MidRight][LoadGlove]
+[BoxHeight][0x1]
+So[Beat] this the village[,] boss?[A]
+
+[MidLeft]
+Aye[,] it fits the bill.[A]
+
+[MidRight]
+[BoxHeight][0x2]
+So[Beat] we just head in and[N]
+and round up the slav-[A]
+
+
+[MidLeft]
+That won't be necessary[.][N]
+I'll handle this one myself.[AN]
+You fools can keep watch and make[N]
+sure no one interrupts my fun![A]
+
+[MidRight]
+[BoxHeight][0x3]
+O-oh[,] right boss.[A] Just don't[N]
+cause too much ruckus in there - we[N]
+don't need that lordling who's been[N]
+snooping around catching wind of us.[A]
+
+[MidLeft]
+[BoxHeight][0x2]
+Tell me[,] Glove[,] who's the[N]
+brains of this outfit?[A]
+
+[MidRight]
+[BoxHeight][0x1]
+[Beat]You are.[A]
+
+[MidLeft]
+[BoxHeight][0x3]
+Correct[.][N]
+I am[.][N]
+Not you.[A][N]
+
+[MidRight]
+[BoxHeight][0x1]
+[Beat][A]
+
+[MidLeft]
+[BoxHeight][0x2]
+Now[,] as I said - stand guard[,][N]
+and let me enjoy myself.[A]
+
+[MidRight]
+Right[,] boss[.][N]
+We'll hold the line.[A][X]
+
+## Chapter1InitialConvo2
+[MidLeft][LoadGlove]
+Pompous bastard[,] always hogging the glory.[AN]
+You heard him boys[!] Stand watch[,][N]
+and keep your eyes sharp for that lordling![AN]
+If anything gets in your way, cut it[N]
+down before it has the chance to shout![A][X]
+
+## Chapter1InitialConvo3
+[MidRight][LoadWesley]
+[MidLeft][LoadAudrey]
+[BoxHeight][0x3]
+So[,] Wesley[,] it appears this [N]
+area is the target of the slavers'[N]
+next attack after all.[A]
+
+[MidRight]
+Indeed[.] It seems they've entrenched[N]
+themselves deep within the valley[.][N]
+What are your orders[,] Princess Audrey?[A]
+
+[MidLeft]
+Our reinforcements are still a few moments[N]
+away[,] but if we wait any longer[,] their[N]
+main force could slip away.[AN]
+It's best we engage the slavers now[N]
+before they slip through our fingers.[A]
+
+[MidRight]
+With all due respect[,] your Highness[,][N]
+are you certain[?] You've trained[N]
+for this[,] but true combat-[A]
+
+[MidLeft]
+-is nothing like sparring with dummies[.][N]
+I know Wesley[,] and by the goddess[,][N]
+Cordell never lets me forget it[.][AN]
+But he believes I'm ready[,] and today[N]
+seems as good a day as any to prove it.[AN]
+Besides[,] I doubt my conscience will be[N]
+too troubled[,] given the filth we're[N]
+dealing with.[A]
+
+[MidRight]
+I see your mind is set. I've[N]
+known you long enough to know[N]
+there's no swaying you now.[AN]
+Very well[,] let us give these[N]
+slavers the justice they deserve![AN]
+But remember[,] our reinforcements[N]
+are not far behind. Don't stray[N]
+too far ahead![A]
+
+[ClearFace]
+
+[MidLeft]
+[BoxHeight][0x1]
+[ToggleSmile]
+Says the man on horseback.[A][X]
+
+## Chapter1Turn2PP1
+
+[MidRight][LoadWesley]
+[MidLeft][LoadAudrey]
+[BoxHeight][0x1]
+What was that sound?[A]
+
+[MidRight]
+[BoxHeight][0x3]
+It sounded like a tree falling.[AN]
+Perhaps the enemy is cutting[N]
+down thickets to cross[N]
+cross the river and outflank us.[A]
+
+[Left]
+I thought this was a small slaver[N]
+band[!] How do they have the men to[N]
+coordinate such a manoeuvre?[A]
+
+[FarFarLeft]
+Lady Audrey, I expected you to[N]
+remember the first rule of tactics[:][N]
+Never underestimate your foe.[A][X]
+
+## Chapter1Turn2PP2
+[FarLeft][LoadElaine]
+[Left][LoadOsborne]
+[MidRight][LoadAudrey]
+[BoxHeight][0x2]
+Osborne[!] Elaine[!] I'm[N]
+relieved you've caught up![A]
+
+[Left]
+[BoxHeight][0x3]
+As am I[,] milady[,] though I must[N]
+say[,] the plan we agreed upon[N]
+has[Beat]unraveled somewhat.[AN]
+Did I not counsel patience[,][N]
+to wait until our forces were[N]
+fully assembled before striking?[A]
+
+
+[MidRight]
+Yes[,] but once we arrived[,] the[N]
+slavers had already established[N]
+themselves in the valley.[AN]
+I thought it best to act swiftly[,][N]
+rather than risk letting them[N]
+slip through our grasp.[A]
+
+[Left]
+Hmm[,] understandable[Beat]but[N]
+a dangerous play[.][AN]
+I doubt King Leland would be pleased[N]
+to hear his daughter gambled her safety[N]
+on her very first day of battle.[A]
+
+[FarLeft]
+She knew reinforcements were coming[,] so[N]
+let's not dwell on it[!] What matters now[N]
+is that we've got her back![A]
+
+[MidRight]
+[BoxHeight][0x2]
+Well said[,] Elaine! Now let's rid[N]
+this valley of the slaver scourge![A]
+
+[FarLeft]
+[BoxHeight][0x1]
+Right behind you[,] milady![A]
+[ClearFace]
+
+[MidRight]
+[ClearFace]
+
+[Left]
+[BoxHeight][0x2]
+[CloseEyes]Oh[,] what reckless[N]
+courage youth have.[A][X]
+
+## Chapter1Turn2EP1
+[MidLeft][LoadGlove]
+[Right][LoadFester]
+[BoxHeight][0x3]
+That went well[!] The villagers[N]
+didn't so much as blink while I[N]
+went about my business![A]
+
+[MidLeft]
+[BoxHeight][0x2]
+Looks like you've caught [N]
+some fresh meat![A]
+
+[Right]
+Quite so[.] Well then[,] care to[N]
+introduce yourselves[,] boys?[A]
+
+[FarRight][LoadJyri]
+[BoxHeight][0x1]
+[Beat][A]
+[ClearFace]
+
+[FarRight][LoadLiev]
+[Beat][A]
+[ClearFace]
+
+[Right]
+[BoxHeight][0x2]
+Ah[,] no matter[.] I don't need[N]
+them to speak to sell them![A]
+
+[MidLeft]
+Heh[,] true enough.[AN]
+Now that you're here[,] though[,][N]
+I heard trees coming down.[AN]
+Some of our boys might be[N]
+tangling with that lordling.[A]
+
+[Right]
+And this concerns me[N]
+how[,] exactly?[A]
+
+[MidLeft]
+[BoxHeight][0x1]
+Aren't you going to help?[A]
+
+[Right]
+[BoxHeight][0x3]
+Oh[,] Glove[,] your memory fails you![N]
+My task was to gather slaves from[N]
+the village - at any cost.[AN]
+Your task is to keep me safe at all[N]
+costs[.] So[,] naturally[,] I must return[N]
+to base with my prize.[AN]
+You[,] however[,] should be dealing[N]
+with that lordling and her knights[.][N]
+Try to keep them off my back.[A]
+
+[MidLeft]
+[BoxHeight][0x1]
+O-oh.[A]
+
+[Right]
+[BoxHeight][0x2]
+What's the problem[?] You've got[N]
+near twenty men at your command.[AN]
+One simple lordling and a handful[N]
+of knights shouldn't trouble you.[AN]
+Honestly[,] Glove[,] have a little[N]
+more confidence.[A]
+
+[MidLeft]
+R-right[.] Well[,]  I'll see you[N]
+back at the base[,] then.[A]
+
+[Right]
+That's more like it[.][N]
+Farewell[,] Glove![A]
+[ClearFace]
+
+[MidLeft]
+[BoxHeight][0x1]
+[Beat][A][X]
+
+## Chapter1Turn2EP2
+
+[Left][LoadJyri]
+[FarLeft][LoadLiev]
+[MidRight][LoadFester]
+He's even more of a fool than I thought.[AN]
+I can't believe he actually fell for[N]
+the idea that I was ordered to leave[N]
+him behind. Wouldn't you two agree?[A]
+
+[Left]
+[BoxHeight][0x1]
+[Beat][A]
+
+[FarLeft]
+[Beat][A]
+
+[MidRight]
+[BoxHeight][0x3]
+Well, no matter. I've no intention of[N]
+sticking around to face Cordell's [N]
+knights.[AN]
+Let's hope Glove can at[N]
+least keep them off my trail.[AN]
+Come now[,] boys! You're worth[N]
+more whole than in pieces.[N]
+Don't make me lose my temper![A][X]
+
+## Chapter1Turn3PP
+[FarLeft][LoadSurge]
+[MidRight][LoadAudrey]
+[Left][LoadCordell]
+[BoxHeight][0x2]
+We've arrived milady[.] It seems you've[N]
+already gotten a head start.[A]
+
+[MidRight]
+[BoxHeight][0x3]
+Cordell[!] Surge[!] It's good to see the[N]
+both of you[.] We were concerned the slavers[N]
+weren't going to stick around[,] so we-[A]
+
+[FarLeft]
+Princess[,] don't bother explaining it.[N]
+Just point me towards which bandits'[N]
+skulls I need to crack.[A]
+
+[Left]
+Indeed[,] let us focus on the battle[.][N]
+We must move quickly to stamp out this[N]
+blight before they get away![A][X]

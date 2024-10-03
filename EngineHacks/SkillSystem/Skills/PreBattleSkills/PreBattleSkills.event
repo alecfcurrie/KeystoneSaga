@@ -476,6 +476,12 @@ StoneBody:
 POIN SkillTester
 WORD StoneBodyID
 
+ALIGN 4
+Ghostwalker:
+#incbin "Ghostwalker/Ghostwalker.dmp"
+POIN SkillTester
+WORD GhostwalkerID
+
 #include "KeenFighter/Installer.event" 
 #include "FlankSwarmScale/Installer.event" 
 

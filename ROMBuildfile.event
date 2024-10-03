@@ -4,12 +4,12 @@
 //PROTECT $25224
     ORG FreeSpace
 	
-	#define DEBUG_MODE
+	//#define DEBUG_MODE
 
     #include "repointedTextTable.event"
 	
 	#include "Definitions/MasterDefinitionInstaller.event"
-
+	
     //Text first for Text ID definitions
     #include "Text/InstallTextData.event"
     MESSAGE Used text space ends at currentOffset
@@ -24,7 +24,7 @@
 	//Engine Hacks
     #include "EngineHacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
-
+	
 	#include "Hacks/MasterHackInstaller.event"
 	
 	//Maps

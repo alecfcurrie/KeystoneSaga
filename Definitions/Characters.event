@@ -33,3 +33,11 @@
 #define SurgePortrait 0xe
 //#define SurgeDescription 0x277
 //#define SurgeName 0x21b
+
+// Liev - Bard
+#define LievID 0x15
+#define LievPortrait 0x1c
+
+// Jyri - Mage
+#define JyriID 0x16
+#define JyriPortrait 0x1e 

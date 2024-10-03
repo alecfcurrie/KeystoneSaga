@@ -15,3 +15,12 @@ Kennard[X]
 
 ## OsborneName
 Osborne[X]
+
+## ElaineName
+Elaine[X]
+
+## GloveName
+Glove[X]
+
+## SlaverName
+Slaver[X]
