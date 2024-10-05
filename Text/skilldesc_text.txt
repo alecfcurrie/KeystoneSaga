@@ -274,6 +274,10 @@ from all effective attacks.[X]
 Paragon: Experience gain[N]
 is doubled.[X]
 
+## SD_Veteran
+Veteran: Experience gain[N]
+is x1.5.[X]
+
 ## SD_Impale
 Impale: Deal 4x damage.[N]
 (Skill % activation)[X]
@@ -1825,3 +1829,26 @@ per adjacent enemy. [X]
 ## SD_Ghostwalker
 Ghostwalker: Grants[N]
 absolute evasion.[X]
+
+## SD_Pursuer
+Pursuer: If initiating, grants AS +5,[N]
+deal more damage = 25% of Spd, and[N]
+follow-ups attack twice.[X]
+
+## SD_Decapitator
+Decapitator: Grants Atk = foe's missing HP[N]
+at start of combat. If foe is below 50%[N]
+HP, grants Hit/Crit +80.[X]
+
+## SD_Pathfinder
+Pathfinder: Allies within 3 spaces can[N]
+use remaining movement after[N]
+any actions.[X]
+
+## SD_ArmsMaster
+Arms Master: Unit can S rank more[N]
+than one weapon type.[X]
+
+## SD_FactionSlayer
+"Faction" Slayer: Deal 2x calculated[N]
+damage to specific opponents.[X]

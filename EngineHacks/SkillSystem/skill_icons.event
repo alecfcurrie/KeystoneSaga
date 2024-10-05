@@ -200,6 +200,9 @@ ORG SkillIcon(NullifyID)
 ORG SkillIcon(ParagonID)
 #incbin "SkillIcons/Paragon.dmp"
 
+ORG SkillIcon(VeteranID)
+#incbin "SkillIcons/Acrobat.dmp"
+
 ORG SkillIcon(ImpaleID)
 #incbin "SkillIcons/Impale.dmp"
 
@@ -1147,15 +1150,15 @@ ORG SkillIcon(SnowWarningID)
 ORG SkillIcon(ContraryID)
 #incbin "SkillIcons/Contrary.dmp"
 ORG SkillIcon(GoddessDanceID)
-#incbin "SkillIcons/Acrobat.dmp"
+#incbin "SkillIcons/GoddessDance.dmp"
 ORG SkillIcon(TrueStrikeID)
-#incbin "SkillIcons/Acrobat.dmp"
+#incbin "SkillIcons/TrueStrike.dmp"
 ORG SkillIcon(CriticalPierceID)
-#incbin "SkillIcons/Acrobat.dmp"
+#incbin "SkillIcons/CriticalPierce.dmp"
 ORG SkillIcon(RunningStartID)
-#incbin "SkillIcons/Acrobat.dmp"
+#incbin "SkillIcons/RunningStart.dmp"
 ORG SkillIcon(CatchingUpID)
-#incbin "SkillIcons/Acrobat.dmp"
+#incbin "SkillIcons/CatchingUp.dmp"
 ORG SkillIcon(NonconformingID)
 #incbin "SkillIcons/Acrobat.dmp"
 ORG SkillIcon(ConcealedWeaponID)
@@ -1176,7 +1179,7 @@ ORG SkillIcon(SandRushID)
 ORG SkillIcon(BlessingID)
 #incbin "SkillIcons/Acrobat.dmp"
 ORG SkillIcon(PastelVeilID)
-#incbin "SkillIcons/Acrobat.dmp"
+#incbin "SkillIcons/PastelVeil.dmp"
 ORG SkillIcon(StoneBodyID)
 #incbin "SkillIcons/StoneBody.dmp"
 
@@ -1185,6 +1188,21 @@ ORG SkillIcon(MercilessID)
 
 ORG SkillIcon(HeavyMetalID)
 #incbin "SkillIcons/HeavyMetal.dmp"
+
+ORG SkillIcon(PursuerID)
+#incbin "SkillIcons/Pursuer.dmp"
+
+ORG SkillIcon(DecapitatorID)
+#incbin "SkillIcons/Decapitator.dmp"
+
+ORG SkillIcon(PathfinderID)
+#incbin "SkillIcons/Pathfinder.dmp"
+
+ORG SkillIcon(ArmsMasterID)
+#incbin "SkillIcons/ArmsMaster.dmp"
+
+ORG SkillIcon(FactionSlayerID)
+#incbin "SkillIcons/FactionSlayer.dmp"
 
 ORG SkillIcons+0x8000
 

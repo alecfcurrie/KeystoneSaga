@@ -286,6 +286,10 @@
 //Author Unknown (Initial Commit)
 #define ParagonID 49
 
+//Veteran: Experience gain is x1.5.
+//By Snerdels
+#define VeteranID 255
+
 //Void Curse: This unit gives no experience when defeated.
 //By Sme
 #define VoidCurseID 6
@@ -589,6 +593,10 @@
 //Author Unknown (Initial Commit)
 #define OddRhythmID 216
 #define EvenRhythmID 215
+
+//"Faction" Slayer: 2x calculated damage when facing specific units.
+//By ditto
+#define FactionSlayerID 255
 
 //Faire Skills: +4 damage when equipping a weapon of the specified type.
 //Author Unknown (Initial Commit)
@@ -1399,7 +1407,21 @@
 // By Jester
 #define ConcealedWeaponID 255
 
+//Pursuer: If initiating, AS +5, deals damage = 25% of Spd, Double attacks hit again.
+// By Devisio
+#define PursuerID 255
 
+//Decapitator: Grants Atk = foe's missing HP; +80 Hit/Crit if foe's HP is below half.
+// By Devisio
+#define DecapitatorID 255
+
+//Pathfinder: Allies within 3 spaces can Canto.
+// By Devisio
+#define PathfinderID 255
+
+//Arms Master: Unit can S rank more than one weapon.
+// By Snerdels
+#define ArmsMasterID 255
 
 //Biorhythm Skills: Double or halve biorhythm effects.
 //By Sme
