@@ -56,9 +56,10 @@ We'll hold the line.[A][X]
 
 ## Chapter1InitialConvo2
 [MidLeft][LoadGlove]
+[BoxHeight][0x2]
 Pompous bastard[,] always hogging the glory.[AN]
-You heard him boys[!] Stand watch[,][N]
-and keep your eyes sharp for that lordling![AN]
+You heard him boys[!] Stand watch[,] and[N]
+keep your eyes sharp for that lordling![AN]
 If anything gets in your way, cut it[N]
 down before it has the chance to shout![A][X]
 
