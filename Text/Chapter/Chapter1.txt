@@ -115,6 +115,89 @@ too far ahead![A]
 [ToggleSmile]
 Says the man on horseback.[A][X]
 
+## Chapter1Turn1EP
+
+[FarRight][LoadVillager2]
+[BoxHeight][0x2]
+Elder[!] A lone[N]
+visitor has arrived![A]
+
+[Right][LoadVillager1]
+Hail[,] traveller[.] What business[N]
+brings you to Gorien?[A]
+
+[MidLeft][LoadFester]
+The name's Fester[.] I'm but a[N]
+humble[Beat]merchant[,] of sorts.[AN]
+I've come to your village in the hopes[N]
+of procuring some goods for my trade.[A]
+
+[Right]
+[BoxHeight][0x3]
+You'll find little here worth trading[.][N]
+Our harvest is meagre[,] and[N]
+the seasons have not been kind.[A]
+
+[MidLeft]
+[BoxHeight][0x2]
+Oh[,] I'm not after crops or trinkets[.][N]
+My interests lie elsewhere.[AN]
+I've heard whispers that you're[N]
+sheltering Felean refugees.[A]
+
+[Right][MoveMidRight]
+[BoxHeight][0x1]
+You[Beat]you're a slaver![A]
+
+[MidLeft]
+[BoxHeight][0x3]
+I prefer "merchant[,]" but let's not[N]
+split hairs[.] I'd rather conduct our[N]
+business without any[Beat]unpleasantness.[A]
+
+[FarRight]
+[BoxHeight][0x1]
+Should I call the militia?[A]
+
+[MidRight]
+[Beat][A]
+
+[MidLeft]
+[BoxHeight][0x2]
+Since I'm feeling generous today[,][N]
+I'll make it simple for you.[AN]
+Hand over the Felean refugees in[N]
+exchange for the safety of your village.[AN]
+Not a single home need be touched[,][N]
+not a single life need be lost.[AN]
+A fair trade, don't you think?[A]
+
+[MidRight][MoveRight]
+[BoxHeight][0x1]
+[Beat]Don't summon the militia.[A]
+
+[MidLeft]
+[BoxHeight][0x2]
+Oh[?] I expected[N]
+more resistance.[A]
+
+
+[Right]
+Gather the children-the ones who[N]
+arrived a fortnight ago.[AN]
+I won't gamble the lives of my people[N]
+for the sake of a few refugees.[A]
+
+[FarRight]
+[BoxHeight][0x1]
+A-as you wish[,] elder.[A]
+[ClearFace]
+
+[MidLeft]
+[BoxHeight][0x2]
+A wise choice[,] elder[.] I just knew[N]
+we could come to an agreement![A][X]
+
 ## Chapter1Turn2PP1
 
 [MidRight][LoadWesley]

@@ -40,6 +40,7 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventPlayer(0x00, Turn2_PP, 2)
 TurnEventPlayer(0x00, Turn3_PP, 3)
+TurnEventEnemy(0x00, Turn1_EP, 1)
 TurnEventEnemy(0x00, Turn2_EP, 2)
 TurnEventEnemy(0x00, Turn3_EP, 3)
 TurnEventEnemy(0x00, Turn4_EP, 4)
@@ -208,7 +209,18 @@ EndConvo
 NoFade
 ENDA
 
-
+Turn1_EP:
+CAMERA_CENTERED [7,5]
+MUSC Raid
+STAL 30
+CURSOR [7,3]
+STAL 60
+REMOVE_CURSORS
+SetBackground(Town_Day)
+Text(Chapter1Turn1EP)
+EndConvo
+NoFade
+ENDA
 
 Turn2_EP:
 

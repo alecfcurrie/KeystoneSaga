@@ -81,6 +81,9 @@
 [LoadGlove]    = [LoadFace][0x30][0x1]
 [LoadFester]   = [LoadFace][0x31][0x1]
 
+[LoadVillager1]   = [LoadFace][0x59][0x1]
+[LoadVillager2]   = [LoadFace][0x5C][0x1]
+
 
 
 [period] = [0xDE][0x82]
