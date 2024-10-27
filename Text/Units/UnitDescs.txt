@@ -30,6 +30,11 @@ A soldier born of a merchant[N]
 family in Lydemoor's capital.[N]
 Something of a tomboy.[X]
 
+## OsmaDesc
+A mage from Gorien village.[N]
+Cared for the Felean children[N]
+before they were kidnapped.[X]
+
 ## GloveDesc
 A dull slaver attempting[N]
 to procure slaves from villages[N]
