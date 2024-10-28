@@ -25,3 +25,7 @@
 #define AdventurerM 0x39
 #define Adventurer AdventurerM
 #define AdventurerF 0x3a
+
+#define Mage 0x25
+#define MageM Mage
+#define MageF 0x26
