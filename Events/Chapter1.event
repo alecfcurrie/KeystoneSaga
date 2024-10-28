@@ -326,7 +326,10 @@ CAMERA AudreyID
 CURSOR AudreyID
 STAL 60
 REMOVE_CURSORS
-Text(Chapter1Turn2PP1)
+StartText(Chapter1Turn2PP1)
+MUSC 0x0
+ContinueText
+REMA
 CAMERA [8,18]
 MUSC Comrades
 LOAD1 0x0 FriendlyReinforcements1
