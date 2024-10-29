@@ -49,11 +49,12 @@ TurnEventEnemy(0x00, Turn6_EP, 6)
 END_MAIN
 
 LocationBasedEvents:
+Seize(8,18)
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-DefeatAll(EndingScene)
+DefeatAll(EndingScene) //DEBUG ONLY, DELETE AFTERWARDS
 END_MAIN
 
 CharacterBasedEvents:
@@ -91,7 +92,7 @@ UNIT
 
 FriendlyReinforcements1:
 UNIT OsborneID Priest Eirika Level(4, Ally, False)  [8,18] 0x0 0x0 0x1 REDA8R17 [Lightning,Heal,Vulnerary] NoAI
-UNIT Vanessa SoldierF Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [IronLance,Javelin,Vulnerary] NoAI
+UNIT ElaineID SoldierF Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [IronLance,Javelin,Vulnerary] NoAI
 UNIT
 
 
@@ -146,6 +147,15 @@ HardModeExclusiveEnemies:
 UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R9 [IronAxe] AttackInRangeAI
 // Upper Left Group
 UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R10 [IronAxe] AttackInRangeAI
+UNIT
+
+EndingCutsceneUnits1:
+UNIT AudreyID EirikaLord Eirika Level(1, Ally, False) [8,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT WesleyID AxeCavM Eirika Level(3, Ally, False)  [8,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT OsborneID Priest Eirika Level(4, Ally, False)  [9,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT ElaineID SoldierF Eirika Level(2, Ally, False) [9,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT CordellID Archer Eirika Level(5, Ally, False) [8,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT SurgeID Fighter Eirika Level(1, Ally, False) [10,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 
@@ -350,6 +360,15 @@ ENDA
 
 
 EndingScene:
+FADI 4
+REMOVEALL_BLUE
+REMOVEALL_RED
+LOAD1 0x2 EndingCutsceneUnits1
+ENUN
+CAMERA_CENTERED [8,5]
+FADU 4
+STAL 300
+
 ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
 STAL 120
 EVBIT_F 0x2
