@@ -18,6 +18,7 @@ EventPointerTable(0x7, PointerList)
 setText(0x160, NewChName)
 
 #define VillageClose 2
+#define VillageCoords [7,3]
 
 ALIGN 4
 NewChName:
@@ -156,6 +157,16 @@ UNIT OsborneID Priest Eirika Level(4, Ally, False)  [9,4] 0x0 0x0 0x0 0x0 [0x0] 
 UNIT ElaineID SoldierF Eirika Level(2, Ally, False) [9,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT CordellID Archer Eirika Level(5, Ally, False) [8,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT SurgeID Fighter Eirika Level(1, Ally, False) [10,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EndingCutsceneUnits2:
+UNIT AudreyID EirikaLord Eirika Level(1, Ally, False) [7,3] 0x0 0x0 0x1 REDA8R4 [0x0] NoAI
+UNIT OsborneID Priest Eirika Level(4, Ally, False)  [7,3] 0x0 0x0 0x1 REDA8R5 [0x0] NoAI
+UNIT CordellID Archer Eirika Level(5, Ally, False) [7,3] 0x0 0x0 0x1 REDA7R4 [0x0] NoAI
+UNIT
+
+OsmaEnd:
+UNIT OsmaID MageF Eirika Level(5, NPC, False) [7,3] 0x0 0x0 0x1 REDA7R5 [0x0] NoAI
 UNIT
 
 
@@ -360,6 +371,8 @@ ENDA
 
 
 EndingScene:
+// Starting Scene
+MUSC Into_the_Shadow_of_Victory
 FADI 4
 REMOVEALL_BLUE
 REMOVEALL_RED
@@ -367,7 +380,39 @@ LOAD1 0x2 EndingCutsceneUnits1
 ENUN
 CAMERA_CENTERED [8,5]
 FADU 4
-STAL 300
+Text(Chapter1EndingConvo1)
+TILEREVERT VillageClose
+MOVE 0x0 AudreyID VillageCoords
+ENUN
+RemoveUnit AudreyID
+MOVE 0x0 CordellID VillageCoords
+ENUN
+RemoveUnit CordellID
+MOVE 0x0 OsborneID VillageCoords
+ENUN
+RemoveUnit OsborneID
+
+// Village Scene
+SetBackground(Town_Day)
+Text(Chapter1EndingConvo2)
+EndConvo
+
+// Post-Village Scene
+LOAD1 0x2 EndingCutsceneUnits2
+ENUN
+MOVE 0x0 WesleyID [9,4]
+ENUN
+StartText(Chapter1EndingConvo3)
+MUSC 0x0
+ContinueText
+REMA
+LOAD1 0x0 OsmaEnd
+ENUN
+MUSC Comrades
+StartText(Chapter1EndingConvo4)
+CUSA OsmaID;
+EndConvo
+FADI 4
 
 ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
 STAL 120
