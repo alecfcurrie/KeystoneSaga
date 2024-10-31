@@ -26,6 +26,10 @@
 #define ElaineID 0x6
 #define ElainePortrait 0x8
 
+// Osma - Mage
+#define OsmaID 0x7
+#define OsmaPortrait 0x9
+
 // Liev - Bard
 #define LievID 0x15
 #define LievPortrait 0x1c
