@@ -253,7 +253,7 @@ TILEREVERT VillageClose
 LOAD1 0x1 Turn2Cutscene
 ENUN
 TILECHANGE VillageClose
-MOVE 0x0 ONeill [6,4]
+MOVE 0x0 ONeill [5,4]
 
 CURSOR Breguet
 STAL 60
