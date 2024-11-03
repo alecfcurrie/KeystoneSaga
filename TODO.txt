@@ -1,10 +1,9 @@
+-Fix AI not activating if their AI is changed when someone steps in range (can do this with fighters on left side in CH1)
 -Fix 0xFF crit indicator bug
 -Fix item image mismatch issue
 -Add text description and image for Energy Drop
 -Replace swordfighter class cards?
 -Add intro cutscene
--Add enemies to chapter 1
--Rework enemy AI for chapter 1
 -Remove immune status from female soldiers
 -Implement Narrow Text for Class Names/Descs
 -Edit Class Mag Growths/Caps
