@@ -48,7 +48,7 @@
 
   ALIGN 4
   HPBarsOnMapHack:
-    #include "asm/WarningAndHpBars.lyn.event"
+    #include "asm/WarningAndHpBars.event"
 
   ALIGN 4
   HPBarGraphic:
