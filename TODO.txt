@@ -10,3 +10,4 @@
 -Add Adventurer Class Card
 -Fix Green Haired Outlaws
 -Swap Outlaw Sprite (since it doesn't get hit by fighter battle anims)
+-Enable Stat Bracketing Flag
