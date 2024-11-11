@@ -4,13 +4,13 @@ EventPointerTable(0x7, PointerList)
 //VeinEffect(0, FreezeAllEnemies)
 //#endif // DRAGON_VEINS
 
-setText(0x160, NewChName)
+setText(0x161, DebugMapName)
 
 #define VillageClose 2
 
 ALIGN 4
-NewChName:
-String("Chapter 1: Canyon Rush")
+DebugMapName:
+String("DEBUG MAP")
 BYTE 0
 
 ALIGN 4
