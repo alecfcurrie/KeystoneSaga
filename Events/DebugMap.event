@@ -1,4 +1,4 @@
-EventPointerTable(0x7, PointerList)
+EventPointerTable(8, PointerList)
 
 //#ifdef DRAGON_VEINS
 //VeinEffect(0, FreezeAllEnemies)
@@ -66,8 +66,8 @@ ALIGN 4
 
 
 Units1:
-UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,20] 0x0 0x0 0x0 0x0 [BronzeSword,Vulnerary] NoAI
-UNIT SurgeID Fighter Eirika Level(1, Ally, False)  [9,20] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,15] 0x0 0x0 0x0 0x0 [BronzeSword,Vulnerary] NoAI
+UNIT SurgeID Fighter Eirika Level(1, Ally, False)  [9,15] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT
 
 EnemyUnits:

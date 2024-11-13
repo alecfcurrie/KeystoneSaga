@@ -176,7 +176,7 @@ UNIT
 
 
 BeginningScene:
-MNC2 0x28
+GOTO 5 //DEBUG - DELETE EVENTUALLY - LABEL 5 is Debug
 ENUT FIXED_GROWTHS_FLAG_ID
 CAMERA [7,5]
 MUSC Raid
@@ -228,6 +228,9 @@ REMOVE_CURSORS
 SetBackground(Woodland)
 Text(Chapter1InitialConvo3)
 EndConvo
+
+LABEL 5 //DEBUG - DELETE EVENTUALLY
+MNC2 40
 NoFade
 ENDA
 

@@ -1,4 +1,8 @@
 #include "REDAs.event"
 #include "WorldMapEvents.event"
+{
 #include "DebugMap.event"
+}
+{
 #include "Chapter1.event"
+}
