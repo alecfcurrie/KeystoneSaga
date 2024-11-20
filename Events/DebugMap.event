@@ -1,10 +1,10 @@
-EventPointerTable(8, PointerList)
+EventPointerTable(0xb2, PointerList)
 
 //#ifdef DRAGON_VEINS
 //VeinEffect(0, FreezeAllEnemies)
 //#endif // DRAGON_VEINS
 
-setText(0x161, DebugMapName)
+setText(0x192, DebugMapName)
 
 #define VillageClose 2
 
