@@ -1,6 +1,6 @@
 ## AudreyDesc
 The youngest princess of Lydemoor.[N]
-Loyal to her people and her ideals[X]
+Loyal to her people and her ideals.[X]
 
 ## CordellDesc
 The calm and collected leader of[N]
