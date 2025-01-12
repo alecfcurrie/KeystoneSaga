@@ -1,0 +1,110 @@
+EventPointerTable(0xa, PointerList)
+
+//#ifdef DRAGON_VEINS
+//VeinEffect(0, FreezeAllEnemies)
+//#endif // DRAGON_VEINS
+
+setText(0x161, Ch2Name)
+
+#define VillageClose 2
+#define VillageDestroy 3
+
+ALIGN 4
+Ch2Name:
+String("Chapter 2: The Slaver's Trail")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN UnitsPlayer UnitsPlayer  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatAll(EndingScene)
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+//==================================================================//
+//==============================UNITS===============================//
+//==================================================================//
+
+
+UnitsPlayer:
+UNIT AudreyID EirikaLord AudreyID Level(20, Ally, True) [4,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT SurgeID Fighter AudreyID Level(20, Ally, True)  [6,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT OsborneID Priest AudreyID Level(20, Ally, True)  [5,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT ElaineID SoldierF AudreyID Level(20, Ally, True) [6,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT CordellID Archer AudreyID Level(20, Ally, True) [5,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT WesleyID AxeCavM AudreyID Level(20, Ally, True)  [7,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT OsmaID AxeCavM AudreyID Level(20, Ally, True)  [7,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+// Lower Central Group
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,6] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,5] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [7 ,4] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
+UNIT
+
+//==================================================================//
+//=============================EVENTS===============================//
+//==================================================================//
+
+
+BeginningScene:
+
+ENUT FIXED_GROWTHS_FLAG_ID
+LOAD1 0x1 EnemyUnits
+ENUN
+ENUF FIXED_GROWTHS_FLAG_ID
+// Finally
+LOAD1 0x0 UnitsPlayer
+ENUN
+NoFade
+ENDA
+
+
+EndingScene:
+ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
+STAL 120
+EVBIT_F 0x2
+MNTS 0x1 //return to title screen
+NoFade
+ENDA
