@@ -21,7 +21,7 @@ POIN LocationBasedEvents
 POIN MiscBasedEvents
 POIN Dunno1 Dunno2 Dunno3 Tutorial
 POIN Traps1 Traps2
-POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN UnitsCH2 UnitsCH2  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
 POIN BeginningScene EndingScene
@@ -65,9 +65,13 @@ ALIGN 4
 //==================================================================//
 
 
-Units1:
-UNIT Eirika EirikaLord Eirika Level(1, Ally, False) [8,15] 0x0 0x0 0x0 0x0 [BronzeSword,Vulnerary] NoAI
-UNIT SurgeID Fighter Eirika Level(1, Ally, False)  [9,15] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UnitsCH2:
+UNIT AudreyID EirikaLord AudreyID Level(3, Ally, True) [8,15] 0x0 0x0 0x0 0x0 [BronzeSword,Vulnerary] NoAI
+UNIT SurgeID Fighter AudreyID Level(3, Ally, True)  [9,16] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT OsborneID Priest AudreyID Level(5, Ally, True)  [8,17] 0x0 0x0 0x0 0x0 [Lightning,Heal,Vulnerary] NoAI
+UNIT ElaineID SoldierF AudreyID Level(3, Ally, True) [9,18] 0x0 0x0 0x0 0x0 [IronLance,Javelin,Vulnerary] NoAI
+UNIT CordellID Archer AudreyID Level(5, Ally, True) [8,19] 0x0 0x0 0x0 0x0 [SteelBow, BronzeBow,Vulnerary] NoAI
+UNIT WesleyID AxeCavM AudreyID Level(4, Ally, True)  [9,20] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT
 
 EnemyUnits:
@@ -87,12 +91,14 @@ UNIT
 
 BeginningScene:
 
+ENUT FIXED_GROWTHS_FLAG_ID
 LOAD1 0x1 EnemyUnits
 ENUN
 
 // Finally
-LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+LOAD1 0x1 UnitsCH2 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
+ENUF FIXED_GROWTHS_FLAG_ID
 NoFade
 ENDA
 
