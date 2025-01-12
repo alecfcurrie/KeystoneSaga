@@ -30,11 +30,11 @@ TurnBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Seize(8,15)
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-DefeatAll(EndingScene)
 END_MAIN
 
 CharacterBasedEvents:
@@ -105,9 +105,6 @@ ENDA
 
 
 EndingScene:
-ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
-STAL 120
-EVBIT_F 0x2
-MNTS 0x1 //return to title screen
+MNC2 1
 NoFade
 ENDA
