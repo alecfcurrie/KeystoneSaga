@@ -16,6 +16,24 @@ Crossbow[X]
 #0x38e BronzeBowName
 Bronze Bow[X]
 
+#0x358 BronzeDaggerName
+Bronze Dagger[X]
+
+#0x359 IronDaggerName
+Iron Dagger[X]
+
+#0x35a SteelDaggerName
+Steel Dagger[X]
+
+#0x35b SilverDaggerName
+Silver Dagger[X]
+
+#0x403 HuntersKnifeName
+Hunter's Knife[X]
+
+#0x4ab HuntersKnifeDesc
+Eff. versus cavalry.[X]
+
 #0x441 OneTwoRangeDesc
 Cannot critical or follow-up.[X]
 
