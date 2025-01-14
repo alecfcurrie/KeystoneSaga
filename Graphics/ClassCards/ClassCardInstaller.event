@@ -32,3 +32,13 @@ OutlawFPalette:
 #incext Png2Dmp --palette-only "OutlawF.png"
 
 setCardEntry(OutlawFClassCard, OutlawFCard, OutlawFPalette)
+
+// ==Ninja==
+NinjaCard:
+#incext Png2Dmp --lz77 "Ninja.png"
+
+ALIGN 4
+NinjaPalette:
+#incext Png2Dmp --palette-only "Ninja.png"
+
+setCardEntry(NinjaClassCard, NinjaCard, NinjaPalette)

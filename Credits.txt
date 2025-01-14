@@ -22,6 +22,7 @@ Peerless - Mini Bow
 RobertFPY - Axe Cavalier
 Spud - Outlaw (M)
 Spud, Jj09 - Outlaw (F)
+Leif, Scraiza, Sword of HaE - Ninja
 
 ==Battle Animations==
 Flasuban - Soldier (Male and Female)
