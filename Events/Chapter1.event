@@ -166,7 +166,7 @@ UNIT CordellID Archer Eirika Level(5, Ally, False) [7,3] 0x0 0x0 0x1 REDA7R4 [0x
 UNIT
 
 OsmaEnd:
-UNIT OsmaID MageF Eirika Level(5, NPC, False) [7,3] 0x0 0x0 0x1 REDA7R5 [0x0] NoAI
+UNIT OsmaID MageF Eirika Level(5, NPC, False) [7,3] 0x0 0x0 0x1 REDA7R5 [Fire, Thunder, Vulnerary] NoAI
 UNIT
 
 

@@ -73,14 +73,17 @@ UNIT OsborneID Priest AudreyID Level(20, Ally, True)  [5,14] 0x0 0x0 0x0 0x0 [0x
 UNIT ElaineID SoldierF AudreyID Level(20, Ally, True) [6,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT CordellID Archer AudreyID Level(20, Ally, True) [5,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT WesleyID AxeCavM AudreyID Level(20, Ally, True)  [7,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT OsmaID AxeCavM AudreyID Level(20, Ally, True)  [7,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT OsmaID AxeCavM AudreyID Level(20, Ally, True)  [6,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 EnemyUnits:
 // Lower Central Group
-UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,6] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
-UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,5] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
-UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [7 ,4] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,7] 0x0 0x0 0x1 REDA8R6 [BronzeAxe] NeverMoveAI
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,7] 0x0 0x0 0x1 REDA8R5 [HandAxe] NeverMoveAI
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [6 ,3] 0x0 0x0 0x1 REDA7R4 [BronzeAxe] NeverMoveAI
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [6 ,3] 0x0 0x0 0x1 REDA7R3 [HandAxe] NeverMoveAI
+UNIT 0x80 Outlaw ONeill Level(3, Enemy, True) [8 ,7] 0x0 0x0 0x1 REDA8R7 [Longbow, IronBow] NeverMoveAI
+UNIT 0x80 Outlaw ONeill Level(3, Enemy, True) [6 ,3] 0x0 0x0 0x1 REDA6R3 [Longbow, IronBow] NeverMoveAI
 UNIT
 
 //==================================================================//

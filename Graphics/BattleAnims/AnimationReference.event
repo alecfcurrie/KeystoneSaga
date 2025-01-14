@@ -4,6 +4,7 @@
 #define BowAnim(AnimID)     "AddClassAnimation(AnimID,Bows,1)"
 #define HandaxeAnim(AnimID) "AddClassAnimation(AnimID,HandAxe,0); AddClassAnimation(AnimID, Tomahawk,0)"
 #define StaffAnim(AnimID)   "AddClassAnimation(AnimID,Staves,1)"
+#define KnifeAnim(AnimID)   "AddClassAnimation(AnimID,Light,1)"
 #define UnarmedAnim(AnimID) "AddClassAnimation(AnimID,Disarmed,1)"
 
 ALIGN 4
@@ -70,4 +71,12 @@ EndClassAnimation
 OutlawFAnims:
 BowAnim(OutlawFBow)
 UnarmedAnim(OutlawFUnarmed)
+EndClassAnimation
+
+NinjaMAnims:
+KnifeAnim(NinjaMKnife)
+EndClassAnimation
+
+NinjaFAnims:
+KnifeAnim(NinjaFKnife)
 EndClassAnimation

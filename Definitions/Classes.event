@@ -6,6 +6,10 @@
 #define Paladin 0x8
 #define PaladinF 0x9
 
+#define NinjaM 0xe
+#define Ninja NinjaM
+#define NinjaF 0xf
+
 #define SwordfighterM1 0x10
 #define SwordfighterM2 0x11
 #define SwordfighterM SwordfighterM1

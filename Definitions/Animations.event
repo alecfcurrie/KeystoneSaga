@@ -31,3 +31,6 @@
 #define AdventurerFBow 0xA7
 #define AdventurerFUnarmed 0xA8
 #define AdventurerFStaff 0xA9
+
+#define NinjaMKnife 0xAA
+#define NinjaFKnife 0xAB

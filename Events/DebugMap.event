@@ -73,16 +73,17 @@ UNIT ElaineID SoldierF AudreyID Level(3, Ally, True) [9,18] 0x0 0x0 0x0 0x0 [Iro
 UNIT CordellID Archer AudreyID Level(5, Ally, True) [8,19] 0x0 0x0 0x0 0x0 [SteelBow, BronzeBow,Vulnerary] NoAI
 UNIT WesleyID AxeCavM AudreyID Level(4, Ally, True)  [9,20] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT OsmaID MageF AudreyID Level(5, Ally, False)  [8,21] 0x0 0x0 0x0 0x0 [Fire, Thunder, Vulnerary] NoAI
+UNIT 0x80 NinjaM AudreyID Level(5, Ally, False)  [8,21] 0x0 0x0 0x0 0x0 [Fire, Thunder, Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
 // Lower Central Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5 ,22] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [6 ,23] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
-
-UNIT 0x80 Fighter ONeill Level(2, NPC, True) [8 ,24] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
-UNIT 0x80 Fighter ONeill Level(2, NPC, True) [9 ,25] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,24] 0x0 0x0 0x0 0x0 [BronzeAxe] [0]
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5 ,22] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [6 ,23] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT 0x80 NinjaM ONeill Level(1, Enemy, True) [8, 16] 0x0 0x0 0x0 0x0 [BronzeSword] NoAI
+UNIT 0x80 Fighter ONeill Level(2, NPC, True) [8 ,24] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT 0x80 Fighter ONeill Level(2, NPC, True) [9 ,25] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [10,24] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT
 
 //==================================================================//

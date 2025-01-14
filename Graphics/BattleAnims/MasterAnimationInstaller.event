@@ -90,3 +90,13 @@
 #include "OutlawFBow.event"
 #include "OutlawFUnarmed.event"
 }
+
+// Ninja (M) Anims
+{
+#include "NinjaMKnife.event"
+}
+
+// Ninja (F) Anims
+{
+#include "NinjaFKnife.event"
+}
