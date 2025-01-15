@@ -30,6 +30,11 @@ A soldier born of a merchant[N]
 family in Lydemoor's capital.[N]
 Something of a tomboy.[X]
 
+## ZandreaDesc
+A Dretian ninja working as a[N]
+mercenary. Keeps to herself[N]
+mostly, but has a good heart.[X]
+
 ## OsmaDesc
 A mage from Gorien village.[N]
 Cared for the Felean children[N]

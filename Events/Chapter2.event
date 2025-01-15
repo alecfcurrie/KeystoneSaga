@@ -78,10 +78,10 @@ UNIT
 
 EnemyUnits:
 // Lower Central Group
-UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,7] 0x0 0x0 0x1 REDA8R6 [BronzeAxe] NeverMoveAI
-UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,7] 0x0 0x0 0x1 REDA8R5 [HandAxe] NeverMoveAI
-UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [6 ,3] 0x0 0x0 0x1 REDA7R4 [BronzeAxe] NeverMoveAI
-UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [6 ,3] 0x0 0x0 0x1 REDA7R3 [HandAxe] NeverMoveAI
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,7] 0x0 0x0 0x1 REDA8R6 [BronzeAxe] [0x0,0x00,NoRecovery,0x0]
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [8 ,7] 0x0 0x0 0x1 REDA8R5 [HandAxe] [0x0,0x00,NoRecovery,0x0]
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [6 ,3] 0x0 0x0 0x1 REDA7R4 [BronzeAxe] [0x0,0x00,NoRecovery,0x0]
+UNIT 0x80 Fighter ONeill Level(3, Enemy, True) [6 ,3] 0x0 0x0 0x1 REDA7R3 [HandAxe] [0x0,0x00,NoRecovery,0x0]
 UNIT 0x80 Outlaw ONeill Level(3, Enemy, True) [8 ,7] 0x0 0x0 0x1 REDA8R7 [Longbow, IronBow] NeverMoveAI
 UNIT 0x80 Outlaw ONeill Level(3, Enemy, True) [6 ,3] 0x0 0x0 0x1 REDA6R3 [Longbow, IronBow] NeverMoveAI
 UNIT
