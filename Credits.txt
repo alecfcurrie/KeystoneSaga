@@ -14,7 +14,7 @@ Teq - Text Engine Rework
 HyperGammaSpaces - OC Questions
 
 ==Item Icons==
-Batima - Bronze Axe/Lance
+Batima - Bronze Axe/Lance, Bronze/Iron/Steel/Silver Dagger
 Zelix - Bronze Sword/Bow, Iron Bow/Lance/Axe, Steel Bow/Lance/Axe, Silver Bow/Lance/Axe, Brave Bow/Lance/Axe, Hammer
 Peerless - Mini Bow
 
