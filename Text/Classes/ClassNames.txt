@@ -15,3 +15,6 @@
 
 ## AdventurerName
 *{Adventurer}[X]
+
+## NinjaName
+*{Ninja}[X]

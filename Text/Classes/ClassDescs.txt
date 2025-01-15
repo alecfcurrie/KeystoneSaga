@@ -25,3 +25,8 @@
 ## AdventurerDesc
 *{Seasoned outlaws that wield bows and staves}[NL]
 *{High res, speed, and above average mobility.}[X]
+
+## NinjaDesc
+Stealthy spies that can pick[NL]
+locks and attack their foes[NL]
+at range using daggers.[X]

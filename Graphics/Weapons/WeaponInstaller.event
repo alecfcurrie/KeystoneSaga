@@ -89,3 +89,28 @@ PUSH
 SetIcon(MiniBow)
 #incext Png2Dmp "MiniBow.png"
 POP
+
+PUSH
+SetIcon(BronzeDagger)
+#incext Png2Dmp "BronzeDagger.png"
+POP
+
+PUSH
+SetIcon(IronDagger)
+#incext Png2Dmp "IronDagger.png"
+POP
+
+PUSH
+SetIcon(SteelDagger)
+#incext Png2Dmp "SteelDagger.png"
+POP
+
+PUSH
+SetIcon(SilverDagger)
+#incext Png2Dmp "SilverDagger.png"
+POP
+
+PUSH
+SetIcon(HuntersKnife)
+#incext Png2Dmp "HuntersKnife.png"
+POP
