@@ -1,6 +1,13 @@
+// Define Bronze Melee Weapons
 #define BronzeSword 0x2
 #define BronzeLance 0x15
 #define BronzeAxe   0x27
+// Define Daggers
+#define BronzeDagger 0x5
+#define IronDagger 0x6
+#define SteelDagger 0x7
+#define SilverDagger 0x8
+#define HuntersKnife 0xa
 // Define Bows
 #define BronzeBow   0x2d
 #define IronBow     0x2e
