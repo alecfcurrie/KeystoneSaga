@@ -100,6 +100,16 @@ ENUN
 LOAD1 0x1 UnitsCH2 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
 ENUF FIXED_GROWTHS_FLAG_ID
+
+FADU 0x4
+CenterTutorialTextBox
+
+// Debugging text overwrite issue
+SOLOTEXTBOXSTART
+TEXT 0x471
+TEXTEND
+REMA
+
 NoFade
 ENDA
 
