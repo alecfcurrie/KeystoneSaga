@@ -1,0 +1,426 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x7, PointerList)
+
+//#ifdef DRAGON_VEINS
+//VeinEffect(0, FreezeAllEnemies)
+//#endif // DRAGON_VEINS
+
+setText(0x160, NewChName)
+
+#define VillageClose 2
+#define VillageCoords [7,3]
+
+ALIGN 4
+NewChName:
+String("Chapter 1: Canyon Rush")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN AudreyWesley AudreyWesley  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0x00, Turn2_PP, 2)
+TurnEventPlayer(0x00, Turn3_PP, 3)
+TurnEventEnemy(0x00, Turn1_EP, 1)
+TurnEventEnemy(0x00, Turn2_EP, 2)
+TurnEventEnemy(0x00, Turn3_EP, 3)
+TurnEventEnemy(0x00, Turn4_EP, 4)
+TurnEventEnemy(0x00, Turn5_EP, 5)
+TurnEventEnemy(0x00, Turn6_EP, 6)
+END_MAIN
+
+LocationBasedEvents:
+Seize(8,18)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatAll(EndingScene) //DEBUG ONLY, DELETE AFTERWARDS
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+//==================================================================//
+//==============================UNITS===============================//
+//==================================================================//
+
+
+AudreyWesley:
+UNIT AudreyID EirikaLord Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeSword,Vulnerary] NoAI
+UNIT WesleyID AxeCavM Eirika Level(3, Ally, False)  [9,18] 0x0 0x0 0x1 REDA9R17 [BronzeAxe] NoAI
+UNIT
+
+FriendlyReinforcements1:
+UNIT OsborneID Priest Eirika Level(4, Ally, False)  [8,18] 0x0 0x0 0x1 REDA8R17 [Lightning,Heal,Vulnerary] NoAI
+UNIT ElaineID SoldierF Eirika Level(2, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [IronLance,Javelin,Vulnerary] NoAI
+UNIT
+
+
+FriendlyReinforcements2:
+UNIT CordellID Archer Eirika Level(5, Ally, False) [9,18] 0x0 0x0 0x1 REDA9R17 [SteelBow, BronzeBow,Vulnerary] NoAI
+UNIT SurgeID Fighter Eirika Level(1, Ally, False) [8,18] 0x0 0x0 0x1 REDA8R17 [BronzeAxe, Vulnerary] NoAI
+UNIT
+
+
+BossGroup:
+UNIT Breguet SwordfighterM ONeill Level(5, Enemy, False) [0,10] 0x0 0x0 0x1 REDA7R4 [IronSword] NoAI
+UNIT ONeill Fighter ONeill Level(3, Enemy, False) [1,11] DropItem 0x0 0x1 REDA8R4 [IronAxe, Vulnerary] GroupOneAI
+UNIT
+
+Turn2Cutscene:
+UNIT Breguet SwordfighterM ONeill Level(5, Enemy, False) [7,3] 0x0 0x0 0x1 REDA7R4 [IronSword] NoAI
+UNIT JyriID Mage ONeill Level(1, NPC, False) [7,3] DropItem 0x0 0x1 REDA8R4 [0x0] GroupOneAI
+UNIT LievID Dancer ONeill Level(1, NPC, False) [7,3] DropItem 0x0 0x1 REDA8R5 [0x0] GroupOneAI
+UNIT
+
+EnemyUnits:
+// Lower Central Group
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [10,0] 0x0 0x0 0x1 REDA8R9 [BronzeAxe] [0x0,0x00,NoRecovery,0x0]
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [11,0] 0x0 0x0 0x1 REDA9R9 [BronzeAxe] [0x0,0x00,NoRecovery,0x0]
+// Wall Breakers
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [17,11] 0x0 0x0 0x1 REDA15R13 [BronzeSword] [0x0,0xE,0xC,0x0]
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [16,14] 0x0 0x0 0x0 0x0 [BronzeSword] [0x0,0xE,0xC,0x0]
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x1 REDA3R12 [BronzeAxe] [0x0,0xE,0xC,0x0]
+UNIT 0x80 OutlawF ONeill Level(1, Enemy, True) [0,11] 0x0 0x0 0x1 REDA3R11 [BronzeBow] [0x0,0xE,0xC,0x0]
+// Middle Central Group
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [10,0] 0x0 0x0 0x1 REDA9R4 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [11,0] 0x0 0x0 0x1 REDA10R5 [BronzeAxe] AttackInRangeAI
+// Upper Central Group
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [10,0] 0x0 0x0 0x1 REDA11R3 [BronzeSword] AttackInRangeAI
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [11,0] 0x0 0x0 0x1 REDA10R2 [BronzeSword] AttackInRangeAI
+// Bottom Right Group
+UNIT 0x80 SwordfighterM ONeill Level(1, Enemy, True) [18,11] 0x0 0x0 0x1 REDA16R12 [BronzeSword] AttackInRangeAI
+UNIT 0x80 Outlaw ONeill Level(1, Enemy, True) [18,10] 0x0 0x0 0x1 REDA17R12 [BronzeBow] AttackInRangeAI
+// Upper Right Group
+UNIT 0x80 Outlaw ONeill Level(1, Enemy, True) [18,11] 0x0 0x0 0x1 REDA16R7 [BronzeBow] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R8 [BronzeAxe] AttackInRangeAI
+// Bottom Left Group
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R11 [BronzeAxe] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [0,11] 0x0 0x0 0x1 REDA2R10 [BronzeAxe] AttackInRangeAI 
+// Upper Left Group
+UNIT 0x80 Outlaw ONeill Level(1, Enemy, True) [0,11] 0x0 0x0 0x1 REDA1R9 [BronzeBow] AttackInRangeAI
+UNIT
+
+
+HardModeExclusiveEnemies:
+// Upper Right Group
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [18,10] 0x0 0x0 0x1 REDA16R9 [IronAxe] AttackInRangeAI
+// Upper Left Group
+UNIT 0x80 Fighter ONeill Level(1, Enemy, True) [0,10] 0x0 0x0 0x1 REDA1R10 [IronAxe] AttackInRangeAI
+UNIT
+
+EndingCutsceneUnits1:
+UNIT AudreyID EirikaLord Eirika Level(1, Ally, False) [8,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT WesleyID AxeCavM Eirika Level(3, Ally, False)  [8,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT OsborneID Priest Eirika Level(4, Ally, False)  [9,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT ElaineID SoldierF Eirika Level(2, Ally, False) [9,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT CordellID Archer Eirika Level(5, Ally, False) [8,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT SurgeID Fighter Eirika Level(1, Ally, False) [10,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EndingCutsceneUnits2:
+UNIT AudreyID EirikaLord Eirika Level(1, Ally, False) [7,3] 0x0 0x0 0x1 REDA8R4 [0x0] NoAI
+UNIT OsborneID Priest Eirika Level(4, Ally, False)  [7,3] 0x0 0x0 0x1 REDA8R5 [0x0] NoAI
+UNIT CordellID Archer Eirika Level(5, Ally, False) [7,3] 0x0 0x0 0x1 REDA7R4 [0x0] NoAI
+UNIT
+
+OsmaEnd:
+UNIT OsmaID MageF Eirika Level(5, NPC, False) [7,3] 0x0 0x0 0x1 REDA7R5 [Fire, Thunder, Vulnerary] NoAI
+UNIT
+
+
+//==================================================================//
+//=============================EVENTS===============================//
+//==================================================================//
+
+
+BeginningScene:
+GOTO 5 //DEBUG - DELETE EVENTUALLY - LABEL 5 is Debug
+ENUT FIXED_GROWTHS_FLAG_ID
+CAMERA [7,5]
+MUSC Raid
+FADU 0x4
+LOAD1 0x1 BossGroup
+ENUN
+
+CURSOR Breguet
+STAL 60
+REMOVE_CURSORS
+SetBackground(Outside_Village_Day)
+Text(Chapter1InitialConvo1)
+EndConvo
+
+MOVE 0x0 Breguet [7,3]
+ENUN
+TILECHANGE VillageClose
+RemoveUnit Breguet
+MOVE 0x0 ONeill [7,4]
+ENUN
+STAL 30
+Text(Chapter1InitialConvo2)
+MOVE 0x0 ONeill [5,4]
+ENUN
+
+LOAD1 0x1 EnemyUnits
+ENUN
+
+// Hard Mode buffs
+CHECK_HARD
+BEQ 1 s0 sC
+SetUnitStatusAll(Any, Item1,  SteelAxe, AnyDeployed, EnemyArmy, AnyClass, AnyRange,     IronAxe)
+SetUnitStatusAll(Any, Item1,   IronAxe, AnyDeployed, EnemyArmy, AnyClass, AnyRange,   BronzeAxe)
+SetUnitStatusAll(Any, Item1, IronSword, AnyDeployed, EnemyArmy, AnyClass, AnyRange, BronzeSword)
+LOAD1 0x1 HardModeExclusiveEnemies
+ENUN
+
+// Finally
+LABEL 1
+ENUF FIXED_GROWTHS_FLAG_ID
+ENUT EnablePerfectHitFlag
+CAMERA [8,18]
+MUSC Tension
+LOAD1 0x1 AudreyWesley
+ENUN
+CURSOR AudreyID
+STAL 60
+REMOVE_CURSORS
+SetBackground(Woodland)
+Text(Chapter1InitialConvo3)
+EndConvo
+
+LABEL 5 //DEBUG - DELETE EVENTUALLY
+MNC2 40
+NoFade
+ENDA
+
+Turn1_EP:
+CAMERA_CENTERED [7,5]
+MUSC Raid
+STAL 30
+CURSOR [7,3]
+STAL 60
+REMOVE_CURSORS
+SetBackground(Town_Day)
+Text(Chapter1Turn1EP)
+EndConvo
+NoFade
+ENDA
+
+Turn2_EP:
+
+// Cutscene
+CAMERA_CENTERED [7,5]
+MUSC Raid
+STAL 30
+TILEREVERT VillageClose
+LOAD1 0x1 Turn2Cutscene
+ENUN
+TILECHANGE VillageClose
+MOVE 0x0 ONeill [5,4]
+
+CURSOR Breguet
+STAL 60
+REMOVE_CURSORS
+Text(Chapter1Turn2EP1)
+
+MOVEONTO 0x0 JyriID Breguet
+ENUN
+RemoveUnit JyriID
+MOVEONTO 0x0 LievID Breguet
+ENUN
+RemoveUnit LievID
+STAL 10
+
+MOVE 0x0 Breguet [11,1]
+MOVE 0x0 ONeill [6,4]
+ENUN
+
+CAMERA_CENTERED [11,5]
+STAL 60
+Text(Chapter1Turn2EP2)
+
+STAL 25
+MOVE 0x0 Breguet [11,0]
+ENUN
+RemoveUnit Breguet
+
+// Activate Middle Central Group
+SetAI_Pos(9,4,0,0,0xC,0)
+SetAI_Pos(10,5,0,0,0xC,0)
+NoFade
+ENDA
+
+
+Turn3_EP:
+// Cutscene
+CAMERA_CENTERED [7,5]
+MUSC Raid
+STAL 30
+CURSOR [7,3]
+STAL 60
+REMOVE_CURSORS
+SetBackground(Town_Day)
+Text(Chapter1Turn3EP)
+EndConvo
+NoFade
+ENDA
+
+ENUF EnablePerfectHitFlag
+// Activate Bottom Right Group
+SetAI_Pos(16,12,0,0,0xC,0)
+SetAI_Pos(17,12,0,0,0xC,0)
+// Activate Bottom Left
+SetAI_Pos(1, 11,0,0,0xC,0)
+SetAI_Pos(2,10,0,0,0xC,0)
+NoFade
+ENDA
+
+
+Turn4_EP:
+// Activate Upper Central Group
+SetAI_Pos(11,3,0,0,0xC,0)
+SetAI_Pos(10,2,0,0,0xC,0)
+NoFade
+ENDA
+
+
+Turn5_EP:
+// Activate Upper Left Group
+SetAI_Pos(1,10,0,0,0xC,0)
+SetAI_Pos(1, 9,0,0,0xC,0)
+// Activate Upper Right
+SetAI_Pos(16,7,0,0,0xC,0)
+SetAI_Pos(16,8,0,0,0xC,0)
+SetAI_Pos(16,9,0,0,0xC,0)
+NoFade
+ENDA
+
+
+Turn6_EP:
+// Activate ONeill		
+//SetAI_Pos(4,5,0,0,0xC,0)
+SetAI_Pos(5,4,0,0,0xC,0)				
+//SetAI_Pos(5,5,0,0,0xC,0)
+NoFade
+ENDA
+
+
+Turn2_PP:
+CAMERA AudreyID
+CURSOR AudreyID
+STAL 60
+REMOVE_CURSORS
+StartText(Chapter1Turn2PP1)
+MUSC 0x0
+ContinueText
+REMA
+CAMERA [8,18]
+MUSC Comrades
+LOAD1 0x0 FriendlyReinforcements1
+ENUN
+Text(Chapter1Turn2PP2)
+NoFade
+ENDA
+
+
+Turn3_PP:
+CAMERA [8,18]
+MUSC Comrades
+LOAD1 0x0 FriendlyReinforcements2
+ENUN
+Text(Chapter1Turn3PP)
+NoFade
+ENDA
+
+
+EndingScene:
+// Starting Scene
+MUSC Into_the_Shadow_of_Victory
+FADI 4
+REMOVEALL_BLUE
+REMOVEALL_RED
+LOAD1 0x2 EndingCutsceneUnits1
+ENUN
+CAMERA_CENTERED [8,5]
+FADU 4
+Text(Chapter1EndingConvo1)
+TILEREVERT VillageClose
+MOVE 0x0 AudreyID VillageCoords
+ENUN
+RemoveUnit AudreyID
+MOVE 0x0 CordellID VillageCoords
+ENUN
+RemoveUnit CordellID
+MOVE 0x0 OsborneID VillageCoords
+ENUN
+RemoveUnit OsborneID
+
+// Village Scene
+SetBackground(Town_Day)
+Text(Chapter1EndingConvo2)
+EndConvo
+
+// Post-Village Scene
+LOAD1 0x2 EndingCutsceneUnits2
+ENUN
+MOVE 0x0 WesleyID [9,4]
+ENUN
+StartText(Chapter1EndingConvo3)
+MUSC 0x0
+ContinueText
+REMA
+LOAD1 0x0 OsmaEnd
+ENUN
+MUSC Comrades
+StartText(Chapter1EndingConvo4)
+CUSA OsmaID;
+EndConvo
+FADI 4
+
+ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
+STAL 120
+EVBIT_F 0x2
+MNTS 0x1 //return to title screen
+NoFade
+ENDA

@@ -173,7 +173,7 @@ strh r0, [ r4, r1 ]
 CheckSpectrumStance:
 bl CheckNextStance
 cmp r0, #0x00
-beq CheckAlertStance
+beq CheckFocusedStance
 mov r1, #0x5A
 ldrh r0, [ r4, r1 ]
 add r0, #0x02 @ Add 2 attack.
@@ -191,13 +191,13 @@ ldrh r0, [ r4, r1 ]
 add r0, #0x02 @ Add 2 def/res.
 strh r0, [ r4, r1 ]
 
-CheckAlertStance:
+CheckFocusedStance:
 bl CheckNextStance
 cmp r0, #0x00
 beq CheckAlertStancePlus
-mov r1, #0x62
+mov r1, #0x60
 ldrh r0, [ r4, r1 ]
-add r0, #15 @ Add 15 avoid.
+add r0, #15 @ Add 15 hit.
 strh r0, [ r4, r1 ]
 
 CheckAlertStancePlus:

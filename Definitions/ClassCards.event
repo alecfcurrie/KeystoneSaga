@@ -1,0 +1,5 @@
+#define OutlawMClassCard 0x8E
+#define OutlawFClassCard 0x8F
+#define NinjaClassCard 0x93
+#define AxeCavClassCard 0xA2
+#define SwordfighterClassCard 0x72

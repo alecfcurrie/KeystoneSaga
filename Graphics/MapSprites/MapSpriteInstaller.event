@@ -1,0 +1,89 @@
+//===Include map sprites===
+
+ALIGN 4
+SoldierMStand:
+#incext Png2Dmp --lz77 "SoldierMStand.png"
+
+ALIGN 4
+SoldierMWalk:
+#incext Png2Dmp --lz77 "SoldierMWalk.png"
+
+ALIGN 4
+SoldierFStand:
+#incext Png2Dmp --lz77 "SoldierFStand.png"
+
+ALIGN 4
+SoldierFWalk:
+#incext Png2Dmp --lz77 "SoldierFWalk.png"
+
+ALIGN 4
+LanceCavStand:
+#incext Png2Dmp --lz77 "LanceCavStand.png"
+
+ALIGN 4
+LanceCavWalk:
+#incext Png2Dmp --lz77 "LanceCavWalk.png"
+
+ALIGN 4
+AxeCavMStand:
+#incext Png2Dmp --lz77 "AxeCavMStand.png"
+
+ALIGN 4
+AxeCavMWalk:
+#incext Png2Dmp --lz77 "AxeCavMWalk.png"
+
+ALIGN 4
+AxeCavFStand:
+#incext Png2Dmp --lz77 "AxeCavFStand.png"
+
+ALIGN 4
+AxeCavFWalk:
+#incext Png2Dmp --lz77 "AxeCavFWalk.png"
+
+ALIGN 4
+SwordfighterMStand:
+#incext Png2Dmp --lz77 "SwordfighterMStand.png"
+
+ALIGN 4
+SwordfighterMWalk:
+#incext Png2Dmp --lz77 "SwordfighterMWalk.png"
+
+ALIGN 4
+SwordfighterFStand:
+#incext Png2Dmp --lz77 "SwordfighterFStand.png"
+
+ALIGN 4
+SwordfighterFWalk:
+#incext Png2Dmp --lz77 "SwordfighterFWalk.png"
+
+ALIGN 4
+OutlawMStand:
+#incext Png2Dmp --lz77 "OutlawMStand.png"
+
+ALIGN 4
+OutlawMWalk:
+#incext Png2Dmp --lz77 "OutlawMWalk.png"
+
+ALIGN 4
+OutlawFStand:
+#incext Png2Dmp --lz77 "OutlawFStand.png"
+
+ALIGN 4
+OutlawFWalk:
+#incext Png2Dmp --lz77 "OutlawFWalk.png"
+
+ALIGN 4
+AdventurerMStand:
+#incext Png2Dmp --lz77 "AdventurerMStand.png"
+
+ALIGN 4
+AdventurerMWalk:
+#incext Png2Dmp --lz77 "AdventurerMWalk.png"
+
+ALIGN 4
+AdventurerFStand:
+#incext Png2Dmp --lz77 "AdventurerFStand.png"
+
+ALIGN 4
+AdventurerFWalk:
+#incext Png2Dmp --lz77 "AdventurerFWalk.png"

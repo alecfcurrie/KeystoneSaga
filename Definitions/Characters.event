@@ -1,0 +1,43 @@
+// Audrey - Lord
+#define AudreyID 0x1
+#define AudreyPortrait 0x2
+
+//Cordell - Archer
+#define CordellID 0x2
+#define CordellPortrait 0x4
+
+//Kennard - Soldier
+#define KennardID 0x3
+#define KennardPortrait 0x5
+
+// Wesley - Cavalier
+#define WesleyID 0x4
+#define WesleyPortrait 0x6
+
+// Osborne - Monk
+#define OsborneID 0x5
+#define OsbornePortrait 0x7
+
+// Surge - Fighter
+#define SurgeID 0xa
+#define SurgePortrait 0xe
+
+// Elaine - Soldier
+#define ElaineID 0x6
+#define ElainePortrait 0x8
+
+// Zandrea - Ninja
+#define ZandreaID 0x8
+#define ZandreaPortrait 0xa
+
+// Osma - Mage
+#define OsmaID 0x7
+#define OsmaPortrait 0x9
+
+// Liev - Bard
+#define LievID 0x15
+#define LievPortrait 0x1c
+
+// Jyri - Mage
+#define JyriID 0x16
+#define JyriPortrait 0x1e 

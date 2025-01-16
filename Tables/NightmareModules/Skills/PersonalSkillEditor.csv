@@ -1,15 +1,15 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Eirika,CharismaID
-Seth,SaviorID
-Gilliam,RallyDefID
-Franz,SealStrID
-Moulder,RallyResID
-Vanessa,SpurSpdID
+Audrey,CharismaID
+Cordell,CourageousID
+Kennard,FocusedStanceID
+Wesley,GhostwalkerID
+Osborne,0x0
+Vanessa,0x0
 Ross,ParagonID
 Neimi,RallyLukID
 Colm,RallySpdID
-Garcia,ColossusID
+Surge,BornBrawlerID
 Innes,BowRangeUpID
 Lute,ParagonID
 Natasha,SealLukID
@@ -103,7 +103,7 @@ Hunter (Ch 16),0x0
 0,0x0
 Brigand,0x0
 0,0x0
-O'Neill (Prologue),QuickRiposteID
+O'Neill (Prologue),CertainBlowID
 Glen (Cutscene),0x0
 Zonta (Ch 5x),0x0
 Vigarde (Ch 14B),RenewalID

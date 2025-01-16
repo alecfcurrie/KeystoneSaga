@@ -1,0 +1,44 @@
+#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP" // Credit: Snakey1
+
+// ==Axe Cavalier==
+ALIGN 4
+AxeCavCard:
+#incext Png2Dmp --lz77 "AxeCav.png"
+
+ALIGN 4
+AxeCavPalette:
+#incext Png2Dmp --palette-only "AxeCav.png"
+
+setCardEntry(AxeCavClassCard,AxeCavCard,AxeCavPalette)
+
+// ==Outlaw (M)==
+ALIGN 4
+OutlawMCard:
+#incext Png2Dmp --lz77 "OutlawM.png"
+
+ALIGN 4
+OutlawMPalette:
+#incext Png2Dmp --palette-only "OutlawM.png"
+
+setCardEntry(OutlawMClassCard, OutlawMCard, OutlawMPalette)
+
+// ==Outlaw (F)==
+ALIGN 4
+OutlawFCard:
+#incext Png2Dmp --lz77 "OutlawF.png"
+
+ALIGN 4
+OutlawFPalette:
+#incext Png2Dmp --palette-only "OutlawF.png"
+
+setCardEntry(OutlawFClassCard, OutlawFCard, OutlawFPalette)
+
+// ==Ninja==
+NinjaCard:
+#incext Png2Dmp --lz77 "Ninja.png"
+
+ALIGN 4
+NinjaPalette:
+#incext Png2Dmp --palette-only "Ninja.png"
+
+setCardEntry(NinjaClassCard, NinjaCard, NinjaPalette)

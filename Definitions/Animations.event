@@ -1,0 +1,36 @@
+#define AudreyLordSword 0x3
+#define AudreyLordUnarmed 0x4
+
+#define SwordfighterM1Sword 0x11
+#define SwordfighterM1Unarmed 0x12
+#define SwordfighterM2Sword 0x13
+#define SwordfighterM2Unarmed 0x14
+#define SwordfighterFSword 0x0B
+#define SwordfighterFUnarmed 0x0C
+
+#define AxeCavMAxe 0xB3
+#define AxeCavMHandaxe 0xB4
+#define AxeCavMUnarmed 0xB5
+#define AxeCavFAxe 0xB6
+#define AxeCavFHandaxe 0xB7
+#define AxeCavFUnarmed 0xB8
+
+#define SoldierMLance 0x98
+#define SoldierMUnarmed 0x99
+#define SoldierFLance 0x9D
+#define SoldierFUnarmed 0x9E
+
+#define OutlawMBow 0xA0
+#define OutlawMUnarmed 0xA1
+#define OutlawFBow 0xA2
+#define OutlawFUnarmed 0xA3
+
+#define AdventurerMBow 0xA4
+#define AdventurerMUnarmed 0xA5
+#define AdventurerMStaff 0xA6
+#define AdventurerFBow 0xA7
+#define AdventurerFUnarmed 0xA8
+#define AdventurerFStaff 0xA9
+
+#define NinjaMKnife 0xAA
+#define NinjaFKnife 0xAB

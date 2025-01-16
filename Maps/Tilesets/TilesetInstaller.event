@@ -1,0 +1,20 @@
+#ifndef tilesetAnimation
+    #define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+#endif
+
+// Super Fields
+ALIGN 4
+SuperFieldsObject:
+#incbin "SuperFields/SuperFields.dmp"
+
+ALIGN 4
+SuperFieldsConfig:
+#incbin "SuperFields/SuperFields_comp.dmp"
+
+ALIGN 4
+SuperFieldsPalette:
+#incbin "SuperFields/SuperFieldsPalette.dmp"
+
+EventPointerTable(0x01, SuperFieldsObject)
+EventPointerTable(0x02, SuperFieldsPalette)
+EventPointerTable(0x03, SuperFieldsConfig)

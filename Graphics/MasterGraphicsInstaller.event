@@ -1,0 +1,4 @@
+#include "Weapons/WeaponInstaller.event"
+#include "BattleAnims/MasterAnimationInstaller.event"
+#include "MapSprites/MapSpriteInstaller.event"
+#include "ClassCards/ClassCardInstaller.event"

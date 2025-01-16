@@ -731,7 +731,7 @@ ORG SkillIcon(OutdoorFighterID)
 ORG SkillIcon(TomeRangeUpID)
 #incbin "SkillIcons/TomeRangeUp.dmp"
 
-ORG SkillIcon(AlertStanceID)
+ORG SkillIcon(FocusedStanceID)
 #incbin "SkillIcons/AlertStance.dmp"
 
 ORG SkillIcon(AlertStancePlusID)

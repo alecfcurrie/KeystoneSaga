@@ -76,6 +76,20 @@ POIN GetUnitsInRange
 WORD TantivyID
 
 ALIGN 4
+Courageous:
+#incbin "SoloSkills/SoloSkills.dmp"
+POIN SkillTester
+POIN GetUnitsInRange
+WORD CourageousID
+
+ALIGN 4
+BornBrawler:
+#incbin "BornBrawler/BornBrawler.dmp"
+POIN SkillTester
+POIN GetUnitsInRange
+WORD BornBrawlerID
+
+ALIGN 4
 Focus:
 #incbin "Focus/Focus.dmp"
 POIN SkillTester

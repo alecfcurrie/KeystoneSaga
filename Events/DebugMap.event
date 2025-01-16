@@ -1,0 +1,116 @@
+EventPointerTable(0x99, PointerList)
+
+//#ifdef DRAGON_VEINS
+//VeinEffect(0, FreezeAllEnemies)
+//#endif // DRAGON_VEINS
+
+setText(0x188, DebugMapName)
+
+#define VillageClose 2
+
+ALIGN 4
+DebugMapName:
+String("DEBUG MAP")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN UnitsCH2 UnitsCH2  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(8,15)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+//==================================================================//
+//==============================UNITS===============================//
+//==================================================================//
+
+
+UnitsCH2:
+UNIT AudreyID EirikaLord AudreyID Level(3, Ally, True) [8,15] 0x0 0x0 0x0 0x0 [BronzeSword,Vulnerary] NoAI
+UNIT SurgeID Fighter AudreyID Level(3, Ally, True)  [9,16] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT OsborneID Priest AudreyID Level(5, Ally, True)  [8,17] 0x0 0x0 0x0 0x0 [Lightning,Heal,Vulnerary] NoAI
+UNIT ElaineID SoldierF AudreyID Level(3, Ally, True) [9,18] 0x0 0x0 0x0 0x0 [IronLance,Javelin,Vulnerary] NoAI
+UNIT CordellID Archer AudreyID Level(5, Ally, True) [8,19] 0x0 0x0 0x0 0x0 [SteelBow, BronzeBow,Vulnerary] NoAI
+UNIT WesleyID AxeCavM AudreyID Level(4, Ally, True)  [9,20] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT OsmaID MageF AudreyID Level(5, Ally, False)  [8,21] 0x0 0x0 0x0 0x0 [Fire, Thunder, Vulnerary] NoAI
+UNIT ZandreaID NinjaF AudreyID Level(5, Ally, False)  [8,22] 0x0 0x0 0x0 0x0 [BronzeDagger, IronDagger, SteelDagger, SilverDagger] NoAI
+UNIT
+
+EnemyUnits:
+// Lower Central Group
+UNIT 0x80 LanceCavalier ONeill Level(10, Enemy, True) [5 ,22] 0x0 0x0 0x0 0x0 [BronzeLance] NoAI
+UNIT
+
+//==================================================================//
+//=============================EVENTS===============================//
+//==================================================================//
+
+
+BeginningScene:
+
+ENUT FIXED_GROWTHS_FLAG_ID
+LOAD1 0x1 EnemyUnits
+ENUN
+
+// Finally
+LOAD1 0x1 UnitsCH2 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+ENUN
+ENUF FIXED_GROWTHS_FLAG_ID
+
+FADU 0x4
+CenterTutorialTextBox
+
+// Debugging text overwrite issue
+SOLOTEXTBOXSTART
+TEXT 0x471
+TEXTEND
+REMA
+
+NoFade
+ENDA
+
+
+EndingScene:
+MNC2 1
+NoFade
+ENDA

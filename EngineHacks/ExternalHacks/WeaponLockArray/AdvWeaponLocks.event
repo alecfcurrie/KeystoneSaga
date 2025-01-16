@@ -34,10 +34,10 @@ FILL 256
 #define HardClassLock 3
 #define EndLockArray 0
 
-TestArray:
+LightMagicArray:
 BYTE HardClassLock
-BYTE EirikaLord
-BYTE Rogue
+BYTE Priest
+BYTE Bishop
 BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS

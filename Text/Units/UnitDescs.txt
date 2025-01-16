@@ -1,0 +1,50 @@
+## AudreyDesc
+The youngest princess of Lydemoor.[N]
+Loyal to her people and her ideals.[X]
+
+## CordellDesc
+The calm and collected leader of[N]
+the north-eastern division of[N]
+Lydemoor's knights.[X]
+
+## KennardDesc
+Something idk[X]
+
+## WesleyDesc
+A noble knight of Lydemoor[N]
+and Audrey's childhood friend.[N]
+Has a sister named Francine.[X]
+
+## OsborneDesc
+A tactician serving Lydemoor[N]
+who used to be a priest.[N]
+Audrey's tactics instructor.[X]
+
+## SurgeDesc
+A soldier from a border village in[N]
+Lydemoor. He's outgoing and eager[N]
+to improve at combat.[X]
+
+## ElaineDesc
+A soldier born of a merchant[N]
+family in Lydemoor's capital.[N]
+Something of a tomboy.[X]
+
+## ZandreaDesc
+A Dretian ninja working as a[N]
+mercenary. Keeps to herself[N]
+mostly, but has a good heart.[X]
+
+## OsmaDesc
+A mage from Gorien village.[N]
+Cared for the Felean children[N]
+before they were kidnapped.[X]
+
+## GloveDesc
+A dull slaver attempting[N]
+to procure slaves from villages[N]
+in north-eastern Lydemoor.[X]
+
+## SlaverDesc
+Bandits that capture civilians[N]
+and sell them for profit.[X]

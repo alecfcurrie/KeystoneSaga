@@ -270,7 +270,13 @@ ldr		r1,=Get_Item_Crit
 mov		r14,r1
 .short	0xF800
 cmp		r0,#crit_warning_cutoff
-bgt		IsCritty
+bgt		CritCheck2
+b NextItem
+
+CritCheck2:
+cmp		r0,#0xFF
+bne		IsCritty
+
 NextItem:
 add		r5,#2
 cmp		r5,#inventory_slot1+8

@@ -1,0 +1,20 @@
+//## SwordCavName
+//Sword Cavalier[X]
+
+## LanceCavName
+*{Lance Cavalier}[X]
+
+## AxeCavName
+*{Axe Cavalier}[X]
+
+## SwordfighterName
+*{Swordfighter}[X]
+
+## OutlawName
+*{Outlaw}[X]
+
+## AdventurerName
+*{Adventurer}[X]
+
+## NinjaName
+*{Ninja}[X]

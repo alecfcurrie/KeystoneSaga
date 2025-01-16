@@ -1,0 +1,82 @@
+#define SwordAnim(AnimID)   "AddClassAnimation(AnimID,Swords,1)"
+#define LanceAnim(AnimID)   "AddClassAnimation(AnimID,Lances,1)"
+#define AxeAnim(AnimID)     "AddClassAnimation(AnimID,Axes,1)"
+#define BowAnim(AnimID)     "AddClassAnimation(AnimID,Bows,1)"
+#define HandaxeAnim(AnimID) "AddClassAnimation(AnimID,HandAxe,0); AddClassAnimation(AnimID, Tomahawk,0)"
+#define StaffAnim(AnimID)   "AddClassAnimation(AnimID,Staves,1)"
+#define KnifeAnim(AnimID)   "AddClassAnimation(AnimID,Light,1)"
+#define UnarmedAnim(AnimID) "AddClassAnimation(AnimID,Disarmed,1)"
+
+ALIGN 4
+
+AudreyLordAnims:
+SwordAnim(AudreyLordSword)
+UnarmedAnim(AudreyLordUnarmed)
+EndClassAnimation
+
+AxeCavMAnims:
+HandaxeAnim(AxeCavMHandaxe)
+AxeAnim(AxeCavMAxe)
+UnarmedAnim(AxeCavMUnarmed)
+EndClassAnimation
+
+AxeCavFAnims:
+HandaxeAnim(AxeCavFHandaxe)
+AxeAnim(AxeCavFAxe)
+UnarmedAnim(AxeCavFUnarmed)
+EndClassAnimation
+
+SwordfighterM1Anims:
+SwordAnim(SwordfighterM1Sword)
+UnarmedAnim(SwordfighterM1Unarmed)
+EndClassAnimation
+
+SwordfighterM2Anims:
+SwordAnim(SwordfighterM2Sword)
+UnarmedAnim(SwordfighterM2Unarmed)
+EndClassAnimation
+
+SwordfighterFAnims:
+SwordAnim(SwordfighterFSword)
+UnarmedAnim(SwordfighterFUnarmed)
+EndClassAnimation
+
+SoldierMAnims:
+LanceAnim(SoldierMLance)
+UnarmedAnim(SoldierMUnarmed)
+EndClassAnimation
+
+SoldierFAnims:
+LanceAnim(SoldierFLance)
+UnarmedAnim(SoldierFUnarmed)
+EndClassAnimation
+
+AdventurerMAnims:
+BowAnim(AdventurerMBow)
+StaffAnim(AdventurerMStaff)
+UnarmedAnim(AdventurerMUnarmed)
+EndClassAnimation
+
+AdventurerFAnims:
+BowAnim(AdventurerFBow)
+StaffAnim(AdventurerFStaff)
+UnarmedAnim(AdventurerFUnarmed)
+EndClassAnimation
+
+OutlawMAnims:
+BowAnim(OutlawMBow)
+UnarmedAnim(OutlawMUnarmed)
+EndClassAnimation
+
+OutlawFAnims:
+BowAnim(OutlawFBow)
+UnarmedAnim(OutlawFUnarmed)
+EndClassAnimation
+
+NinjaMAnims:
+KnifeAnim(NinjaMKnife)
+EndClassAnimation
+
+NinjaFAnims:
+KnifeAnim(NinjaFKnife)
+EndClassAnimation

@@ -1,0 +1,116 @@
+#define SetIcon(ID) "ORG 0x5926F4 + ID * 128 - 128" //0x5926F4 is the address of the Icon Table
+
+PUSH //PUSHing because SetIcon ORGs
+SetIcon(BronzeSword) // Bronze Sword ID
+#incext Png2Dmp "BronzeSword_Fixed.png"
+POP
+
+PUSH
+SetIcon(BronzeLance)
+#incext Png2Dmp "BronzeLance.png"
+POP
+
+PUSH
+SetIcon(IronLance)
+#incext Png2Dmp "IronLance.png"
+POP
+
+PUSH
+SetIcon(SteelLance)
+#incext Png2Dmp "SteelLance.png"
+POP
+
+PUSH
+SetIcon(SilverLance)
+#incext Png2Dmp "SilverLance.png"
+POP
+
+PUSH
+SetIcon(BraveLance)
+#incext Png2Dmp "BraveLance.png"
+POP
+
+PUSH
+SetIcon(BronzeAxe)
+#incext Png2Dmp "BronzeAxe.png"
+POP
+
+PUSH
+SetIcon(IronAxe)
+#incext Png2Dmp "IronAxe.png"
+POP
+
+PUSH
+SetIcon(SteelAxe)
+#incext Png2Dmp "SteelAxe.png"
+POP
+
+PUSH
+SetIcon(SilverAxe)
+#incext Png2Dmp "SilverAxe.png"
+POP
+
+PUSH
+SetIcon(BraveAxe)
+#incext Png2Dmp "BraveAxe.png"
+POP
+
+PUSH
+SetIcon(Hammer)
+#incext Png2Dmp "Hammer.png"
+POP
+
+PUSH
+SetIcon(BronzeBow)
+#incext Png2Dmp "BronzeBow.png"
+POP
+
+PUSH
+SetIcon(IronBow)
+#incext Png2Dmp "IronBow.png"
+POP
+
+PUSH
+SetIcon(SteelBow)
+#incext Png2Dmp "SteelBow.png"
+POP
+
+PUSH
+SetIcon(SilverBow)
+#incext Png2Dmp "SilverBow.png"
+POP
+
+PUSH
+SetIcon(BraveBow)
+#incext Png2Dmp "BraveBow.png"
+POP
+
+PUSH
+SetIcon(MiniBow)
+#incext Png2Dmp "MiniBow.png"
+POP
+
+PUSH
+SetIcon(BronzeDagger)
+#incext Png2Dmp "BronzeDagger.png"
+POP
+
+PUSH
+SetIcon(IronDagger)
+#incext Png2Dmp "IronDagger.png"
+POP
+
+PUSH
+SetIcon(SteelDagger)
+#incext Png2Dmp "SteelDagger.png"
+POP
+
+PUSH
+SetIcon(SilverDagger)
+#incext Png2Dmp "SilverDagger.png"
+POP
+
+PUSH
+SetIcon(HuntersKnife)
+#incext Png2Dmp "HuntersKnife.png"
+POP

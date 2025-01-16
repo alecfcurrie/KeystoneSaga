@@ -1,0 +1,45 @@
+GratedShtick - DSFE Avoid Patch
+Vesley - SetStatus
+HyperGammaSpaces - CHAI Fix
+Sme - RNByFlag
+Mystic - Map Sprite and Promotion Tables
+Snakey1 - setCardEntry macro
+Dragz - Forging prototype
+Sme - Fixed Damage Weapons
+Snakey1 - AssembleObjects.bat
+Snakey1 - REDA list event file
+Zeta - Murder Sticks
+HyperGammaSpaces - EA Notepad++ Language settings
+Teq - Text Engine Rework
+HyperGammaSpaces - OC Questions
+
+==Item Icons==
+Batima - Bronze Axe/Lance, Bronze/Iron/Steel/Silver Dagger
+Zelix - Bronze Sword/Bow, Iron Bow/Lance/Axe, Steel Bow/Lance/Axe, Silver Bow/Lance/Axe, Brave Bow/Lance/Axe, Hammer
+Peerless - Mini Bow
+
+==Class Cards==
+RobertFPY - Axe Cavalier
+Spud - Outlaw (M)
+Spud, Jj09 - Outlaw (F)
+Leif, Scraiza, Sword of HaE - Ninja
+
+==Battle Animations==
+Flasuban - Soldier (Male and Female)
+Red Bean, Jeorge_Reds - Audrey Lord
+Leo_Link, Pushwall - Female and Male Axe Cavalier
+Iscaneus, Leo_link - Female Sword Fighter
+Iscaneus, Leo_link, Intestine - Male Sword Fighter
+Leo_link, Tsushi, Iscaneus - Male Sword Fighter (alt)
+Itranc, Leo_Link - Adventurer 
+Leo_link, Spud, MeatOfJustice - Outlaw 
+
+==Map Animations==
+Rexacuse, Peerless, Alusq - Soldier (M)
+Rexacuse, Peerless, Alusq, WarPath - Soldier (F) 
+Salvaged - Male Axe Cavalier
+Salvaged, Flasuban - Female Axe Cavalier 
+Sephie - Male Swordfighter
+Alice - Female Swordfighter
+MeatOfJustice - Outlaw
+ArcherBias - Adventurer

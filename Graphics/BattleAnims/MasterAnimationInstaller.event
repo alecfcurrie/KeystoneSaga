@@ -1,0 +1,102 @@
+#ifndef ClassAnimTable
+  #ifdef _FE8_
+    #define ClassAnimTable (0xc00008-0x20)
+  #endif
+  #ifdef _FE7_
+    #define ClassAnimTable (0xe00008-0x20)
+  #endif
+#endif
+
+#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
+
+// Animation Pointers (MUST GO FIRST)
+
+#include "AnimationReference.event"
+
+//////////////Installed animations go here:
+
+// Audrey Lord Anims
+{
+#include "AudreyLordSword.event"
+#include "AudreyLordUnarmed.event"
+}
+
+// Axe Cav (M) Anims
+{
+#include "AxeCavMAxe.event"
+#include "AxeCavMHandaxe.event"
+#include "AxeCavMUnarmed.event"
+}
+
+// Axe Cav (F) Anims
+{
+#include "AxeCavFAxe.event"
+#include "AxeCavFHandaxe.event"
+#include "AxeCavFUnarmed.event"
+}
+
+// Swordfighter (M) Anims
+{
+#include "SwordfighterM1Sword.event"
+#include "SwordfighterM1Unarmed.event"
+}
+
+// Swordfighter (M) Alternate Anims
+{
+#include "SwordfighterM2Sword.event"
+#include "SwordfighterM2Unarmed.event"
+}
+
+// Swordfighter (F) Anims
+{
+#include "SwordfighterFSword.event"
+#include "SwordfighterFUnarmed.event"
+}
+
+// Soldier (M) Anims
+{
+#include "SoldierMLance.event"
+#include "SoldierMUnarmed.event"
+}
+
+// Soldier (F) Anims
+{
+#include "SoldierFLance.event"
+#include "SoldierFUnarmed.event"
+}
+
+// Adventurer (M) Anims
+{
+#include "AdventurerMBow.event"
+#include "AdventurerMStaff.event"
+#include "AdventurerMUnarmed.event"
+}
+
+// Adventurer (F) Anims
+{
+#include "AdventurerFBow.event"
+#include "AdventurerFStaff.event"
+#include "AdventurerFUnarmed.event"
+}
+
+// Outlaw (M) Anims
+{
+#include "OutlawMBow.event"
+#include "OutlawMUnarmed.event"
+}
+
+// Outlaw (F) Anims
+{
+#include "OutlawFBow.event"
+#include "OutlawFUnarmed.event"
+}
+
+// Ninja (M) Anims
+{
+#include "NinjaMKnife.event"
+}
+
+// Ninja (F) Anims
+{
+#include "NinjaFKnife.event"
+}

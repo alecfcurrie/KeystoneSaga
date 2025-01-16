@@ -1,0 +1,44 @@
+#0x0355 BronzeSwordName
+Bronze Sword[X]
+
+#0x0405 BronzeDesc
+Cannot critical.[X]
+
+#0x036a BronzeLanceName
+Bronze Lance[X]
+
+#0x0382 BronzeAxeName
+Bronze Axe[X]
+
+#0x391 MiniBowName
+Crossbow[X]
+
+#0x38e BronzeBowName
+Bronze Bow[X]
+
+#0x358 BronzeDaggerName
+Bronze Dagger[X]
+
+#0x359 IronDaggerName
+Iron Dagger[X]
+
+#0x35a SteelDaggerName
+Steel Dagger[X]
+
+#0x35b SilverDaggerName
+Silver Dagger[X]
+
+#0x403 HuntersKnifeName
+Hunter's Knife[X]
+
+#0x4ab HuntersKnifeDesc
+Eff. versus cavalry.[X]
+
+#0x441 OneTwoRangeDesc
+Cannot critical or follow-up.[X]
+
+## CrossbowDesc
+*{Ignores str. Cannot critical or double.}[X]
+
+## LightMagDesc
+*{Priest/Bishop only. Eff. vs monsters.}[X]

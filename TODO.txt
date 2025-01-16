@@ -1,0 +1,13 @@
+-Fix AI not activating if their AI is changed when someone steps in range (can do this with fighters on left side in CH1)
+-Fix item image mismatch issue
+-Add text description and image for Energy Drop
+-Replace swordfighter class cards?
+-Add intro cutscene
+-Remove immune status from female soldiers
+-Implement Narrow Text for Class Names/Descs
+-Edit Class Mag Growths/Caps
+-Edit Unit Growths for Mag
+-Add Adventurer Class Card
+-Fix Green Haired Outlaws
+-Swap Outlaw Sprite (since it doesn't get hit by fighter battle anims)
+-Enable Stat Bracketing Flag

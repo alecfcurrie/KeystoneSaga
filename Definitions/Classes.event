@@ -1,0 +1,35 @@
+#define AudreyLord EirikaLord
+
+#define LanceCav 0x5
+#define AxeCavM 0x6
+#define AxeCavF 0x7
+#define Paladin 0x8
+#define PaladinF 0x9
+
+#define NinjaM 0xe
+#define Ninja NinjaM
+#define NinjaF 0xf
+
+#define SwordfighterM1 0x10
+#define SwordfighterM2 0x11
+#define SwordfighterM SwordfighterM1
+#define SwordfighterF  0x12
+
+#define GreatKnight 0x35
+#define GreatKnightF 0x36
+
+#define SoldierM 0x4E
+#define Soldier SoldierM
+#define SoldierF 0x4F
+
+#define OutlawM 0x37
+#define Outlaw OutlawM
+#define OutlawF 0x38
+
+#define AdventurerM 0x39
+#define Adventurer AdventurerM
+#define AdventurerF 0x3a
+
+#define Mage 0x25
+#define MageM Mage
+#define MageF 0x26

@@ -1012,8 +1012,8 @@ Avo when fighting outdoors.[X]
 Tome Range +1: Maximum range[N]
 of equipped tome is increased.[X]
 
-## SD_AlertStance
-Alert Stance: +15 Avo[N]
+## SD_FocusedStance
+Focused Stance: +15 Hit[N]
 when defending.[X]
 
 ## SD_AlertStancePlus
@@ -1817,6 +1817,18 @@ immune to poison.[X]
 StoneBody: If your CON is greater[N]
 than the enemy's, reduce incoming[N]
 physical damage by the difference.[X]
+
+## SD_Courageous
+Courageous: Grants +3/-3 damage[N]
+dealt/taken when not adjacent to allies.[X]
+
+## SD_BornBrawler
+Born Brawler: Grants +3 damage [NL]
+per adjacent enemy. [X]
+
+## SD_Ghostwalker
+Ghostwalker: Grants[N]
+absolute evasion.[X]
 
 ## SD_Pursuer
 Pursuer: If initiating, grants AS +5,[N]

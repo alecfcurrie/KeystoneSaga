@@ -1,0 +1,10 @@
+// Gamma CHAI fix fix
+ALIGN 4
+New_CHAI:
+#incbin "New_CHAI.dmp"
+PUSH
+ORG $10644
+replaceWithHack(New_CHAI)
+POP
+#define SetAI_ID(unitid,ai1,ai2,ai3,ai4) "SVAL 0x1 ai1|(ai2<<8)|(ai3<<16)|(ai4<<24); CHAI unitid"
+#define SetAI_Pos(x,y,ai1,ai2,ai3,ai4) "SVAL 0x1 ai1|(ai2<<8)|(ai3<<16)|(ai4<<24); CHAI [x,y]"
