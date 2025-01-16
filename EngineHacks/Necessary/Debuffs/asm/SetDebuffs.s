@@ -235,8 +235,9 @@ cmp r0, #0
 ble DontAddToValue_Negative
 adc r3, r0 @ to remove positives first 
 DontAddToValue_Negative: 
-cmp r3, r0 
-bgt Loop @ if debuffed stat is less bad than before (a higher # since we're negative), do nothing 
+@cmp r3, r0 @r0 is original debuff, and r3 is new debuff
+@bgt Loop @ if debuffed stat is less bad than before (a higher # since we're negative), do nothing
+add r3, r0
 tst r1, r2 
 beq AffectEnemy 
 
