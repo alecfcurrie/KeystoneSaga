@@ -78,7 +78,7 @@ UNIT
 
 EnemyUnits:
 // Lower Central Group
-UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [5 ,22] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT 0x80 Paladin ONeill Level(2, Enemy, True) [5 ,22] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT 0x80 Fighter ONeill Level(2, Enemy, True) [6 ,23] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT 0x80 Fighter ONeill Level(2, NPC, True) [8 ,24] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
 UNIT 0x80 Fighter ONeill Level(2, NPC, True) [9 ,25] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
