@@ -78,7 +78,7 @@ UNIT
 
 EnemyUnits:
 // Lower Central Group
-UNIT 0x80 LanceCavalier ONeill Level(10, Enemy, True) [5 ,22] 0x0 0x0 0x0 0x0 [BronzeLance] NoAI
+UNIT 0x80 LanceCav ONeill Level(10, Enemy, True) [5 ,22] 0x0 0x0 0x0 0x0 [BronzeLance] NoAI
 UNIT
 
 //==================================================================//
