@@ -106,15 +106,15 @@ mov r3, r7 @ ram
 bl ProcessCombatDebuffs 
 
 OppositeUnit: 
-mov r0, #0x48       @Equipped item after battle
-ldrh r0, [r5, r0]   
-bl GetWepDebuffByte
-mov r1, #0x1F
-and r0, r1 @wep debuff byte 
-mov r1, r5 @ unit 
-mov r2, r7 @ ram 
-mov r3, r6 @ ram 
-bl ProcessCombatDebuffs 
+@mov r0, #0x48       @Equipped item after battle
+@ldrh r0, [r5, r0]   
+@bl GetWepDebuffByte
+@mov r1, #0x1F
+@and r0, r1 @wep debuff byte 
+@mov r1, r5 @ unit 
+@mov r2, r7 @ ram 
+@mov r3, r6 @ ram 
+@bl ProcessCombatDebuffs 
 
 
 pop {r4-r7}
@@ -229,8 +229,8 @@ b AffectEnemy
 
 NegativeA: @ new value will be negative 
 mov r3, #0x3F 
-and r3, r1 
-neg r3, r3 
+and r3, r1 @positive to be applied debuff value 
+neg r3, r3 @negative to be applied debuff value
 cmp r0, #0 
 ble DontAddToValue_Negative
 adc r3, r0 @ to remove positives first 
