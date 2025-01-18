@@ -101,6 +101,7 @@ ENUF FIXED_GROWTHS_FLAG_ID
 SetUnitStatusAll(Any, Strength, 0, AnyDeployed, EnemyArmy, AnyClass, AnyRange, AnyItem)
 SetUnitStatusAll(Any, MaxHP, 60, AnyDeployed, EnemyArmy, AnyClass, AnyRange, AnyItem)
 SetUnitStatusAll(Any, CurrentHP, 60, AnyDeployed, EnemyArmy, AnyClass, AnyRange, AnyItem)
+SetUnitStatusAll(Any, Speed, 14, AnyDeployed, EnemyArmy, AnyClass, AnyRange, AnyItem)
 
 NoFade
 ENDA
