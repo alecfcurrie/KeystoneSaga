@@ -16,8 +16,8 @@ NewWeaponDebuffTable:
 // 	mag, str, skl, spd, def, res, luk, mov
 BYTE 0 0 0 0 0 0 0 0 // do nothing for 0th entry 
 WepDebuffEntry(0,0,2,2,2,2,0,0) //0x1: Bronze Shuriken debuff.
-WepDebuffEntry(3,0,0,0,3,3,0,0) //0x2: Iron Shuriken debuff.
-WepDebuffEntry(0,4,0,0,3,3,0,0) //0x3: Steel Shuriken debuff.
+WepDebuffEntry(2,0,0,0,3,3,0,0) //0x2: Iron Shuriken debuff.
+WepDebuffEntry(0,3,0,0,3,3,0,0) //0x3: Steel Shuriken debuff.
 WepDebuffEntry(0,0,0,4,4,4,0,0) //0x4: Silver Shuriken debuff.
 WepDebuffEntry(0,0,0,0,3,3,3,0) //0x5: Hunter's Knife debuff.
 BYTE 31 31|DebuffSelf 23|DebuffEnemy 24|BuffEnemy 25 26 27 28 // +31 Mag, -31 Str, -23 Skl for enemy, +24 Spd for enemy, +25/+26/+27/+28 Def/Res/Luk/Mov for user 
