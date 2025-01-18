@@ -288,6 +288,7 @@ TeamDebuffTables:
 
   ALIGN 4
   setDebuffs:
+	MESSAGE Set Debuffs code is at currentOffset //0x907F726
     #include "asm/SetDebuffs.lyn.event"
     POIN ItemTable
 
