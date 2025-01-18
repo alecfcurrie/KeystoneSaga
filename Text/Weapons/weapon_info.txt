@@ -1,40 +1,54 @@
-#0x0355 BronzeSwordName
+##BronzeSwordName
 Bronze Sword[X]
 
-#0x0405 BronzeDesc
+## BronzeDesc
 Cannot critical.[X]
 
-#0x036a BronzeLanceName
+## BronzeLanceName
 Bronze Lance[X]
 
-#0x0382 BronzeAxeName
+## BronzeAxeName
 Bronze Axe[X]
 
-#0x391 MiniBowName
+## MiniBowName
 Crossbow[X]
 
-#0x38e BronzeBowName
+## BronzeBowName
 Bronze Bow[X]
 
-#0x358 BronzeDaggerName
+## BronzeDaggerName
 Bronze Dagger[X]
 
-#0x359 IronDaggerName
+## BronzeDaggerDesc
+Cannot critical. Inflicts[N]
+Mag-2, Skl-2, Def-3, Res-3.[X]
+
+## IronDaggerName
 Iron Dagger[X]
 
-#0x35a SteelDaggerName
+## IronDaggerDesc
+Inflicts Mag-2, Def-3, Res-3.[X]
+
+## SteelDaggerName
 Steel Dagger[X]
 
-#0x35b SilverDaggerName
+## SteelDaggerDesc
+Inflicts Str-3, Def-4, Res-4.[X]
+
+## SilverDaggerName
 Silver Dagger[X]
 
-#0x403 HuntersKnifeName
+## SilverDaggerDesc
+Inflicts Str-4, Def-4, Res-4.[X]
+
+## HuntersKnifeName
 Hunter's Knife[X]
 
-#0x4ab HuntersKnifeDesc
-Eff. versus cavalry.[X]
+## HuntersKnifeDesc
+Eff. versus cavalry. Inflicts,[N]
+Lck-3, Def-3, Res-3.[X]
 
-#0x441 OneTwoRangeDesc
+## OneTwoRangeDesc
 Cannot critical or follow-up.[X]
 
 ## CrossbowDesc
