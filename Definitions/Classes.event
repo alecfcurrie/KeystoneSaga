@@ -13,6 +13,7 @@
 #define SwordfighterM1 0x10
 #define SwordfighterM2 0x11
 #define SwordfighterM SwordfighterM1
+#define Swordfighter SwordfighterM1
 #define SwordfighterF  0x12
 
 #define GreatKnight 0x35
