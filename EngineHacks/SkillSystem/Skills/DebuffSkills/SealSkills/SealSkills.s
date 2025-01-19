@@ -155,9 +155,10 @@ b NowStoreDebuff
 Negative: 
 mov r1, #0 
 sub r1, r4 @ to compare 
-cmp r3, r1 
-blt EndApplyDebuff @ we had a lower value / worse debuff already 
-mov r4, r1 @ new value to store 
+@cmp r3, r1 
+@blt EndApplyDebuff @ we had a lower value / worse debuff already
+add r4,r3, r1
+@mov r4, r1 @ new value to store 
 
 NowStoreDebuff: 
 mov r0, r6 @ debuff entry 
