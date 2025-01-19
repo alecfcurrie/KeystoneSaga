@@ -41,12 +41,12 @@ beq End
 @first apply the weapon debuffs
 @r5 = attacker
 @r4 = defender
-mov r0, r5
-mov r1, r4
-bl ApplyWeaponDebuffs @ in SetDebuffs.s 
-mov r0, r4
-mov r1, r5
-bl ApplyWeaponDebuffs
+@mov r0, r5
+@mov r1, r4
+@bl ApplyWeaponDebuffs @ in SetDebuffs.s 
+@mov r0, r4
+@mov r1, r5
+@bl ApplyWeaponDebuffs
 
 
 ldr r4, SealSkillList
