@@ -5,12 +5,12 @@ ItemTableLocation = EALiterals+0
 push {r0, lr}
 @r5 = attacker
 @r4 = defender
-mov r0, r5
-mov r1, r4
-bl ApplyWeaponDebuffs
-mov r0, r4
-mov r1, r5
-bl ApplyWeaponDebuffs
+@mov r0, r5
+@mov r1, r4
+@bl ApplyWeaponDebuffs
+@mov r0, r4
+@mov r1, r5
+@bl ApplyWeaponDebuffs
 pop {r0}
 @From original routine
 lsl     r0,r0,#0x1

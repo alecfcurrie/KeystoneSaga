@@ -30,6 +30,16 @@ mov r0, r4
 
 ApplySeals:
 
+@first apply the weapon debuffs
+@r5 = attacker
+@r4 = defender
+mov r0, r5
+mov r1, r4
+bl ApplyWeaponDebuffs @ in SetDebuffs.s 
+mov r0, r4
+mov r1, r5
+bl ApplyWeaponDebuffs
+
 @check if either one of us are dead
 ldrb r0,[r5,#0x13]
 cmp r0,#0
@@ -37,16 +47,6 @@ beq End
 ldrb r0,[r4,#0x13]
 cmp r0,#0
 beq End
-
-@first apply the weapon debuffs
-@r5 = attacker
-@r4 = defender
-@mov r0, r5
-@mov r1, r4
-@bl ApplyWeaponDebuffs @ in SetDebuffs.s 
-@mov r0, r4
-@mov r1, r5
-@bl ApplyWeaponDebuffs
 
 
 ldr r4, SealSkillList
