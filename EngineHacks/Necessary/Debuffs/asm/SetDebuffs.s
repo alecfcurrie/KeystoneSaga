@@ -131,16 +131,15 @@ and r4, r0 @ wep debuff entry
 
 
 
-mov r5, r8 
-push {r5} 
-
-
+mov r5, r8
+mov r6, r9
+push {r5-r6}
 
 mov r5, r1 @ unit 
 mov r6, r2 @ unitA debuff ram 
 mov r7, r3 @ unitB debuff ram 
 
-mov r0, #0x7C       @damage/hit data
+mov r0, #0x7C     @damage/hit data
 ldrb r0, [r5, r0] @ always called by ApplyWeaponDebuffs 
 mov r1, #0x1
 and r0, r1
@@ -156,6 +155,15 @@ AlwaysDebuff:
 ldr r2, =DebuffNumberOfStats_Link
 ldr r1, [r2] @ max 
 mov r8, r1 
+
+@ Check if Inevitable End, is active, and store the value in r9
+mov r0, r7
+ldr r1, =InevitableEndActive_Link
+ldr r1, [r1]
+bl CheckBit
+mov r1, #0x1
+and r0, r1
+mov r9, r0
 
 mov r2, #0x40 @ no 0x40 bitflag of Swap 
 ldr r3, =NewWeaponDebuffTable
@@ -227,17 +235,31 @@ tst r1, r2
 beq AffectUser
 b AffectEnemy
 
-NegativeA: @ new value will be negative 
+NegativeA: @ new value will be negative
+mov r3, r9
+cmp r3, #0x0
+beq InevitableEndInactive
+
+@ If inevitable end is active
+mov r3, #0x3F 
+and r3, r1 @positive to be applied debuff value 
+neg r3, r3 @negative to be applied debuff value
+adc r3, r0 @to remove positives first
+b CheckAffected
+
+@ If inevitable end is NOT active
+InevitableEndInactive:
 mov r3, #0x3F 
 and r3, r1 @positive to be applied debuff value 
 neg r3, r3 @negative to be applied debuff value
 cmp r0, #0 
 ble DontAddToValue_Negative
-adc r3, r0 @ to remove positives first 
-DontAddToValue_Negative: 
-@cmp r3, r0 @r0 is original debuff, and r3 is new debuff
-@bgt Loop @ if debuffed stat is less bad than before (a higher # since we're negative), do nothing
-add r3, r0
+adc r3, r0 @to remove positives first
+DontAddToValue_Negative:
+cmp r3, r0 @r0 is original debuff, and r3 is new debuff
+bgt Loop @ if debuffed stat is less bad than before (a higher # since we're negative), do nothing
+
+CheckAffected:
 tst r1, r2 
 beq AffectEnemy 
 
@@ -273,8 +295,9 @@ bl UnpackData_Signed
 b Loop 
 
 BreakLoop: 
-pop {r5} 
-mov r8, r5 
+pop {r5-r6} 
+mov r8, r5
+mov r9, r6
 
 pop {r4-r7} 
 pop {r0} 
