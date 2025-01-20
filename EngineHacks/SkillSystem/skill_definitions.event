@@ -1432,7 +1432,7 @@
 //Display-Only Skills
 
 #define CunningID 4
-#define NiceThighsID 115
+#define NiceThighsID 255
 #define PersonalityID 116
 
 
@@ -1451,3 +1451,6 @@
 
 // Born Brawler: Grants +3 ATK per adjacent enemy
 #define BornBrawlerID 151
+
+// My Skills (Enemy Exclusive Skills)
+#define InevitableEndID 115

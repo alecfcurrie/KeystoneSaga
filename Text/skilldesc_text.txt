@@ -1852,3 +1852,7 @@ than one weapon type.[X]
 ## SD_FactionSlayer
 "Faction" Slayer: Deal 2x calculated[N]
 damage to specific opponents.[X]
+
+## SD_InevitableEnd
+Inevitable End: Enables status effects[N]
+to accumulate when debuffing opponents.[X]
