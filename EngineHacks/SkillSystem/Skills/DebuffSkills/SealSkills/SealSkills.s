@@ -5,8 +5,9 @@
 .equ ItemTableLocation, ExtraUnitData+4 @dont forget to add this to the master skill installer
 .equ FullMetalBodyID, ItemTableLocation+4
 .equ ContraryID, FullMetalBodyID+4
+.equ InevitableEndID, ContraryID+4
 
-mov r1,r5
+mov r1,r5 @0x90938C4
 ldr r3, =0x802c1ec @UpdateUnitFromBattleUnit
 mov lr, r3
 .short 0xf800
@@ -29,10 +30,16 @@ mov r0, r4
 
 
 ApplySeals:
-
-@first apply the weapon debuffs
 @r5 = attacker
 @r4 = defender
+mov r0, r5
+mov r1, r4
+bl EnableInevitableEnd
+mov r0, r4
+mov r1, r5
+bl EnableInevitableEnd
+
+@first apply the weapon debuffs
 mov r0, r5
 mov r1, r4
 bl ApplyWeaponDebuffs @ in SetDebuffs.s 
@@ -47,6 +54,9 @@ beq End
 ldrb r0,[r4,#0x13]
 cmp r0,#0
 beq End
+
+@push unit locations to the stack
+push {r4, r5}
 
 
 ldr r4, SealSkillList
@@ -101,6 +111,12 @@ SealLoop:
   ble SealLoop
 
 End:
+@ Disable inevitable end (occurs regardless if inflicted)
+pop {r0}
+bl DisableInevitableEnd
+pop {r0}
+bl DisableInevitableEnd
+
 pop {r4-r7}
 pop {r0}
 bx r0
@@ -183,6 +199,41 @@ bx r0
 BXR3:
 bx r3
 
+.ltorg 
+EnableInevitableEnd:
+push {lr}
+push {r1}
+ldr r2, SkillTester		@r2 = SkillTester
+mov lr, r2				@lr = SkillTester
+ldr r1, InevitableEndID	@r1 = InevitableEndID
+.short 0xf800
+cmp r0, #0
+beq DoneEnableIE
+
+pop {r0}
+bl GetUnitDebuffEntry
+ldr r1, =InevitableEndActive_Link
+ldr r1, [r1]
+bl SetBit
+b DoneEnableIE2
+
+DoneEnableIE:
+pop {r0}
+DoneEnableIE2:
+pop {r0}
+bx r0
+.ltorg
+
+DisableInevitableEnd:
+push {lr}
+ldr r1, =InevitableEndActive_Link
+ldr r1, [r1]
+bl UnsetBit
+pop {r0}
+bx r0
+.ltorg
+
+
 .align
 .ltorg
 SkillTester:
@@ -192,3 +243,4 @@ SkillTester:
 @POIN ItemTableLocation
 @WORD FullMetalBodyID
 @WORD Contrary
+@WORD InevitableEndID
