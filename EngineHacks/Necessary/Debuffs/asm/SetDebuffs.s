@@ -244,7 +244,7 @@ beq InevitableEndInactive
 mov r3, #0x3F 
 and r3, r1 @positive to be applied debuff value 
 neg r3, r3 @negative to be applied debuff value
-adc r3, r0 @to remove positives first
+add r3, r0 @to remove positives first
 b CheckAffected
 
 @ If inevitable end is NOT active
