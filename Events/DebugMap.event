@@ -103,6 +103,8 @@ SetUnitStatusAll(Any, MaxHP, 60, AnyDeployed, EnemyArmy, AnyClass, AnyRange, Any
 SetUnitStatusAll(Any, CurrentHP, 60, AnyDeployed, EnemyArmy, AnyClass, AnyRange, AnyItem)
 SetUnitStatusAll(Any, Speed, 14, AnyDeployed, EnemyArmy, AnyClass, AnyRange, AnyItem)
 
+GiveItemWithDurability(SkillScroll,InevitableEndID,ZandreaID)
+
 NoFade
 ENDA
 
