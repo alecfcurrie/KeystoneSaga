@@ -67,12 +67,12 @@ ALIGN 4
 
 UnitsCH2:
 UNIT AudreyID EirikaLord AudreyID Level(3, Ally, True) [1,1] 0x0 0x0 0x0 0x0 [BronzeSword,Vulnerary] NoAI
-//UNIT SurgeID Fighter AudreyID Level(3, Ally, True)  [9,16] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
-//UNIT OsborneID Priest AudreyID Level(5, Ally, True)  [8,17] 0x0 0x0 0x0 0x0 [Lightning,Heal,Vulnerary] NoAI
-//UNIT ElaineID SoldierF AudreyID Level(3, Ally, True) [9,18] 0x0 0x0 0x0 0x0 [IronLance,Javelin,Vulnerary] NoAI
-//UNIT CordellID Archer AudreyID Level(5, Ally, True) [8,19] 0x0 0x0 0x0 0x0 [SteelBow, BronzeBow,Vulnerary] NoAI
-//UNIT WesleyID AxeCavM AudreyID Level(4, Ally, True)  [9,20] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
-//UNIT OsmaID MageF AudreyID Level(5, Ally, False)  [8,21] 0x0 0x0 0x0 0x0 [Fire, Thunder, Vulnerary] NoAI
+UNIT SurgeID Fighter AudreyID Level(3, Ally, True)  [9,16] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT OsborneID Priest AudreyID Level(5, Ally, True)  [8,17] 0x0 0x0 0x0 0x0 [Lightning,Heal,Vulnerary] NoAI
+UNIT ElaineID SoldierF AudreyID Level(3, Ally, True) [9,18] 0x0 0x0 0x0 0x0 [IronLance,Javelin,Vulnerary] NoAI
+UNIT CordellID Archer AudreyID Level(5, Ally, True) [8,19] 0x0 0x0 0x0 0x0 [SteelBow, BronzeBow,Vulnerary] NoAI
+UNIT WesleyID AxeCavM AudreyID Level(4, Ally, True)  [9,20] 0x0 0x0 0x0 0x0 [BronzeAxe] NoAI
+UNIT OsmaID MageF AudreyID Level(5, Ally, False)  [8,21] 0x0 0x0 0x0 0x0 [Fire, Thunder, Vulnerary] NoAI
 UNIT ZandreaID NinjaF AudreyID Level(5, Ally, False)  [9,24] 0x0 0x0 0x0 0x0 [BronzeDagger, IronDagger, SteelDagger, SilverDagger] NoAI
 UNIT
 
