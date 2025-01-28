@@ -50,10 +50,10 @@ bl ApplyWeaponDebuffs
 @check if either one of us are dead
 ldrb r0,[r5,#0x13]
 cmp r0,#0
-beq End
+beq End2
 ldrb r0,[r4,#0x13]
 cmp r0,#0
-beq End
+beq End2
 
 @push unit locations to the stack
 push {r4, r5}
@@ -116,7 +116,7 @@ pop {r0}
 bl DisableInevitableEnd
 pop {r0}
 bl DisableInevitableEnd
-
+End2:
 pop {r4-r7}
 pop {r0}
 bx r0
